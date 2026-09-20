@@ -299,6 +299,14 @@
         animation: floatBlob2 18s ease-in-out infinite;
         will-change: transform;
       }
+      @keyframes floatAvatar {
+        0%, 100% { transform: translate3d(0, 0, 0); }
+        50% { transform: translate3d(0, -12px, 0); }
+      }
+      .animate-float-avatar {
+        animation: floatAvatar 5s ease-in-out infinite;
+        will-change: transform;
+      }
     </style>
   </head>
   <body class="text-slate-900 antialiased overflow-x-hidden">

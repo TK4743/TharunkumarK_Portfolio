@@ -116,44 +116,39 @@ const Nav: React.FC<NavProps> = ({ onOpenPalette }) => {
   };
 
   useEffect(() => {
-    let rAF: number | null = null;
     let lastScrolled = false;
-    let lastSection = '';
 
     const handleScroll = () => {
-      if (rAF !== null) return;
-      rAF = requestAnimationFrame(() => {
-        rAF = null;
-        const scrolled = window.scrollY > 20;
-        if (scrolled !== lastScrolled) {
-          lastScrolled = scrolled;
-          setIsScrolled(scrolled);
-        }
-
-        let current = '';
-        for (const link of navLinks) {
-          const element = document.getElementById(link.id);
-          if (element) {
-            if (element.getBoundingClientRect().top <= window.innerHeight * 0.4) {
-              current = link.id;
-            }
-          }
-        }
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
-          current = 'contact';
-        }
-        if (current !== lastSection) {
-          lastSection = current;
-          setActiveSection(current);
-        }
-      });
+      const scrolled = window.scrollY > 20;
+      if (scrolled !== lastScrolled) {
+        lastScrolled = scrolled;
+        setIsScrolled(scrolled);
+      }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
+
+    // High performance IntersectionObserver: avoids getBoundingClientRect forced reflows during scroll
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: '-20% 0px -60% 0px' }
+    );
+
+    navLinks.forEach((link) => {
+      const el = document.getElementById(link.id);
+      if (el) observer.observe(el);
+    });
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      if (rAF !== null) cancelAnimationFrame(rAF);
+      observer.disconnect();
     };
   }, []);
 
@@ -353,15 +348,28 @@ const CountUp: React.FC<{ value: number; suffix?: string }> = ({ value, suffix =
 
 const TiltCard: React.FC<{ children: React.ReactNode; className?: string; onClick?: () => void }> = ({ children, className = '', onClick }) => {
   const cardRef = useRef<HTMLDivElement>(null);
+  const rAFRef = useRef<number | null>(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!cardRef.current) return;
+    const el = cardRef.current;
+    if (!el) return;
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    cardRef.current.style.setProperty('--card-x', `${x}px`);
-    cardRef.current.style.setProperty('--card-y', `${y}px`);
+
+    if (rAFRef.current !== null) return;
+    rAFRef.current = requestAnimationFrame(() => {
+      rAFRef.current = null;
+      el.style.setProperty('--card-x', `${x}px`);
+      el.style.setProperty('--card-y', `${y}px`);
+    });
   };
+
+  useEffect(() => {
+    return () => {
+      if (rAFRef.current !== null) cancelAnimationFrame(rAFRef.current);
+    };
+  }, []);
 
   return (
     <div
@@ -747,6 +755,8 @@ const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) =
                 <img
                   src={chartUrl}
                   alt="Tharunkumar K GitHub Contributions Chart"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-auto mx-auto select-none pointer-events-none"
                 />
               </div>
@@ -1222,21 +1232,21 @@ const App: React.FC = () => {
                 {/* Glow Backdrop */}
                 <div className="absolute -inset-8 bg-theme-soft rounded-[4rem] blur-[50px] -z-10 transition-colors opacity-50" style={{ backgroundColor: 'var(--theme-glow)' }}></div>
 
-                <motion.div
-                  animate={{ y: [0, -15, 0] }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                  className="w-full aspect-[3/4] bg-slate-100 rounded-[3rem] shadow-2xl relative overflow-hidden transition-all duration-700 border-[8px] border-white ring-1 ring-slate-100"
+                <div
+                  className="w-full aspect-[3/4] bg-slate-100 rounded-[3rem] shadow-2xl relative overflow-hidden transition-all duration-700 border-[8px] border-white ring-1 ring-slate-100 animate-float-avatar will-change-transform"
                 >
                   <img
                     src={PERSONAL_INFO.profileImage}
                     alt={PERSONAL_INFO.name}
+                    fetchpriority="high"
+                    decoding="async"
                     className="w-full h-full object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-1000"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop';
                     }}
                   />
-                </motion.div>
+                </div>
 
                 <HeroHighlightBadge />
               </div>
@@ -1878,6 +1888,8 @@ const App: React.FC = () => {
                     <img
                       src={infosysSpringboardImg}
                       alt="Infosys Springboard"
+                      loading="lazy"
+                      decoding="async"
                       className="w-8 h-8 object-contain"
                     />
                   );
@@ -1887,6 +1899,8 @@ const App: React.FC = () => {
                     <img
                       src={tcsIonImg}
                       alt="TCS iON"
+                      loading="lazy"
+                      decoding="async"
                       className="w-8 h-8 object-contain"
                     />
                   );
@@ -1896,6 +1910,8 @@ const App: React.FC = () => {
                     <img
                       src={tataImg}
                       alt="Tata"
+                      loading="lazy"
+                      decoding="async"
                       className="w-8 h-8 object-contain"
                     />
                   );
@@ -1905,6 +1921,8 @@ const App: React.FC = () => {
                     <img
                       src="https://img.icons8.com/?size=100&id=38804&format=png"
                       alt="Salesforce"
+                      loading="lazy"
+                      decoding="async"
                       className="w-7 h-7 object-contain"
                     />
                   );
@@ -1914,6 +1932,8 @@ const App: React.FC = () => {
                     <img
                       src={ciscoImg}
                       alt="Cisco"
+                      loading="lazy"
+                      decoding="async"
                       className="w-8 h-8 object-contain"
                     />
                   );
@@ -1923,6 +1943,8 @@ const App: React.FC = () => {
                     <img
                       src={futureSkillsImg}
                       alt="FutureSkills Prime"
+                      loading="lazy"
+                      decoding="async"
                       className="w-8 h-8 object-contain"
                     />
                   );
