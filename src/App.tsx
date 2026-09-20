@@ -1238,7 +1238,7 @@ const App: React.FC = () => {
                   <img
                     src={PERSONAL_INFO.profileImage}
                     alt={PERSONAL_INFO.name}
-                    fetchpriority="high"
+                    loading="eager"
                     decoding="async"
                     className="w-full h-full object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-1000"
                     onError={(e) => {
