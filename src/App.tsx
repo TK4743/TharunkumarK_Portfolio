@@ -1118,26 +1118,14 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50 selection:bg-theme-soft selection:text-theme relative">
       <CustomCursor />
-      {/* Background Blobs (Feature 6) */}
+      {/* Background Blobs (GPU Accelerated) */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden -z-20 opacity-30">
-        <motion.div
-          animate={{
-            x: [0, 100, -50, 0],
-            y: [0, -100, 50, 0],
-            scale: [1, 1.2, 0.9, 1]
-          }}
-          transition={{ duration: 25, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full blur-[100px] will-change-transform"
+        <div
+          className="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full blur-[100px] animate-blob-1"
           style={{ backgroundColor: 'var(--theme-glow)' }}
         />
-        <motion.div
-          animate={{
-            x: [0, -120, 80, 0],
-            y: [0, 80, -120, 0],
-            scale: [1, 0.8, 1.1, 1]
-          }}
-          transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute -bottom-40 -right-40 w-[500px] h-[500px] rounded-full blur-[100px] will-change-transform"
+        <div
+          className="absolute -bottom-40 -right-40 w-[500px] h-[500px] rounded-full blur-[100px] animate-blob-2"
           style={{ backgroundColor: 'var(--theme-glow)' }}
         />
       </div>
@@ -1149,12 +1137,10 @@ const App: React.FC = () => {
 
       {/* Hero Section */}
       <section id="hero" className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
-        <motion.div
-          animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}
-          transition={{ duration: 20, repeat: Infinity }}
-          className="absolute -top-20 -right-20 w-96 h-96 blur-[100px] rounded-full -z-10 opacity-30"
+        <div
+          className="absolute -top-20 -right-20 w-96 h-96 blur-[100px] rounded-full -z-10 opacity-30 animate-blob-1"
           style={{ backgroundColor: 'var(--theme-glow)' }}
-        ></motion.div>
+        />
 
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-16">
