@@ -7,6 +7,7 @@ import auraImg from './assets/aura-ai.png';
 import chatboxImg from './assets/chatbox-ai.png';
 import smartHelmetImg from './assets/smart-helmet.png';
 import goatCodeEditorImg from './assets/goat.png';
+import findoraImg from './assets/findora.png';
 
 export const PERSONAL_INFO = {
   name: 'Tharunkumar K',
@@ -135,6 +136,53 @@ export const CERTIFICATIONS: CertificationItem[] = [
   }
 ];
 export const PROJECTS: Project[] = [
+  {
+    title: 'FINDORA AI',
+    description:
+      'Autonomous Campus Lost & Found Intelligence Network with multimodal correlation and zero-knowledge ownership verification. 4th Prize Winner at 8-Hour AIML Hackathon.',
+    longDescription:
+      'FINDORA AI is an institutional-grade, privacy-first Lost & Found intelligence network and multimodal correlation ecosystem engineered for smart university campuses.\n\nSecured 4th Prize in the 8-Hour Hackathon conducted by the Department of Artificial Intelligence & Machine Learning at VSB Engineering College (awarded ChatGPT Go Subscription). The platform solves campus lost property chaos by automating item reporting, semantic matching, and fraud-proof ownership claims.\n\nIt features an AI-driven multimodal hybrid correlation pipeline (Visual 35%, Text 30%, Category 15%, Spatial 10%, Time 10%) powered by Google Gemini 2.5 Flash to automatically detect matching lost-and-found reports. To prevent fraudulent handovers, FINDORA AI implements a zero-knowledge blind verification protocol with Levenshtein distance matching and dynamic anti-hammering velocity limiters.\n\nThe system includes in-browser WebRTC camera capture with client-side HTML5 Canvas optical GPS/timestamp watermarking, Supabase PostgreSQL persistence, Cloudinary secure CDN storage, and instant automated campus broadcasts via Telegram Bot API (@findoravsb_bot) and Brevo SMTP secret OTP handovers.',
+    date: 'Sep 2026',
+    link: 'https://findoravsbec.vercel.app',
+    githubLink: 'https://github.com/Tharun4743/findora-ai',
+    tags: [
+      'React 19',
+      'TypeScript',
+      'Tailwind CSS',
+      'Node.js 20+',
+      'Express.js',
+      'Supabase (PostgreSQL)',
+      'Google Gemini 2.5 Flash',
+      'Cloudinary CDN',
+      'Telegram Bot API',
+      'Brevo SMTP'
+    ],
+    category: 'fullstack',
+    status: '4th Prize Winner',
+    realWorldImplementation:
+      'Awarded 4th Prize in the 8-Hour Hackathon at VSB Engineering College (AIML Dept). Deployed live on Vercel with real-time Telegram Bot integration (@findoravsb_bot) and Supabase backend.',
+    image: findoraImg,
+    problem:
+      'Campus lost and found workflows rely on disorganized noticeboards, unverified social media posts, and vulnerable manual handovers susceptible to false claims and lack of privacy.',
+    solution:
+      'FINDORA AI unifies campus lost property reporting with multimodal AI correlation (Gemini 2.5 Flash), zero-knowledge blind ownership verification challenges, optical tamper-proof camera watermarking, and instant Telegram broadcasts.',
+    features: [
+      'Multimodal Hybrid Matching: Fusion correlation combining visual analysis (35%), text embeddings (30%), category taxonomy (15%), and spatio-temporal telemetry (20%)',
+      'Zero-Knowledge Blind Verification: Automated challenge-response protocol with Levenshtein distance scoring and anti-fraud velocity throttling',
+      'Tamper-Proof WebRTC Camera: Live in-browser capture with HTML5 Canvas GPS and timestamp optical watermarking',
+      'Multi-Tier Role Portals: Tailored interfaces for Students, Campus Desk Officers, and Departmental Administrators',
+      'Instant Campus Broadcasts: Real-time event dispatches via Telegram Bot API (@findoravsb_bot) and Brevo SMTP 1-time handover PINs'
+    ],
+    challenges:
+      'Preventing fraudulent claim attempts and false positives on similar-looking items. Solved by engineering a multi-factor correlation algorithm blending visual attributes with spatial-temporal proximity and private question-answer verification barriers.',
+    architecture:
+      'Full-stack architecture featuring React 19 / TypeScript SPA, Express REST API gateway, Supabase PostgreSQL database, Cloudinary CDN vault, Google Gemini 2.5 Flash AI, and Telegram Bot webhook relay.',
+    myRole: 'Lead Full-Stack Architect & AI Engineer',
+    impact:
+      'Built and delivered within 8 hours during the VSBEC AIML Department Hackathon, winning 4th Prize and ChatGPT Go subscription.',
+    keyLearnings:
+      'Mastered Gemini multimodal visual feature extraction, zero-knowledge verification design, WebRTC canvas watermarking, and automated Telegram bot integration.'
+  },
   {
     title: 'VSBEC IT Vault',
     description:
@@ -456,6 +504,17 @@ export const LEADERSHIP = [
 ];
 
 export const ACHIEVEMENTS: AchievementItem[] = [
+  {
+    title: '8-Hour AI/ML Hackathon — 4th Prize',
+    organization: 'VSB Engineering College (AIML Dept)',
+    year: '2026',
+    type: '4TH PRIZE WINNER',
+    prize: 'ChatGPT Go Subscription',
+    category: 'hackathon',
+    iconName: 'award',
+    description:
+      'Secured 4th Prize in the 8-Hour Hackathon conducted by the Department of AI & ML at VSB Engineering College for architecting FINDORA AI — an autonomous campus lost & found intelligence network.'
+  },
   {
     title: 'Code Thugs 2k26 – 1st Place (National Winner)',
     organization: 'Code Thugs 2k26',
