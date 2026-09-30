@@ -526,6 +526,16 @@ export const ACHIEVEMENTS: AchievementItem[] = [
       'Secured 3rd Prize in the 8-Hour Hackathon conducted by the Department of AI & ML at VSB Engineering College for architecting FINDORA AI — an autonomous campus lost & found intelligence network.'
   },
   {
+    title: 'Best GitHub Profile & Top Developer',
+    organization: 'VSB Engineering College',
+    year: '2026',
+    type: 'CAMPUS EXCELLENCE',
+    prize: 'Rank #1 GitHub Profile in Campus',
+    iconName: 'trophy',
+    description:
+      'Recognized for maintaining the top developer profile at VSB Engineering College with 2,378+ commits, 26+ active repositories, a published GitHub Marketplace Action (GitHub Profile Visualizer), and enterprise-grade full-stack architectures.'
+  },
+  {
     title: 'Smart India Hackathon 2026 – Top 50 (Internal)',
     organization: 'Ministry of Education & SIH Internal Hackathon',
     year: '2026',
