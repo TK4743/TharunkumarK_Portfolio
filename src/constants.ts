@@ -504,17 +504,6 @@ export const LEADERSHIP = [
 
 export const ACHIEVEMENTS: AchievementItem[] = [
   {
-    title: '8-Hour AI/ML Hackathon — 3rd Prize',
-    organization: 'VSB Engineering College (AIML Dept)',
-    year: '2026',
-    type: '3RD PRIZE WINNER',
-    prize: 'ChatGPT Go Subscription',
-    category: 'hackathon',
-    iconName: 'award',
-    description:
-      'Secured 3rd Prize in the 8-Hour Hackathon conducted by the Department of AI & ML at VSB Engineering College for architecting FINDORA AI — an autonomous campus lost & found intelligence network.'
-  },
-  {
     title: 'Code Thugs 2k26 – 1st Place (National Winner)',
     organization: 'Code Thugs 2k26',
     year: '2026',
@@ -524,6 +513,17 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     iconName: 'trophy',
     description:
       'Won 1st Place Winner nationally at Code Thugs 2k26 for designing, building, and deploying GOAT Code Editor — a real-time collaborative IDE featuring live cursor highlighting and in-browser compilation.'
+  },
+  {
+    title: '8-Hour AI/ML Hackathon — 3rd Prize',
+    organization: 'VSB Engineering College (AIML Dept)',
+    year: '2026',
+    type: '3RD PRIZE WINNER',
+    prize: 'ChatGPT Go Subscription',
+    category: 'hackathon',
+    iconName: 'award',
+    description:
+      'Secured 3rd Prize in the 8-Hour Hackathon conducted by the Department of AI & ML at VSB Engineering College for architecting FINDORA AI — an autonomous campus lost & found intelligence network.'
   },
   {
     title: 'Smart India Hackathon 2026 – Top 50 (Internal)',
