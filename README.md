@@ -19,7 +19,7 @@
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=Tharun4743&label=Profile+Views&color=0e75b6&style=flat" alt="Profile Views"/>
+<a href="https://hits.sh/github.com/Tharun4743/"><img src="https://hits.sh/github.com/Tharun4743.svg?label=Profile+Views&color=0e75b6&style=flat" alt="Profile Views"/></a>
 
 <br clear="both"/>
 </div>
