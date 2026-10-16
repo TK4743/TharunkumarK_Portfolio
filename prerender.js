@@ -25,20 +25,43 @@ async function prerender() {
   const serverEntryUrl = pathToFileURL(serverEntryPath).href;
   const { render } = await import(serverEntryUrl);
 
-  const { html: appHtml } = render();
+  // 1. Prerender Homepage (/)
+  const { html: homeHtml } = render('/');
+  let renderedHome = template.includes('<!--app-html-->')
+    ? template.replace('<!--app-html-->', homeHtml)
+    : template.replace('<div id="root"></div>', `<div id="root">${homeHtml}</div>`);
 
-  let renderedHtml = template;
-  if (renderedHtml.includes('<!--app-html-->')) {
-    renderedHtml = renderedHtml.replace('<!--app-html-->', appHtml);
-  } else {
-    renderedHtml = renderedHtml.replace(
-      '<div id="root"></div>',
-      `<div id="root">${appHtml}</div>`
-    );
+  fs.writeFileSync(templatePath, renderedHome, 'utf-8');
+  console.log(`[prerender] Successfully prerendered dist/index.html (${(Buffer.byteLength(renderedHome, 'utf8') / 1024).toFixed(2)} KB)`);
+
+  // 2. Prerender Dedicated Showcase Page (/vsb-engineering-college-github-profiles/)
+  const showcaseDir = toAbsolute('dist/vsb-engineering-college-github-profiles');
+  if (!fs.existsSync(showcaseDir)) {
+    fs.mkdirSync(showcaseDir, { recursive: true });
   }
 
-  fs.writeFileSync(templatePath, renderedHtml, 'utf-8');
-  console.log(`[prerender] Successfully prerendered HTML into dist/index.html (${(Buffer.byteLength(renderedHtml, 'utf8') / 1024).toFixed(2)} KB)`);
+  const { html: showcaseHtml } = render('/vsb-engineering-college-github-profiles/');
+  let renderedShowcase = template.includes('<!--app-html-->')
+    ? template.replace('<!--app-html-->', showcaseHtml)
+    : template.replace('<div id="root"></div>', `<div id="root">${showcaseHtml}</div>`);
+
+  // Update title, description, and canonical tag for dedicated showcase
+  renderedShowcase = renderedShowcase.replace(
+    /<title>.*?<\/title>/,
+    '<title>Best GitHub Profiles — VSB Engineering College | Student Developer Showcase</title>'
+  );
+  renderedShowcase = renderedShowcase.replace(
+    /<link rel="canonical" href="https:\/\/tharunkumark4743\.netlify\.app\/" \/>/,
+    '<link rel="canonical" href="https://tharunkumark4743.netlify.app/vsb-engineering-college-github-profiles/" />'
+  );
+  renderedShowcase = renderedShowcase.replace(
+    /<meta name="description" content=".*?" \/>/,
+    '<meta name="description" content="Explore GitHub profiles and software projects from students associated with V.S.B. Engineering College, Karur. Curated showcase featuring Tharunkumar K (@Tharun4743) and verified student innovations." />'
+  );
+
+  const showcaseFilePath = path.join(showcaseDir, 'index.html');
+  fs.writeFileSync(showcaseFilePath, renderedShowcase, 'utf-8');
+  console.log(`[prerender] Successfully prerendered dist/vsb-engineering-college-github-profiles/index.html (${(Buffer.byteLength(renderedShowcase, 'utf8') / 1024).toFixed(2)} KB)`);
 
   // Clean up server build folder
   const serverDir = toAbsolute('dist/server');

@@ -1,4 +1,4 @@
-import { Project, CertificationItem, SkillCategory, AchievementItem } from './type';
+import { Project, CertificationItem, SkillCategory, AchievementItem, VsbStudentProfile, ShowcaseCriteria } from './type';
 
 import profileImg from './assets/TharunKumar.jpeg';
 import vsbecTaskManagerImg from './assets/vsbec-task-manager.png';
@@ -10,18 +10,23 @@ import goatCodeEditorImg from './assets/goat.png';
 
 export const PERSONAL_INFO = {
   name: 'Tharunkumar K',
-  title: 'Full Stack Developer | AI Application Developer',
+  primaryName: 'Tharunkumar K',
+  title: 'Software Developer | Full Stack & AI Systems Developer',
+  college: 'V.S.B. Engineering College, Karur',
+  collegeFull: 'V.S.B. Engineering College, Karur, Tamil Nadu',
+  department: 'Information Technology',
+  degree: 'B.Tech Information Technology',
   profileImage: profileImg,
   email: 'tharunkumark42007@gmail.com',
   phone: '+91 87609 64830',
   location: 'Dharapuram, Tamil Nadu, India',
-  linkedin: 'https://in.linkedin.com/in/tharunkumark4743?trk=profile-badge',
+  linkedin: 'https://www.linkedin.com/in/tharunkumark4743/',
   github: 'https://github.com/Tharun4743',
   leetcode: 'https://leetcode.com/u/Tharunkumar__K/',
   geeksforgeeks: 'https://www.geeksforgeeks.org/profile/tharunkumark4743',
   resume: 'https://drive.google.com/drive/folders/1zdLQ8EoEC8X73fFAJjSJr-Ros_xckIyW',
   profileSummary:
-    'Full stack developer who enjoys building things end-to-end – frontend, backend, and everything in between. Comfortable with React, Next.js, Node.js, TypeScript, and PostgreSQL, with recent experience at Neura Global. Learn fast, work well with teams, and like solving problems that actually matter.'
+    'Full-stack software developer and B.Tech Information Technology student at V.S.B. Engineering College, Karur. Experienced in engineering production web applications, distributed systems, and AI-powered platforms using React 19, TypeScript, Node.js, and PostgreSQL. Creator of VSBEC IT Vault (adopted by 365+ daily students), GOAT Code Editor (1st Place National Winner at Code Thugs 2K26), and published GitHub Marketplace Actions.'
 };
 
 export const EDUCATION = [
@@ -482,6 +487,182 @@ export const PROJECTS: Project[] = [
       'Lead embedded developer on the dual-unit rider safety system. Shortlisted as Top 50 out of 300+ teams in the SIH 2025 Internal Hackathon and officially nominated to submit on the central SIH portal. Proved sub-500ms ignition cutoff response time to proactively safeguard motorcycle riders.',
     keyLearnings:
       'Navigated embedded hardware constraints, noise filtering in analog gas sensors, RF transceiver packet stability, and failsafe design in life-critical systems.'
+  },
+  {
+    title: 'Work Suite HRMS',
+    description:
+      'Enterprise workforce operations suite featuring two-level RBAC, automated payroll tax calculations, biometric attendance tracking, and leave request state machines. National Finalist at Odoo × NMIT Hackathon 2026.',
+    longDescription:
+      'Work Suite HRMS is an enterprise workforce operations platform engineered for mid-to-large business automation. Selected as a National Finalist for the 24-hour on-campus Grand Finale at NMIT Bangalore during the Odoo × NMIT Bangalore Hackathon 2026.\n\nThe system unifies employee directory management, automated monthly payroll calculations with tax withholding tables, biometric attendance logging, and multi-tier leave approval state machines. Built with modular Node.js, Express, and PostgreSQL with robust session encryption and role-based access control (Admin, HR, Employee).',
+    date: 'Oct 2026',
+    link: 'https://worksuite-hrms.onrender.com',
+    githubLink: 'https://github.com/Tharun4743/WorkSuite-HRMS',
+    tags: [
+      'React',
+      'TypeScript',
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'Tailwind CSS',
+      'RBAC',
+      'Payroll Automation'
+    ],
+    category: 'fullstack',
+    status: 'Odoo × NMIT Finalist',
+    problem:
+      'Small and medium enterprises struggle with fragmented spreadsheets for daily attendance, manual error-prone payroll deductions, and delayed multi-level employee leave authorizations.',
+    solution:
+      'Work Suite HRMS digitizes the entire employee lifecycle with strict RBAC permissions, one-click tax-compliant payroll generation, and transparent leave approval workflows.',
+    features: [
+      'Automated Payroll Engine: Configurable tax withholding brackets and instant pay slip calculations',
+      'Multi-Level RBAC: Strict privilege partitioning across Admin, HR Manager, and Staff roles',
+      'Attendance & Leave State Machine: Biometric punch-in emulation and multi-stage leave approvals',
+      'Analytical HR Dashboard: Real-time workforce headcounts, payroll expense charts, and department metrics'
+    ],
+    architecture:
+      'Decoupled React & Tailwind frontend communicating via authenticated REST endpoints with an Express.js backend backed by relational PostgreSQL.',
+    myRole: 'Lead Full-Stack Architect',
+    impact:
+      'Qualified as National On-Site Finalist at the Odoo × NMIT Bangalore Hackathon 2026 out of nationwide competing developer teams.'
+  },
+  {
+    title: 'GitHub Profile Visualizer',
+    description:
+      'Published GitHub Marketplace Action and CLI suite generating 3D isometric contribution skylines, commit velocity telemetry, and skill radars in pure zero-dependency SVG.',
+    longDescription:
+      'GitHub Profile Visualizer is a published GitHub Marketplace Action and developer telemetry engine. It parses public GitHub user activity and generates rich, high-resolution SVG telemetry cards including 3D isometric contribution skylines, commit velocity graphs, language distribution matrixes, and skill radar diagrams.\n\nEngineered with zero native binary dependencies to run seamlessly in GitHub Actions CI/CD runners, Docker containers, or local developer workstations.',
+    date: '2026',
+    link: 'https://github.com/marketplace/actions/github-profile-visualizer',
+    githubLink: 'https://github.com/Tharun4743/Github-profile-visualizer',
+    tags: [
+      'Node.js',
+      'TypeScript',
+      'GitHub Actions',
+      'SVG Engine',
+      'GitHub REST API',
+      'CI/CD'
+    ],
+    category: 'fullstack',
+    status: 'Marketplace Action',
+    problem:
+      'Standard GitHub profile README cards rely on third-party hosted services that frequently hit rate limits, suffer downtime, or fail to render properly.',
+    solution:
+      'GitHub Profile Visualizer runs as a native GitHub Action directly within the user repository, rendering and committing static self-hosted SVGs with zero runtime API dependency.',
+    features: [
+      '3D Isometric Contribution City: Transforms daily git contribution heatmaps into 3D isometric architectural skylines',
+      'Pure SVG Generation: Renders pixel-perfect, scalable vector graphics without canvas or headless browser dependencies',
+      '13-in-1 Telemetry Suite: Commit velocity, activity streams, languages breakdown, and achievement badges',
+      'Zero-Config Workflow: Single YAML workflow integration directly on GitHub Actions'
+    ],
+    architecture:
+      'TypeScript execution pipeline parsing GitHub GraphQL & REST APIs, computing commit geometry, and rendering pure XML/SVG output.',
+    myRole: 'Author & Maintainer',
+    impact:
+      'Published on the official GitHub Marketplace and adopted by student developers and open-source engineers to power GitHub profile telemetry.'
+  },
+  {
+    title: 'EdgeGuard — Automotive CAN Bus IDS',
+    description:
+      'On-device Controller Area Network (CAN Bus 2.0B) intrusion detection system with sub-5ms LightGBM edge inference neutralizing DoS bus floods, fuzzing, and spoofing.',
+    longDescription:
+      'EdgeGuard is an automotive cybersecurity platform engineered to protect modern vehicle Controller Area Networks (CAN Bus 2.0B) against physical and remote cyber attacks. Utilizing lightweight LightGBM decision models trained on real vehicle telemetry, EdgeGuard runs on embedded in-vehicle hardware to identify anomalous message frequencies, payload entropy spikes, and frame spoofing within 5ms without requiring internet connectivity.',
+    date: '2026',
+    githubLink: 'https://github.com/Tharun4743/EdgeGuard',
+    tags: [
+      'Python',
+      'SocketCAN',
+      'LightGBM',
+      'Machine Learning',
+      'Automotive Security',
+      'CAN Bus 2.0B'
+    ],
+    category: 'fullstack',
+    status: 'Vehicle Cybersecurity',
+    problem:
+      'Automotive CAN bus protocols lack authentication and encryption by design, leaving connected vehicles vulnerable to malicious frame injection, throttle tampering, and denial-of-service bus flooding.',
+    solution:
+      'EdgeGuard provides sub-5ms real-time edge anomaly detection inspecting CAN ID timing deltas and payload entropy directly on-device with zero cloud reliance.',
+    features: [
+      'Sub-5ms Inference: Edge-optimized LightGBM model evaluating frame inter-arrival timing anomalies',
+      'SocketCAN Linux Daemon: Direct hardware interface with virtual and physical CAN transceivers',
+      'Attack Classification: Detects DoS bus floods, diagnostic fuzzing attacks, and impersonation spoofing',
+      'Security Operations Dashboard: Real-time NSOC telemetry interface for vehicle fleet telematics'
+    ],
+    architecture:
+      'Python SocketCAN daemon interfacing with kernel network stack, running optimized LightGBM inference pipelines with alert streaming.',
+    myRole: 'Lead Security Systems Engineer',
+    impact:
+      'Demonstrated 99.4% precision in catching synthetic CAN injection attacks with zero latency degradation to safety-critical vehicle ECUs.'
+  },
+  {
+    title: 'MuleGuard — Anti-Money Laundering Graph System',
+    description:
+      'Financial crime detection engine using Neo4j and D3.js graph topologies to identify money mule smurfing rings, circular transaction loops, and high-velocity layering.',
+    longDescription:
+      'MuleGuard is a financial forensics platform designed for fraud investigation units and regulatory compliance teams. It models transactional records into dynamic directed graph topologies using Neo4j and D3.js to detect complex money laundering patterns—including smurfing rings, high-velocity fund layering, and circular transaction loops—that evade conventional rule-based relational databases.',
+    date: '2026',
+    githubLink: 'https://github.com/Tharun4743/Muleguard',
+    tags: [
+      'React',
+      'Node.js',
+      'Neo4j',
+      'Graph Algorithms',
+      'D3.js',
+      'FinTech',
+      'Fraud Detection'
+    ],
+    category: 'fullstack',
+    status: 'Fraud Forensics',
+    problem:
+      'Financial fraudsters split illegal proceeds across dozens of intermediary "money mule" bank accounts within minutes, creating dispersed transaction trails that evade traditional relational database queries.',
+    solution:
+      'MuleGuard converts transactions into multi-hop graph structures, executing Cypher graph queries and velocity heuristics to uncover coordinated laundering rings instantly.',
+    features: [
+      'Interactive Graph Topology: D3.js visualization mapping money flow velocity between bank accounts and entities',
+      'Smurfing Detection: Algorithmic identification of split deposits aggregating into centralized destination vaults',
+      'Circular Loop Tracing: Cycle detection algorithms spotting self-funding and wash-trading schemes',
+      'Risk Scorecard: Multi-factor risk scores based on transaction velocity, account age, and node centrality'
+    ],
+    architecture:
+      'React and D3.js visualization interface connected via REST APIs to a Node.js backend executing Cypher graph queries on Neo4j.',
+    myRole: 'Full-Stack & Graph Systems Developer',
+    impact:
+      'Accelerated mule network discovery time from hours of manual CSV collation to instantaneous graphical visualization.'
+  },
+  {
+    title: 'Smart Public Service CRM',
+    description:
+      'Citizen grievance redressal portal with automated SLA tracking, geo-tagging, public status verification, and administrative escalation workflows.',
+    longDescription:
+      'Smart Public Service CRM is a civic engagement and municipal task governance platform designed to eliminate bottlenecks in citizen grievance redressal. Citizens can submit civic infrastructure complaints with GPS coordinates and photo evidence, while municipal officers manage resolution workflows governed by strict automated SLA escalation timers.',
+    date: '2026',
+    githubLink: 'https://github.com/Tharun4743/Public-CRM',
+    tags: [
+      'React',
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'Leaflet GIS',
+      'SLA Escalation',
+      'Civic Tech'
+    ],
+    category: 'fullstack',
+    status: 'Civic Governance',
+    problem:
+      'Civic complaints filed with municipal bodies suffer from lack of transparency, misplaced physical paperwork, and no accountability for resolving public infrastructure issues.',
+    solution:
+      'Smart Public Service CRM provides a public tracking portal with geo-tagged incident mapping, transparent status lifecycles, and automatic escalation when resolution SLAs expire.',
+    features: [
+      'Geo-Tagged Complaint Registration: Citizens pin issues on interactive Leaflet maps with image uploads',
+      'Automated SLA Escalation: Unresolved tickets automatically escalate to higher zonal authorities upon SLA breach',
+      'Public Transparency Tracker: Real-time ticket lifecycle status (Submitted, Assigned, In Progress, Resolved)',
+      'Administrative Analytics: Zonal heatmap displaying infrastructure grievance clusters and department resolution rates'
+    ],
+    architecture:
+      'React frontend with Leaflet mapping, Express.js REST API, and PostgreSQL database tracking ticket state transitions.',
+    myRole: 'Lead Full-Stack Developer',
+    impact:
+      'Built a complete civic accountability prototype delivering automated escalation and public status tracking.'
   }
 ];
 
@@ -617,3 +798,112 @@ export const ACHIEVEMENTS: AchievementItem[] = [
       'Spearheaded event planning, logistics, and execution for 150+ symposium participants, achieving an average feedback rating score of 9.8 out of 10.'
   }
 ];
+
+export const SHOWCASE_CRITERIA: ShowcaseCriteria[] = [
+  {
+    title: 'Code Architecture & Depth',
+    description: 'Original production architectures, decoupled components, and real problem-solving over boilerplate copies.',
+    iconName: 'code'
+  },
+  {
+    title: 'Documentation & Readability',
+    description: 'Comprehensive READMEs with architecture diagrams, setup guides, verified problem statements, and demos.',
+    iconName: 'fileText'
+  },
+  {
+    title: 'Continuous Commit Velocity',
+    description: 'Evidence of consistent, disciplined daily engineering habits and version-controlled codebase maintenance.',
+    iconName: 'activity'
+  },
+  {
+    title: 'Real-World Validation & Awards',
+    description: 'Institutional adoption, national hackathon recognitions (SIH, Code Thugs, Odoo), and peer review.',
+    iconName: 'award'
+  }
+];
+
+export const VSB_GITHUB_PROFILES: VsbStudentProfile[] = [
+  {
+    name: 'Tharunkumar K',
+    githubUsername: 'Tharun4743',
+    githubUrl: 'https://github.com/Tharun4743',
+    linkedinUrl: 'https://www.linkedin.com/in/tharunkumark4743/',
+    role: 'Lead Full-Stack Architect & Embedded Systems Developer',
+    department: 'Department of Information Technology',
+    college: 'V.S.B. Engineering College, Karur',
+    batch: '2024 – 2028 Batch',
+    description:
+      'Recognized for holding the leading student GitHub developer profile at V.S.B. Engineering College, Karur. Lead architect of production platforms adopted across 365+ campus students, published GitHub Marketplace Action creator, and national hackathon winner.',
+    featuredRepos: [
+      {
+        name: 'taskmanager (VSBEC IT Vault)',
+        description: 'Multi-compiler Monaco IDE assessment suite, 3-tier submission pipeline, and LeetCode velocity sync adopted by 365+ students.',
+        url: 'https://github.com/Tharun4743/taskmanager',
+        tags: ['React 19', 'TypeScript', 'Node.js', 'PostgreSQL', 'Monaco IDE'],
+        highlight: 'SIH 2026 Top 50 Nominee'
+      },
+      {
+        name: 'GOAT-CE (GOAT Code Editor)',
+        description: 'Collaborative in-browser pair programming IDE with custom WebRTC peer voice mesh and real-time cursor sync.',
+        url: 'https://github.com/Tharun4743/GOAT-CE',
+        tags: ['React 19', 'WebRTC', 'Socket.IO', 'Piston API', 'Monaco'],
+        highlight: '1st Place Winner (Code Thugs 2K26)'
+      },
+      {
+        name: 'findora-ai (FINDORA AI)',
+        description: 'Campus lost & found intelligence network with Google Gemini 2.5 Flash multimodal correlation and zero-knowledge claim verification.',
+        url: 'https://github.com/Tharun4743/findora-ai',
+        tags: ['React 19', 'Gemini AI', 'Supabase', 'Telegram Bot API'],
+        highlight: '3rd Prize Winner (AIML Hackathon)'
+      },
+      {
+        name: 'github-profile-visualizer',
+        description: 'Published GitHub Marketplace Action & 13-in-1 pure SVG developer telemetry suite generating 3D isometric contribution skylines.',
+        url: 'https://github.com/Tharun4743/Github-profile-visualizer',
+        tags: ['TypeScript', 'GitHub Actions', 'SVG Engine', 'CI/CD'],
+        highlight: 'Published GitHub Marketplace Action'
+      },
+      {
+        name: 'AGILE-INNOVATORS-smart-helmet-',
+        description: 'Dual-unit rider safety system with IR helmet wear verification, MQ-3 alcohol detection, eye-blink sensor, and RF ignition interlock.',
+        url: 'https://github.com/Tharun4743/AGILE-INNOVATORS-smart-helmet-',
+        tags: ['Arduino', 'C/C++', 'RF 433MHz', 'IoT Hardware'],
+        highlight: 'SIH 2025 Top 50 Nominee'
+      },
+      {
+        name: 'WorkSuite-HRMS',
+        description: 'Enterprise workforce operations suite with 2-tier RBAC, automated payroll tax deduction calculations, and attendance tracking.',
+        url: 'https://github.com/Tharun4743/WorkSuite-HRMS',
+        tags: ['React', 'Express', 'PostgreSQL', 'RBAC'],
+        highlight: 'Odoo × NMIT National Finalist'
+      }
+    ],
+    skills: [
+      'React 19',
+      'TypeScript',
+      'Node.js',
+      'Express.js',
+      'PostgreSQL',
+      'Supabase',
+      'Google Gemini AI',
+      'WebRTC',
+      'Socket.IO',
+      'Arduino C/C++',
+      'Docker'
+    ],
+    metrics: {
+      commits: '2,378+ Commits',
+      repos: '26+ Public Repositories',
+      achievements: 'National Hackathon Winner'
+    },
+    evaluationHighlights: [
+      '365+ active campus daily users on VSBEC IT Vault platform',
+      'Published author on official GitHub Marketplace (GitHub Action)',
+      '1st Place Winner nationally at Code Thugs 2K26 Hackathon',
+      '2x Smart India Hackathon (SIH 2025 & 2026) Top 50 Nominee',
+      'Department Student Coordinator for Information Technology'
+    ]
+  }
+];
+
+

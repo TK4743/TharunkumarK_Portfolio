@@ -33,7 +33,8 @@ import {
   Layers,
   Briefcase,
   Check,
-  Copy
+  Copy,
+  FolderGit2
 } from 'lucide-react';
 import {
   PERSONAL_INFO,
@@ -45,6 +46,7 @@ import {
   ACHIEVEMENTS
 } from './constants';
 import { Project, RoleItem, LeadershipItem, EducationItem } from './type';
+import VsbShowcase from './VsbShowcase';
 import infosysSpringboardImg from './assets/infosys-springboard.png';
 import tcsIonImg from './assets/tcs-ion.png';
 import futureSkillsImg from './assets/futureskills-prime.png';
@@ -90,6 +92,7 @@ const Nav: React.FC<NavProps> = ({ onOpenPalette }) => {
     { name: 'Experience', id: 'experience' },
     { name: 'Education', id: 'education' },
     { name: 'Projects', id: 'projects' },
+    { name: 'VSB Showcase', id: 'vsb-github-showcase' },
     { name: 'Achievements', id: 'achievements' },
     { name: 'Certifications', id: 'certs' },
     { name: 'Contact', id: 'contact' },
@@ -447,6 +450,7 @@ const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose, onSele
     { name: 'Navigate: Experience', action: () => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' }), icon: <User size={18} /> },
     { name: 'Navigate: Education', action: () => document.getElementById('education')?.scrollIntoView({ behavior: 'smooth' }), icon: <BookOpen size={18} /> },
     { name: 'Navigate: Projects', action: () => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }), icon: <Code size={18} /> },
+    { name: 'Navigate: VSB GitHub Showcase', action: () => document.getElementById('vsb-github-showcase')?.scrollIntoView({ behavior: 'smooth' }), icon: <FolderGit2 size={18} /> },
     { name: 'Navigate: Achievements', action: () => document.getElementById('achievements')?.scrollIntoView({ behavior: 'smooth' }), icon: <Award size={18} /> },
     { name: 'Navigate: Certifications', action: () => document.getElementById('certs')?.scrollIntoView({ behavior: 'smooth' }), icon: <Award size={18} /> },
     { name: 'Navigate: Contact', action: () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }), icon: <MessageSquare size={18} /> },
@@ -737,15 +741,63 @@ const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) =
         />
 
         <div className="max-w-4xl mx-auto flex flex-col gap-4 sm:gap-6">
-          <div className="grid grid-cols-2 gap-3 sm:gap-5 text-center">
-            <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all">
-              <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5">Repos</h4>
-              <p className="text-base sm:text-lg font-black text-slate-900 truncate">{gitStats.loading ? '...' : gitStats.repos}</p>
-            </TiltCard>
-            <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all">
-              <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5">Followers</h4>
-              <p className="text-base sm:text-lg font-black text-slate-900 truncate">{gitStats.loading ? '...' : gitStats.followers}</p>
-            </TiltCard>
+          <div className="flex items-center justify-between pb-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-full border border-emerald-200">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              Live GitHub Telemetry &bull; @Tharun4743
+            </div>
+            <a
+              href="https://github.com/Tharun4743"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-bold text-theme hover:underline flex items-center gap-1"
+            >
+              View on GitHub <ExternalLink size={12} />
+            </a>
+          </div>
+
+          <div className="grid grid-cols-3 gap-3 sm:gap-5 text-center">
+            <a
+              href="https://github.com/Tharun4743?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
+            >
+              <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all h-full">
+                <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-theme transition-colors">Public Repos</h4>
+                <p className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-theme transition-colors">
+                  {gitStats.loading ? '...' : gitStats.repos}
+                </p>
+              </TiltCard>
+            </a>
+
+            <a
+              href="https://github.com/Tharun4743?tab=followers"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
+            >
+              <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all h-full">
+                <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-theme transition-colors">Followers</h4>
+                <p className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-theme transition-colors">
+                  {gitStats.loading ? '...' : gitStats.followers}
+                </p>
+              </TiltCard>
+            </a>
+
+            <a
+              href="https://github.com/Tharun4743?tab=following"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
+            >
+              <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all h-full">
+                <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-theme transition-colors">Following</h4>
+                <p className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-theme transition-colors">
+                  {gitStats.loading ? '...' : gitStats.following}
+                </p>
+              </TiltCard>
+            </a>
           </div>
 
           <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm border border-slate-100 text-center hover:shadow-md transition-all">
@@ -1050,14 +1102,24 @@ const App: React.FC = () => {
   const [activeThemeIndex, setActiveThemeIndex] = useState(0);
   const [isPaletteOpen, setIsPaletteOpen] = useState(false);
   const [activeProject, setActiveProject] = useState<Project | null>(null);
+  const [isDedicatedShowcase, setIsDedicatedShowcase] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<'all' | 'iot' | 'fullstack'>('all');
   const [gitStats, setGitStats] = useState({
-    followers: 7,
-    repos: 15,
-    following: 6,
-    loading: true,
+    followers: 23,
+    repos: 31,
+    following: 12,
+    loading: false,
     error: false
   });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const path = window.location.pathname.toLowerCase();
+      if (path.includes('vsb-engineering-college-github-profiles')) {
+        setIsDedicatedShowcase(true);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * THEMES.length);
@@ -1098,32 +1160,75 @@ const App: React.FC = () => {
   }, [activeProject]);
 
   useEffect(() => {
-    const fetchGitHub = async () => {
+    let isMounted = true;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+    const fetchLiveGitHub = async () => {
       try {
-        const userRes = await fetch('https://api.github.com/users/Tharun4743');
-        if (!userRes.ok) throw new Error('API Rate Limited or Offline');
-        const userJson = await userRes.json();
-        
-        setGitStats({
-          followers: userJson.followers ?? 7,
-          repos: userJson.public_repos ?? 15,
-          following: userJson.following ?? 6,
-          loading: false,
-          error: false
+        const userRes = await fetch('https://api.github.com/users/Tharun4743', {
+          signal: controller.signal,
+          headers: {
+            'Accept': 'application/vnd.github.v3+json'
+          }
         });
+        clearTimeout(timeoutId);
+
+        if (userRes.ok) {
+          const userJson = await userRes.json();
+          if (isMounted) {
+            setGitStats({
+              followers: Number(userJson.followers) || 23,
+              repos: Number(userJson.public_repos) || 31,
+              following: Number(userJson.following) || 12,
+              loading: false,
+              error: false
+            });
+          }
+        }
       } catch (err) {
-        setGitStats({
-          followers: 7,
-          repos: 15,
-          following: 6,
-          loading: false,
-          error: true
-        });
+        // Retain current live numbers if network is offline
       }
     };
 
-    fetchGitHub();
+    fetchLiveGitHub();
+    return () => {
+      isMounted = false;
+      clearTimeout(timeoutId);
+      controller.abort();
+    };
   }, []);
+
+  if (isDedicatedShowcase) {
+    return (
+      <div className="min-h-screen bg-slate-50 selection:bg-theme-soft selection:text-theme relative">
+        <CustomCursor />
+        <SpotlightBackground />
+        <Nav onOpenPalette={() => setIsPaletteOpen(true)} />
+        <main>
+          <VsbShowcase
+            isDedicatedPage={true}
+            onNavigateHome={() => {
+              window.history.pushState({}, '', '/');
+              setIsDedicatedShowcase(false);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          />
+        </main>
+        <footer className="py-12 bg-white border-t border-slate-100 text-center">
+          <p className="text-slate-400 font-bold text-xs tracking-widest uppercase">
+            &copy; {new Date().getFullYear()} THARUNKUMAR K &bull; V.S.B. ENGINEERING COLLEGE, KARUR
+          </p>
+        </footer>
+        <CommandPalette
+          isOpen={isPaletteOpen}
+          onClose={() => setIsPaletteOpen(false)}
+          onSelectTheme={(idx) => setActiveThemeIndex(idx)}
+        />
+        <AIChatbot />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-slate-50 selection:bg-theme-soft selection:text-theme relative">
@@ -1161,15 +1266,21 @@ const App: React.FC = () => {
               className="w-full lg:w-3/5 text-center lg:text-left order-2 lg:order-1"
             >
 
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 mb-8 leading-[1.1] tracking-tighter">
-                Building <span className="text-theme">Intelligent Software Solutions</span>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-theme-soft border border-theme/20 text-theme text-xs font-bold uppercase tracking-wider mb-6">
+                <span className="w-2 h-2 rounded-full bg-theme animate-ping" />
+                V.S.B. Engineering College &bull; Information Technology
+              </div>
+
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-slate-900 mb-6 leading-[1.1] tracking-tighter">
+                Tharunkumar K <br />
+                <span className="text-theme">Software Developer</span>
               </h1>
 
-              <p className="text-lg md:text-2xl text-slate-600 mb-12 leading-relaxed max-w-2xl font-medium mx-auto lg:mx-0">
-                Hi, I'm <span className="text-slate-900 font-bold underline decoration-4 underline-offset-4" style={{ textDecorationColor: 'var(--theme-primary)' }}>{PERSONAL_INFO.name}</span>. I build intelligent web applications, desktop software, and safety IoT systems that solve real-world problems.
+              <p className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl font-medium mx-auto lg:mx-0">
+                B.Tech Information Technology student at <strong className="text-slate-900">V.S.B. Engineering College, Karur</strong>. Full-stack software developer, Code Thugs 2K26 national winner, and SIH nominee building real-world software platforms, collaborative developer tools, and intelligent IoT systems.
               </p>
 
-              <div className="flex flex-wrap justify-center lg:justify-start gap-6 items-center">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 items-center">
                 <motion.button
                   whileHover={{ scale: 1.05, boxShadow: "0 20px 25px -5px var(--theme-glow)" }}
                   whileTap={{ scale: 0.95 }}
@@ -1177,10 +1288,23 @@ const App: React.FC = () => {
                     e.preventDefault();
                     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="px-10 py-5 bg-theme hover:brightness-110 text-white rounded-[2rem] font-bold transition-all flex items-center gap-3 group shadow-lg"
+                  className="px-8 py-4 bg-theme hover:brightness-110 text-white rounded-[2rem] font-bold transition-all flex items-center gap-2 group shadow-lg text-sm sm:text-base"
                 >
                   Explore My Work
-                  <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                </motion.button>
+
+                <motion.button
+                  whileHover={{ scale: 1.05, boxShadow: "0 20px 25px -5px var(--theme-glow)" }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('vsb-github-showcase')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="px-6 py-4 bg-white text-slate-800 border-2 border-slate-200 hover:border-theme hover:text-theme rounded-[2rem] font-bold transition-all flex items-center gap-2 group shadow-xs text-sm sm:text-base"
+                >
+                  <FolderGit2 size={18} className="text-theme group-hover:scale-110 transition-transform" />
+                  VSB GitHub Showcase
                 </motion.button>
 
                 <motion.a
@@ -1846,6 +1970,9 @@ const App: React.FC = () => {
           )}
         </AnimatePresence>
       </section>
+
+      {/* Best GitHub Profiles — VSB Engineering College Showcase */}
+      <VsbShowcase isDedicatedPage={false} />
 
       {/* Achievements Section */}
       <section id="achievements" className="py-32 bg-slate-50">

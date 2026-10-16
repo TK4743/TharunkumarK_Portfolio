@@ -68,3 +68,38 @@ export type AchievementItem = {
   iconName?: 'trophy' | 'rocket' | 'lightbulb' | 'graduation' | 'shield' | 'code' | 'star' | 'award';
 };
 
+export type FeaturedRepoItem = {
+  name: string;
+  description: string;
+  url: string;
+  tags: string[];
+  highlight?: string;
+};
+
+export type VsbStudentProfile = {
+  name: string;
+  githubUsername: string;
+  githubUrl: string;
+  linkedinUrl?: string;
+  role: string;
+  department: string;
+  college: string;
+  batch: string;
+  description: string;
+  featuredRepos: FeaturedRepoItem[];
+  skills: string[];
+  metrics: {
+    commits?: string;
+    repos?: string;
+    achievements?: string;
+  };
+  evaluationHighlights: string[];
+};
+
+export type ShowcaseCriteria = {
+  title: string;
+  description: string;
+  iconName: 'code' | 'fileText' | 'activity' | 'shieldCheck' | 'award';
+};
+
+

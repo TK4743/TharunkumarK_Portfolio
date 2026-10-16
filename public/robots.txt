@@ -1,10 +1,40 @@
-# Robots.txt for Tharunkumar K Portfolio
-# Entity Graph Engineering Crawler Rules
+# Robots.txt for Tharunkumar K Portfolio & VSB Engineering College GitHub Profiles
+# Canonical Host: https://tharunkumark4743.netlify.app/
+# Target Entity: Tharunkumar K (Tharun4743) | V.S.B. Engineering College, Karur
 
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
-# Specifically allow AI search bots and LLM crawlers for entity disambiguation
+# Specific directives for major Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Specifically allow AI search engines & LLM crawlers for Knowledge Graph & Entity Disambiguation
 User-agent: GPTBot
 Allow: /
 
@@ -20,4 +50,12 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Canonical Sitemap Declaration
 Sitemap: https://tharunkumark4743.netlify.app/sitemap.xml
+Host: https://tharunkumark4743.netlify.app
