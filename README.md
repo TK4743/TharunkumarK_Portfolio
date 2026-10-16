@@ -286,6 +286,22 @@ Proactive motorcycle safety platform monitoring helmet compliance (IR proximity)
 
 ### 👨‍💻 Engineering Author
 
+## ⚙️ Technical Approach & System Architecture
+
+### 📐 High-Level Architectural Flowchart:
+`mermaid
+graph TD
+    Visitor["Visitor / Technical Recruiter"] -->|Access Portfolio| NextApp["Modern Interactive Portfolio (React 19 / TypeScript)"]
+    NextApp --> DynamicHero["3D Particle & Glassmorphic Hero Canvas"]
+    NextApp --> ProjectShowcase["Categorized Engineering Project Explorer"]
+    NextApp --> ExperienceTree["Interactive Education & Hackathon Milestones"]
+    NextApp --> SEOEngine["Semantic JSON-LD Structured Data & OpenGraph Engine"]
+    NextApp --> ContactForm["Direct Resend / Web3Forms Contact Bridge"]
+    ContactForm --> AuthorInbox["Tharunkumar K's Direct Communication Gateway"]
+`
+
+---
+
 <table border="0">
   <tr>
     <td width="120" align="center" valign="top">
