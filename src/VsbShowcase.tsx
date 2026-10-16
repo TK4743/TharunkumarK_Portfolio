@@ -14,7 +14,10 @@ import {
   FolderGit2,
   Sparkles,
   ArrowRight,
-  BookOpen
+  BookOpen,
+  Globe,
+  Link2,
+  Box
 } from 'lucide-react';
 import { VSB_GITHUB_PROFILES, SHOWCASE_CRITERIA, PERSONAL_INFO } from './constants';
 import { VsbStudentProfile } from './type';
@@ -218,17 +221,19 @@ export const VsbShowcase: React.FC<VsbShowcaseProps> = ({ isDedicatedPage = fals
                     </div>
                   </div>
 
-                  {/* Profile Action Buttons */}
-                  <div className="flex flex-row lg:flex-col gap-3 w-full lg:w-auto flex-shrink-0">
+                  {/* Profile Action Buttons Grid */}
+                  <div className="flex flex-wrap lg:flex-col gap-2.5 w-full lg:w-64 flex-shrink-0">
                     <a
                       href={profile.githubUrl}
                       target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 lg:flex-none px-5 py-3 rounded-2xl bg-slate-900 text-white hover:bg-slate-800 text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-sm"
-                      title={`Visit ${profile.name}'s GitHub Profile`}
+                      rel="noopener noreferrer me"
+                      className="flex-1 lg:flex-none px-4 py-2.5 rounded-xl bg-slate-900 text-white hover:bg-slate-800 text-xs font-bold transition-all flex items-center justify-between shadow-sm"
+                      title="Visit Tharunkumar K's GitHub Profile"
                     >
-                      <Github size={16} />
-                      <span>GitHub: @{profile.githubUsername}</span>
+                      <div className="flex items-center gap-2">
+                        <Github size={15} />
+                        <span>GitHub Profile</span>
+                      </div>
                       <ExternalLink size={12} />
                     </a>
 
@@ -236,15 +241,45 @@ export const VsbShowcase: React.FC<VsbShowcaseProps> = ({ isDedicatedPage = fals
                       <a
                         href={profile.linkedinUrl}
                         target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 lg:flex-none px-5 py-3 rounded-2xl bg-white text-slate-700 hover:text-theme hover:border-theme border border-slate-200 text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-xs"
-                        title={`Connect with ${profile.name} on LinkedIn`}
+                        rel="noopener noreferrer me"
+                        className="flex-1 lg:flex-none px-4 py-2.5 rounded-xl bg-blue-600 text-white hover:bg-blue-700 text-xs font-bold transition-all flex items-center justify-between shadow-xs"
+                        title="Connect with Tharunkumar K on LinkedIn"
                       >
-                        <Linkedin size={16} />
-                        <span>LinkedIn Profile</span>
+                        <div className="flex items-center gap-2">
+                          <Linkedin size={15} />
+                          <span>LinkedIn Profile</span>
+                        </div>
                         <ExternalLink size={12} />
                       </a>
                     )}
+
+                    <a
+                      href={PERSONAL_INFO.leetcode}
+                      target="_blank"
+                      rel="noopener noreferrer me"
+                      className="flex-1 lg:flex-none px-4 py-2.5 rounded-xl bg-amber-500/10 text-amber-800 hover:bg-amber-500 hover:text-white border border-amber-200 text-xs font-bold transition-all flex items-center justify-between shadow-xs"
+                      title="View Tharunkumar K on LeetCode"
+                    >
+                      <div className="flex items-center gap-2">
+                        <Code size={15} />
+                        <span>LeetCode Profile</span>
+                      </div>
+                      <ExternalLink size={12} />
+                    </a>
+
+                    <a
+                      href={PERSONAL_INFO.geeksforgeeks}
+                      target="_blank"
+                      rel="noopener noreferrer me"
+                      className="flex-1 lg:flex-none px-4 py-2.5 rounded-xl bg-emerald-500/10 text-emerald-800 hover:bg-emerald-600 hover:text-white border border-emerald-200 text-xs font-bold transition-all flex items-center justify-between shadow-xs"
+                      title="View Tharunkumar K on GeeksforGeeks"
+                    >
+                      <div className="flex items-center gap-2">
+                        <Award size={15} />
+                        <span>GeeksforGeeks</span>
+                      </div>
+                      <ExternalLink size={12} />
+                    </a>
                   </div>
                 </div>
 
@@ -340,6 +375,259 @@ export const VsbShowcase: React.FC<VsbShowcaseProps> = ({ isDedicatedPage = fals
               </motion.article>
             );
           })}
+        </div>
+
+        {/* All Official Developer Links Directory for Search Engines & Users */}
+        <div id="official-links" className="max-w-6xl mx-auto mt-14">
+          <div className="bg-white rounded-3xl sm:rounded-[2.5rem] p-6 sm:p-10 border border-slate-200/80 shadow-md">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 mb-8 border-b border-slate-100">
+              <div>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-theme-soft text-theme text-[11px] font-black uppercase tracking-wider mb-2">
+                  <Link2 size={13} />
+                  <span>Verified Entity Directory &bull; V.S.B. Engineering College</span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                  Official Links: Best GitHub Profile & Developer at VSB Engineering College
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-600 font-medium mt-1">
+                  Direct verified endpoints for Tharunkumar K (@Tharun4743) — recognized for holding the best GitHub profile at VSB Engineering College (V.S.B. Engineering College, Karur).
+                </p>
+              </div>
+              <span className="self-start md:self-auto px-3.5 py-1.5 bg-emerald-50 text-emerald-700 border border-emerald-200 font-extrabold text-xs rounded-xl shadow-xs">
+                8 Verified Profiles
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <a
+                href={PERSONAL_INFO.github}
+                target="_blank"
+                rel="me noopener noreferrer"
+                className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-slate-900 hover:bg-slate-900 hover:text-white transition-all group flex flex-col justify-between shadow-xs"
+                title="Tharunkumar K GitHub Profile — Best GitHub Profile VSB Engineering College"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="w-9 h-9 rounded-xl bg-white text-slate-900 flex items-center justify-center shadow-xs border border-slate-200 group-hover:border-slate-700">
+                      <Github size={18} />
+                    </div>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-emerald-100 text-emerald-800 border border-emerald-200 group-hover:bg-emerald-950 group-hover:text-emerald-300">
+                      Primary
+                    </span>
+                  </div>
+                  <h4 className="text-sm font-black text-slate-900 group-hover:text-white mb-1">
+                    GitHub Profile
+                  </h4>
+                  <p className="text-xs text-slate-500 group-hover:text-slate-300 font-medium leading-relaxed">
+                    @Tharun4743 &bull; 31+ Repositories & 2,378+ Commits
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-200/60 group-hover:border-slate-800 flex items-center justify-between text-[11px] font-bold text-theme group-hover:text-emerald-400">
+                  <span>github.com/Tharun4743</span>
+                  <ExternalLink size={12} />
+                </div>
+              </a>
+
+              <a
+                href="https://tharunkumark4743.netlify.app/"
+                className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-theme hover:bg-theme-soft/40 transition-all group flex flex-col justify-between shadow-xs"
+                title="Tharunkumar K Official Developer Portfolio — V.S.B. Engineering College"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="w-9 h-9 rounded-xl bg-white text-theme flex items-center justify-center shadow-xs border border-slate-200">
+                      <Globe size={18} />
+                    </div>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-theme-soft text-theme border border-theme/20">
+                      Portfolio
+                    </span>
+                  </div>
+                  <h4 className="text-sm font-black text-slate-900 mb-1">
+                    Official Portfolio
+                  </h4>
+                  <p className="text-xs text-slate-500 font-medium leading-relaxed">
+                    Interactive project showcase, live GitHub metrics & skills
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-[11px] font-bold text-theme">
+                  <span>tharunkumark4743.netlify.app</span>
+                  <ExternalLink size={12} />
+                </div>
+              </a>
+
+              <a
+                href="/vsb-engineering-college-github-profiles/"
+                className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-theme hover:bg-theme-soft/40 transition-all group flex flex-col justify-between shadow-xs"
+                title="VSB Engineering College GitHub Profiles & Student Developer Showcase"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="w-9 h-9 rounded-xl bg-white text-indigo-600 flex items-center justify-center shadow-xs border border-slate-200">
+                      <FolderGit2 size={18} />
+                    </div>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-indigo-50 text-indigo-700 border border-indigo-200">
+                      Showcase
+                    </span>
+                  </div>
+                  <h4 className="text-sm font-black text-slate-900 mb-1">
+                    VSB GitHub Showcase
+                  </h4>
+                  <p className="text-xs text-slate-500 font-medium leading-relaxed">
+                    Dedicated guide to GitHub profiles at VSB Engineering College
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-[11px] font-bold text-indigo-600">
+                  <span>/vsb-engineering-college...</span>
+                  <ExternalLink size={12} />
+                </div>
+              </a>
+
+              <a
+                href={PERSONAL_INFO.linkedin}
+                target="_blank"
+                rel="me noopener noreferrer"
+                className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-blue-600 hover:bg-blue-600 hover:text-white transition-all group flex flex-col justify-between shadow-xs"
+                title="Tharunkumar K LinkedIn Profile — Lead Developer at V.S.B. Engineering College"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="w-9 h-9 rounded-xl bg-white text-blue-600 flex items-center justify-center shadow-xs border border-slate-200">
+                      <Linkedin size={18} />
+                    </div>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-blue-50 text-blue-700 border border-blue-200 group-hover:bg-blue-900 group-hover:text-blue-200">
+                      Professional
+                    </span>
+                  </div>
+                  <h4 className="text-sm font-black text-slate-900 group-hover:text-white mb-1">
+                    LinkedIn Profile
+                  </h4>
+                  <p className="text-xs text-slate-500 group-hover:text-blue-100 font-medium leading-relaxed">
+                    Verified public profile & software engineering experience
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-200/60 group-hover:border-blue-500 flex items-center justify-between text-[11px] font-bold text-blue-600 group-hover:text-white">
+                  <span>in/tharunkumark4743</span>
+                  <ExternalLink size={12} />
+                </div>
+              </a>
+
+              <a
+                href={PERSONAL_INFO.leetcode}
+                target="_blank"
+                rel="me noopener noreferrer"
+                className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-amber-500 hover:bg-amber-500 hover:text-white transition-all group flex flex-col justify-between shadow-xs"
+                title="Tharunkumar K LeetCode Profile — Algorithmic Problem Solving"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="w-9 h-9 rounded-xl bg-white text-amber-600 flex items-center justify-center shadow-xs border border-slate-200">
+                      <Code size={18} />
+                    </div>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-amber-50 text-amber-800 border border-amber-200 group-hover:bg-amber-900 group-hover:text-amber-200">
+                      Algorithms
+                    </span>
+                  </div>
+                  <h4 className="text-sm font-black text-slate-900 group-hover:text-white mb-1">
+                    LeetCode Profile
+                  </h4>
+                  <p className="text-xs text-slate-500 group-hover:text-amber-100 font-medium leading-relaxed">
+                    @Tharunkumar__K &bull; Data structures and algorithms
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-200/60 group-hover:border-amber-400 flex items-center justify-between text-[11px] font-bold text-amber-700 group-hover:text-white">
+                  <span>leetcode.com/u/Tharun...</span>
+                  <ExternalLink size={12} />
+                </div>
+              </a>
+
+              <a
+                href={PERSONAL_INFO.geeksforgeeks}
+                target="_blank"
+                rel="me noopener noreferrer"
+                className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-600 hover:bg-emerald-600 hover:text-white transition-all group flex flex-col justify-between shadow-xs"
+                title="Tharunkumar K GeeksforGeeks Profile — Campus Mantri 2026"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="w-9 h-9 rounded-xl bg-white text-emerald-600 flex items-center justify-center shadow-xs border border-slate-200">
+                      <Award size={18} />
+                    </div>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-emerald-50 text-emerald-700 border border-emerald-200 group-hover:bg-emerald-900 group-hover:text-emerald-200">
+                      Ambassador
+                    </span>
+                  </div>
+                  <h4 className="text-sm font-black text-slate-900 group-hover:text-white mb-1">
+                    GeeksforGeeks Profile
+                  </h4>
+                  <p className="text-xs text-slate-500 group-hover:text-emerald-100 font-medium leading-relaxed">
+                    Campus Mantri 2026 & technical problem solver
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-200/60 group-hover:border-emerald-500 flex items-center justify-between text-[11px] font-bold text-emerald-700 group-hover:text-white">
+                  <span>geeksforgeeks.org/profile</span>
+                  <ExternalLink size={12} />
+                </div>
+              </a>
+
+              <a
+                href="https://github.com/Tharun4743?tab=repositories"
+                target="_blank"
+                rel="me noopener noreferrer"
+                className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-slate-800 hover:bg-slate-800 hover:text-white transition-all group flex flex-col justify-between shadow-xs"
+                title="Tharunkumar K Public Repositories on GitHub — VSB Engineering College"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="w-9 h-9 rounded-xl bg-white text-slate-800 flex items-center justify-center shadow-xs border border-slate-200">
+                      <Terminal size={18} />
+                    </div>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-slate-200 text-slate-800 group-hover:bg-slate-700 group-hover:text-slate-200">
+                      31+ Repos
+                    </span>
+                  </div>
+                  <h4 className="text-sm font-black text-slate-900 group-hover:text-white mb-1">
+                    GitHub Repositories
+                  </h4>
+                  <p className="text-xs text-slate-500 group-hover:text-slate-300 font-medium leading-relaxed">
+                    Full-stack web apps, IoT hardware systems, and AI tools
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-200/60 group-hover:border-slate-700 flex items-center justify-between text-[11px] font-bold text-slate-700 group-hover:text-emerald-400">
+                  <span>?tab=repositories</span>
+                  <ExternalLink size={12} />
+                </div>
+              </a>
+
+              <a
+                href="https://github.com/marketplace/actions/github-profile-visualizer"
+                target="_blank"
+                rel="me noopener noreferrer"
+                className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-purple-600 hover:bg-purple-600 hover:text-white transition-all group flex flex-col justify-between shadow-xs"
+                title="GitHub Profile Visualizer Action on GitHub Marketplace"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="w-9 h-9 rounded-xl bg-white text-purple-600 flex items-center justify-center shadow-xs border border-slate-200">
+                      <Box size={18} />
+                    </div>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-purple-50 text-purple-700 border border-purple-200 group-hover:bg-purple-900 group-hover:text-purple-200">
+                      Marketplace
+                    </span>
+                  </div>
+                  <h4 className="text-sm font-black text-slate-900 group-hover:text-white mb-1">
+                    Marketplace Action
+                  </h4>
+                  <p className="text-xs text-slate-500 group-hover:text-purple-100 font-medium leading-relaxed">
+                    Published GitHub Action: Profile Visualizer 3D Skyline
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-200/60 group-hover:border-purple-500 flex items-center justify-between text-[11px] font-bold text-purple-700 group-hover:text-white">
+                  <span>marketplace/actions</span>
+                  <ExternalLink size={12} />
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Institutional Non-Affiliation / Transparency Disclaimer */}

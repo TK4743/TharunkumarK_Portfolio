@@ -31,7 +31,13 @@
     <loc>https://tharunkumark4743.netlify.app/#vsb-github-showcase</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.90</priority>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://tharunkumark4743.netlify.app/#official-links</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://tharunkumark4743.netlify.app/#skills</loc>
