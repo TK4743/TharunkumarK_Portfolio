@@ -598,8 +598,12 @@ const AIChatbot: React.FC = () => {
       answer: "Tharunkumar K is a passionate Full Stack Developer and IoT enthusiast from Tamil Nadu, currently pursuing a B.Tech in IT at VSB Engineering College (CGPA: 8.5). He specializes in React, Node.js, TypeScript, PostgreSQL, and embedded IoT designs."
     },
     {
+      keywords: ['hackathon', 'award', 'prize', 'winner', 'neural', 'thugs', 'odoo', 'achievement'],
+      answer: "Tharunkumar K is a 2× Hackathon Winner & holds the #1 Best GitHub Profile at VSB Engineering College:\n\n• Code Thugs 2K26 🥇: 1st Place National Winner for GOAT Code Editor.\n• Neural Minds 🥉: 3rd Prize in AI/ML Hackathon for FINDORA AI.\n• India Innovates 2026 & Odoo × NMIT 2026 Finalist 🇮🇳 for Work Suite HRMS.\n• Smart India Hackathon (SIH 2025 & 2026) Top 50 Nominee.\n• Best GitHub Profile @ VSB Engineering College (2,400+ commits, 31+ repos)."
+    },
+    {
       keywords: ['project', 'work', 'build', 'portfolio', 'top', 'technical', 'skills', 'tech', 'stack', 'helmet', 'backend', 'task', 'vsbec', 'goat', 'vault', 'sih'],
-      answer: "Tharun has built several production-grade engineering platforms:\n\n• VSBEC IT Vault: SIH 2026 Internal Hackathon Top 50 (out of 300+ campus teams, official SIH portal nominee) adopted by 365+ students with 3-tier proof audit, LeetCode sync, and sandboxed Monaco IDE.\n• Smart Helmet IoT System: SIH 2025 Internal Hackathon Top 50 (out of 300+ campus teams, official SIH portal nominee) with RF 433MHz wireless ignition cutoff.\n• GOAT Code Editor: Real-time collaborative IDE with browser-native WebRTC voice calling mesh, Monaco kernel & 13+ language execution (Code Thugs 2k26 National 1st Place Winner).\n• CampusConnect: Enterprise placement platform automating TPO workflows and student interview timelines for 500+ students (React 19, Supabase, Socket.IO).\n• Techy Tharun's Chatbox: SSE typewriter streaming AI platform with automated multi-provider fallback (Next.js 15, Neon Postgres).\n• Aura: 100% Offline Multimodal RAG workstation (Spring Boot, Llama-3, CLIP, Electron)."
+      answer: "Tharun has built several production-grade engineering platforms:\n\n• VSBEC IT Vault: SIH 2026 Internal Hackathon Top 50 (out of 300+ campus teams, official SIH portal nominee) adopted by 365+ students with 3-tier proof audit, LeetCode sync, and sandboxed Monaco IDE.\n• Smart Helmet IoT System: SIH 2025 Internal Hackathon Top 50 (out of 300+ campus teams, official SIH portal nominee) with RF 433MHz wireless ignition cutoff.\n• GOAT Code Editor: Real-time collaborative IDE with browser-native WebRTC voice calling mesh, Monaco kernel & 13+ language execution (Code Thugs 2k26 National 1st Place Winner 🥇).\n• FINDORA AI: Campus lost & found intelligence network with Google Gemini 2.5 Flash (Neural Minds AIML Hackathon 3rd Prize 🥉).\n• CampusConnect: Enterprise placement platform automating TPO workflows and student interview timelines for 500+ students (React 19, Supabase, Socket.IO).\n• Techy Tharun's Chatbox: SSE typewriter streaming AI platform with automated multi-provider fallback (Next.js 15, Neon Postgres).\n• Aura: 100% Offline Multimodal RAG workstation (Spring Boot, Llama-3, CLIP, Electron)."
     },
     {
       keywords: ['intern', 'experience', 'neura', 'infosys', 'job'],
@@ -1014,23 +1018,23 @@ const HeroHighlightBadge: React.FC = () => {
   const highlights = [
     {
       icon: <Award size={20} />,
-      subtitle: 'Hackathon Winner',
-      title: 'Code Thugs 2k26'
+      subtitle: '2× Hackathon Winner',
+      title: 'Code Thugs 🥇 & Neural Minds 🥉'
     },
     {
       icon: <Trophy size={20} />,
+      subtitle: 'Rank #1 Best GitHub Profile',
+      title: 'VSB Engineering College'
+    },
+    {
+      icon: <Award size={20} />,
       subtitle: 'SIH 2025 & 2026 Top 50',
       title: 'Smart India Hackathon'
     },
     {
-      icon: <Award size={20} />,
-      subtitle: 'National Finalist',
-      title: 'Odoo × NMIT 2026'
-    },
-    {
       icon: <Sparkles size={20} />,
       subtitle: 'National Finalist',
-      title: 'India Innovates 2026'
+      title: 'India Innovates & Odoo × NMIT'
     }
   ];
 
@@ -1271,16 +1275,22 @@ const App: React.FC = () => {
 
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-theme-soft border border-theme/20 text-theme text-xs font-bold uppercase tracking-wider mb-6">
                 <span className="w-2 h-2 rounded-full bg-theme animate-ping" />
-                V.S.B. Engineering College &bull; Information Technology
+                V.S.B. Engineering College &bull; Best GitHub Profile &bull; 2× Hackathon Winner
               </div>
 
               <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-slate-900 mb-6 leading-[1.1] tracking-tighter">
                 Tharunkumar K <br />
-                <span className="text-theme">Software Developer</span>
+                <span className="text-theme">Full Stack & AI Developer</span>
               </h1>
 
-              <p className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl font-medium mx-auto lg:mx-0">
-                B.Tech Information Technology student at <strong className="text-slate-900">V.S.B. Engineering College, Karur</strong>. Full-stack software developer, Code Thugs 2K26 national winner, and SIH nominee building real-world software platforms, collaborative developer tools, and intelligent IoT systems.
+              <div className="mb-6 p-4 rounded-2xl bg-slate-50/90 border border-slate-200/80 text-left max-w-2xl mx-auto lg:mx-0 shadow-2xs">
+                <p className="text-xs sm:text-sm font-bold text-slate-800 leading-relaxed">
+                  🏆 <span className="text-theme font-black">2× Hackathon Winner</span> | CODE THUGS 2K26 🥇 | Neural Minds 🥉 | India Innovates 2026 &amp; Odoo × NMIT 2026 Finalist 🇮🇳 | SIH 2025 &amp; 2026 Top 50 | <strong className="text-slate-900 underline decoration-theme decoration-2">Best GitHub profile @VSB ENGINEERING COLLEGE</strong> | Full Stack &amp; AI Developer
+                </p>
+              </div>
+
+              <p className="text-base md:text-lg text-slate-600 mb-10 leading-relaxed max-w-2xl font-medium mx-auto lg:mx-0">
+                B.Tech Information Technology student at <strong className="text-slate-900">V.S.B. Engineering College, Karur</strong>. Architecting scalable full-stack applications, collaborative cloud tools, and real-time AI solutions.
               </p>
 
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 items-center">

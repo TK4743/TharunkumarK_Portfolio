@@ -56,7 +56,7 @@ async function prerender() {
   );
   renderedShowcase = renderedShowcase.replace(
     /<meta name="description" content=".*?" \/>/,
-    '<meta name="description" content="Explore GitHub profiles and software projects from students associated with V.S.B. Engineering College, Karur. Curated showcase featuring Tharunkumar K (@Tharun4743) and verified student innovations." />'
+    '<meta name="description" content="Explore GitHub profiles and software projects from students associated with V.S.B. Engineering College, Karur. Curated showcase featuring Tharunkumar K (@Tharun4743), 2× Hackathon Winner (Code Thugs 2K26 🥇, Neural Minds 🥉), and verified student innovations." />'
   );
 
   const showcaseFilePath = path.join(showcaseDir, 'index.html');

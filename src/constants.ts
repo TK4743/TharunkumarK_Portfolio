@@ -11,7 +11,7 @@ import goatCodeEditorImg from './assets/goat.png';
 export const PERSONAL_INFO = {
   name: 'Tharunkumar K',
   primaryName: 'Tharunkumar K',
-  title: 'Software Developer | Full Stack & AI Systems Developer',
+  title: 'Software Developer | Full Stack & AI Systems Developer | 2× Hackathon Winner',
   college: 'V.S.B. Engineering College, Karur',
   collegeFull: 'V.S.B. Engineering College, Karur, Tamil Nadu',
   department: 'Information Technology',
@@ -26,7 +26,7 @@ export const PERSONAL_INFO = {
   geeksforgeeks: 'https://www.geeksforgeeks.org/profile/tharunkumark4743',
   resume: 'https://drive.google.com/drive/folders/1zdLQ8EoEC8X73fFAJjSJr-Ros_xckIyW',
   profileSummary:
-    'Full-stack software developer and B.Tech Information Technology student at V.S.B. Engineering College, Karur. Experienced in engineering production web applications, distributed systems, and AI-powered platforms using React 19, TypeScript, Node.js, and PostgreSQL. Creator of VSBEC IT Vault (adopted by 365+ daily students), GOAT Code Editor (1st Place National Winner at Code Thugs 2K26), and published GitHub Marketplace Actions.'
+    '2× Hackathon Winner | CODE THUGS 2K26 🥇 | Neural Minds 🥉 | India Innovates 2026 & Odoo × NMIT 2026 Finalist 🇮🇳 | SIH 2025 & 2026 Top 50 | Best GitHub profile @VSB ENGINEERING COLLEGE | Full Stack & AI Developer. Experienced in engineering production web applications, distributed systems, and AI-powered platforms using React 19, TypeScript, Node.js, and PostgreSQL. Creator of VSBEC IT Vault (adopted by 365+ daily students), GOAT Code Editor (1st Place National Winner at Code Thugs 2K26), and published GitHub Marketplace Actions.'
 };
 
 export const EDUCATION = [
@@ -685,7 +685,7 @@ export const LEADERSHIP = [
 
 export const ACHIEVEMENTS: AchievementItem[] = [
   {
-    title: 'Code Thugs 2k26 – 1st Place (National Winner)',
+    title: 'Code Thugs 2k26 – 1st Place (National Winner 🥇)',
     organization: 'Code Thugs 2k26',
     year: '2026',
     type: '1ST PLACE WINNER',
@@ -696,7 +696,7 @@ export const ACHIEVEMENTS: AchievementItem[] = [
       'Won 1st Place Winner nationally at Code Thugs 2k26 for designing, building, and deploying GOAT Code Editor — a real-time collaborative IDE featuring live cursor highlighting and in-browser compilation.'
   },
   {
-    title: '8-Hour AI/ML Hackathon — 3rd Prize',
+    title: 'Neural Minds AI/ML Hackathon — 3rd Prize (🥉)',
     organization: 'VSB Engineering College (AIML Dept)',
     year: '2026',
     type: '3RD PRIZE WINNER',
@@ -704,17 +704,17 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     category: 'hackathon',
     iconName: 'award',
     description:
-      'Secured 3rd Prize in the 8-Hour Hackathon conducted by the Department of AI & ML at VSB Engineering College for architecting FINDORA AI — an autonomous campus lost & found intelligence network.'
+      'Secured 3rd Prize in the Neural Minds 8-Hour AI/ML Hackathon conducted by the Department of AI & ML at VSB Engineering College for architecting FINDORA AI — an autonomous campus lost & found intelligence network.'
   },
   {
-    title: 'Best GitHub Profile & Top Developer',
-    organization: 'VSB Engineering College',
+    title: 'Best GitHub Profile & Top Developer — VSB Engineering College',
+    organization: 'V.S.B. Engineering College, Karur',
     year: '2026',
     type: 'CAMPUS EXCELLENCE',
     prize: 'Rank #1 GitHub Profile in Campus',
     iconName: 'trophy',
     description:
-      'Recognized for maintaining the top developer profile at VSB Engineering College with 2,378+ commits, 26+ active repositories, a published GitHub Marketplace Action (GitHub Profile Visualizer), and enterprise-grade full-stack architectures.'
+      'Recognized for maintaining the top developer profile at V.S.B. Engineering College, Karur with 2,400+ commits, 31+ active repositories, a published GitHub Marketplace Action (GitHub Profile Visualizer), and enterprise-grade full-stack architectures.'
   },
   {
     title: 'Smart India Hackathon 2026 – Top 50 (Internal)',
@@ -828,12 +828,12 @@ export const VSB_GITHUB_PROFILES: VsbStudentProfile[] = [
     githubUsername: 'Tharun4743',
     githubUrl: 'https://github.com/Tharun4743',
     linkedinUrl: 'https://www.linkedin.com/in/tharunkumark4743/',
-    role: 'Lead Full-Stack Architect & Embedded Systems Developer',
+    role: 'Lead Full-Stack Architect & AI Systems Developer | 2× Hackathon Winner',
     department: 'Department of Information Technology',
     college: 'V.S.B. Engineering College, Karur',
     batch: '2024 – 2028 Batch',
     description:
-      'Recognized for holding the leading student GitHub developer profile at V.S.B. Engineering College, Karur. Lead architect of production platforms adopted across 365+ campus students, published GitHub Marketplace Action creator, and national hackathon winner.',
+      'Recognized for holding the leading student GitHub developer profile at V.S.B. Engineering College, Karur. 2× Hackathon Winner (Code Thugs 2K26 🥇, Neural Minds 🥉), India Innovates 2026 & Odoo × NMIT 2026 Finalist 🇮🇳, SIH 2025 & 2026 Top 50, lead architect of production platforms adopted across 365+ campus students, and published GitHub Marketplace Action creator.',
     featuredRepos: [
       {
         name: 'taskmanager (VSBEC IT Vault)',
@@ -847,14 +847,14 @@ export const VSB_GITHUB_PROFILES: VsbStudentProfile[] = [
         description: 'Collaborative in-browser pair programming IDE with custom WebRTC peer voice mesh and real-time cursor sync.',
         url: 'https://github.com/Tharun4743/GOAT-CE',
         tags: ['React 19', 'WebRTC', 'Socket.IO', 'Piston API', 'Monaco'],
-        highlight: '1st Place Winner (Code Thugs 2K26)'
+        highlight: '1st Place Winner (Code Thugs 2K26 🥇)'
       },
       {
         name: 'findora-ai (FINDORA AI)',
         description: 'Campus lost & found intelligence network with Google Gemini 2.5 Flash multimodal correlation and zero-knowledge claim verification.',
         url: 'https://github.com/Tharun4743/findora-ai',
         tags: ['React 19', 'Gemini AI', 'Supabase', 'Telegram Bot API'],
-        highlight: '3rd Prize Winner (AIML Hackathon)'
+        highlight: '3rd Prize Winner (Neural Minds 🥉)'
       },
       {
         name: 'github-profile-visualizer',
@@ -892,16 +892,18 @@ export const VSB_GITHUB_PROFILES: VsbStudentProfile[] = [
       'Docker'
     ],
     metrics: {
-      commits: '2,378+ Commits',
-      repos: '26+ Public Repositories',
-      achievements: 'National Hackathon Winner'
+      commits: '2,400+ Commits',
+      repos: '31+ Public Repositories',
+      achievements: '2× Hackathon Winner | SIH Top 50'
     },
     evaluationHighlights: [
+      '2× Hackathon Winner (Code Thugs 2K26 🥇, Neural Minds 🥉)',
+      'Rank #1 Best GitHub Profile in VSB Engineering College (2,400+ commits, 31+ repos)',
+      'India Innovates 2026 & Odoo × NMIT Bangalore 2026 National Finalist 🇮🇳',
+      '2x Smart India Hackathon (SIH 2025 & 2026) Top 50 Nominee',
       '365+ active campus daily users on VSBEC IT Vault platform',
       'Published author on official GitHub Marketplace (GitHub Action)',
-      '1st Place Winner nationally at Code Thugs 2K26 Hackathon',
-      '2x Smart India Hackathon (SIH 2025 & 2026) Top 50 Nominee',
-      'Department Student Coordinator for Information Technology'
+      'Department Student Coordinator for Information Technology, VSBEC'
     ]
   }
 ];
