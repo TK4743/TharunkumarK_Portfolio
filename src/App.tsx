@@ -326,29 +326,46 @@ const CustomCursor: React.FC = () => {
   );
 };
 
-const CountUp: React.FC<{ value: number; suffix?: string }> = ({ value, suffix = '' }) => {
+const CountUp: React.FC<{ value: number; suffix?: string; duration?: number }> = ({
+  value,
+  suffix = '',
+  duration = 1200
+}) => {
   const [count, setCount] = useState(0);
+  const prevValueRef = useRef(0);
+
   useEffect(() => {
-    let start = 0;
-    const end = value;
-    if (start === end) return;
-    
-    const totalDuration = 1500;
-    const incrementTime = Math.max(Math.floor(totalDuration / end), 25);
-    
-    const timer = setInterval(() => {
-      start += Math.ceil(end / 30);
-      if (start >= end) {
-        setCount(end);
-        clearInterval(timer);
+    const startVal = prevValueRef.current;
+    const endVal = Number(value) || 0;
+    prevValueRef.current = endVal;
+
+    if (startVal === endVal) {
+      setCount(endVal);
+      return;
+    }
+
+    const startTime = performance.now();
+    let animId: number;
+
+    const updateCount = (currentTime: number) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // Smooth ease-out cubic curve
+      const easeProgress = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(startVal + (endVal - startVal) * easeProgress);
+      setCount(current);
+
+      if (progress < 1) {
+        animId = requestAnimationFrame(updateCount);
       } else {
-        setCount(start);
+        setCount(endVal);
       }
-    }, incrementTime);
-    
-    return () => clearInterval(timer);
-  }, [value]);
-  
+    };
+
+    animId = requestAnimationFrame(updateCount);
+    return () => cancelAnimationFrame(animId);
+  }, [value, duration]);
+
   return <span>{count}{suffix}</span>;
 };
 
@@ -599,7 +616,7 @@ const AIChatbot: React.FC = () => {
     },
     {
       keywords: ['hackathon', 'award', 'prize', 'winner', 'neural', 'thugs', 'odoo', 'achievement'],
-      answer: "Tharunkumar K is a 2× Hackathon Winner & holds the #1 Best GitHub Profile at VSB Engineering College:\n\n• Code Thugs 2K26 🥇: 1st Place National Winner for GOAT Code Editor.\n• Neural Minds 🥉: 3rd Prize in AI/ML Hackathon for FINDORA AI.\n• India Innovates 2026 & Odoo × NMIT 2026 Finalist 🇮🇳 for Work Suite HRMS.\n• Smart India Hackathon (SIH 2025 & 2026) Top 50 Nominee.\n• Best GitHub Profile @ VSB Engineering College (2,400+ commits, 31+ repos)."
+      answer: "Tharunkumar K is a 2× Hackathon Winner & holds the #1 Best GitHub Profile at VSB Engineering College:\n\n• Code Thugs 2K26 🥇: 1st Place National Winner for GOAT Code Editor.\n• Neural Minds 🥉: 3rd Prize in AI/ML Hackathon for FINDORA AI.\n• India Innovates 2026 & Odoo × NMIT 2026 Finalist 🇮🇳 for Work Suite HRMS.\n• Smart India Hackathon (SIH 2025 & 2026) Top 50 Nominee.\n• Best GitHub Profile @ VSB Engineering College (2,400+ commits, 15+ repos)."
     },
     {
       keywords: ['project', 'work', 'build', 'portfolio', 'top', 'technical', 'skills', 'tech', 'stack', 'helmet', 'backend', 'task', 'vsbec', 'goat', 'vault', 'sih'],
@@ -728,7 +745,6 @@ interface GitHubWidgetProps {
   gitStats: {
     followers: number;
     repos: number;
-    following: number;
     loading: boolean;
     error: boolean;
   };
@@ -763,7 +779,7 @@ const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) =
             </a>
           </div>
 
-          <div className="grid grid-cols-3 gap-3 sm:gap-5 text-center">
+          <div className="grid grid-cols-2 gap-3 sm:gap-5 text-center">
             <a
               href="https://github.com/Tharun4743?tab=repositories"
               target="_blank"
@@ -773,7 +789,11 @@ const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) =
               <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all h-full">
                 <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-theme transition-colors">Public Repos</h4>
                 <p className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-theme transition-colors">
-                  {gitStats.loading ? '...' : gitStats.repos}
+                  {gitStats.loading ? (
+                    <span className="animate-pulse text-slate-400">...</span>
+                  ) : (
+                    <CountUp value={gitStats.repos} />
+                  )}
                 </p>
               </TiltCard>
             </a>
@@ -787,21 +807,11 @@ const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) =
               <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all h-full">
                 <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-theme transition-colors">Followers</h4>
                 <p className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-theme transition-colors">
-                  {gitStats.loading ? '...' : gitStats.followers}
-                </p>
-              </TiltCard>
-            </a>
-
-            <a
-              href="https://github.com/Tharun4743?tab=following"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all h-full">
-                <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-theme transition-colors">Following</h4>
-                <p className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-theme transition-colors">
-                  {gitStats.loading ? '...' : gitStats.following}
+                  {gitStats.loading ? (
+                    <span className="animate-pulse text-slate-400">...</span>
+                  ) : (
+                    <CountUp value={gitStats.followers} />
+                  )}
                 </p>
               </TiltCard>
             </a>
@@ -1112,9 +1122,8 @@ const App: React.FC = () => {
   const [isDedicatedShowcase, setIsDedicatedShowcase] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<'all' | 'iot' | 'fullstack'>('all');
   const [gitStats, setGitStats] = useState({
-    followers: 23,
-    repos: 31,
-    following: 12,
+    followers: 7,
+    repos: 15,
     loading: false,
     error: false
   });
@@ -1184,17 +1193,25 @@ const App: React.FC = () => {
         if (userRes.ok) {
           const userJson = await userRes.json();
           if (isMounted) {
+            const liveFollowers = typeof userJson.followers === 'number' ? userJson.followers : (Number(userJson.followers) || 7);
+            const liveRepos = typeof userJson.public_repos === 'number' ? userJson.public_repos : (Number(userJson.public_repos) || 15);
+
             setGitStats({
-              followers: Number(userJson.followers) || 23,
-              repos: Number(userJson.public_repos) || 31,
-              following: Number(userJson.following) || 12,
+              followers: liveFollowers,
+              repos: liveRepos,
               loading: false,
               error: false
             });
           }
+        } else {
+          if (isMounted) {
+            setGitStats(prev => ({ ...prev, loading: false }));
+          }
         }
       } catch (err) {
-        // Retain current live numbers if network is offline
+        if (isMounted) {
+          setGitStats(prev => ({ ...prev, loading: false }));
+        }
       }
     };
 
@@ -2231,10 +2248,10 @@ const App: React.FC = () => {
                 target="_blank"
                 rel="me noopener noreferrer"
                 className="p-3 rounded-xl bg-white border border-slate-200/70 hover:border-theme hover:text-theme transition-all font-bold flex items-center gap-2 group shadow-2xs"
-                title="Tharunkumar K 31+ GitHub Repositories"
+                title="Tharunkumar K 15+ GitHub Repositories"
               >
                 <FolderGit2 size={16} className="text-slate-700 group-hover:text-theme flex-shrink-0" />
-                <span className="truncate">31+ Repositories</span>
+                <span className="truncate">15+ Repositories</span>
               </a>
 
               <a

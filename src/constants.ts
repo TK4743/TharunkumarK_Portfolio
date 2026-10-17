@@ -714,7 +714,7 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     prize: 'Rank #1 GitHub Profile in Campus',
     iconName: 'trophy',
     description:
-      'Recognized for maintaining the top developer profile at V.S.B. Engineering College, Karur with 2,400+ commits, 31+ active repositories, a published GitHub Marketplace Action (GitHub Profile Visualizer), and enterprise-grade full-stack architectures.'
+      'Recognized for maintaining the top developer profile at V.S.B. Engineering College, Karur with 2,400+ commits, 15+ active repositories, a published GitHub Marketplace Action (GitHub Profile Visualizer), and enterprise-grade full-stack architectures.'
   },
   {
     title: 'Smart India Hackathon 2026 – Top 50 (Internal)',
@@ -893,12 +893,12 @@ export const VSB_GITHUB_PROFILES: VsbStudentProfile[] = [
     ],
     metrics: {
       commits: '2,400+ Commits',
-      repos: '31+ Public Repositories',
+      repos: '15+ Public Repositories',
       achievements: '2× Hackathon Winner | SIH Top 50'
     },
     evaluationHighlights: [
       '2× Hackathon Winner (Code Thugs 2K26 🥇, Neural Minds 🥉)',
-      'Rank #1 Best GitHub Profile in VSB Engineering College (2,400+ commits, 31+ repos)',
+      'Rank #1 Best GitHub Profile in VSB Engineering College (2,400+ commits, 15+ repos)',
       'India Innovates 2026 & Odoo × NMIT Bangalore 2026 National Finalist 🇮🇳',
       '2x Smart India Hackathon (SIH 2025 & 2026) Top 50 Nominee',
       '365+ active campus daily users on VSBEC IT Vault platform',

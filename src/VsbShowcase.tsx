@@ -419,7 +419,7 @@ export const VsbShowcase: React.FC<VsbShowcaseProps> = ({ isDedicatedPage = fals
                     GitHub Profile
                   </h4>
                   <p className="text-xs text-slate-500 group-hover:text-slate-300 font-medium leading-relaxed">
-                    @Tharun4743 &bull; 31+ Repositories & 2,378+ Commits
+                    @Tharun4743 &bull; 15+ Repositories & 2,378+ Commits
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-slate-200/60 group-hover:border-slate-800 flex items-center justify-between text-[11px] font-bold text-theme group-hover:text-emerald-400">
@@ -582,7 +582,7 @@ export const VsbShowcase: React.FC<VsbShowcaseProps> = ({ isDedicatedPage = fals
                       <Terminal size={18} />
                     </div>
                     <span className="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-slate-200 text-slate-800 group-hover:bg-slate-700 group-hover:text-slate-200">
-                      31+ Repos
+                      15+ Repos
                     </span>
                   </div>
                   <h4 className="text-sm font-black text-slate-900 group-hover:text-white mb-1">
