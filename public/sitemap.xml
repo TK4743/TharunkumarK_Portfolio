@@ -1,18 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Canonical Primary Index Page -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ========================================== -->
+  <!-- PRIMARY CUSTOM DOMAIN: tharunkumark.getvoroa.com -->
+  <!-- ========================================== -->
   <url>
-    <loc>https://tharunkumark4743.netlify.app/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <loc>https://tharunkumark.getvoroa.com/</loc>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tharunkumark.getvoroa.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tharunkumark.getvoroa.com/" />
+    <image:image>
+      <image:loc>https://tharunkumark.getvoroa.com/og-image.jpg</image:loc>
+      <image:title>Tharunkumar K — Building Intelligent Software Solutions</image:title>
+      <image:caption>Tharunkumar K - Full Stack &amp; AI Developer, 2x Hackathon Winner, Best GitHub Profile VSB Engineering College</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://tharunkumark.getvoroa.com/dev-cover.jpg</image:loc>
+      <image:title>Tharunkumar K Developer Cover &amp; Awards</image:title>
+      <image:caption>Code Thugs 2K26 First Prize &amp; Neural Minds Winner</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://tharunkumark.getvoroa.com/contribution-chart.svg</image:loc>
+      <image:title>Tharunkumar K GitHub Contribution Heatmap Visualizer</image:title>
+      <image:caption>Interactive GitHub Contribution Activity of Tharun4743</image:caption>
+    </image:image>
   </url>
 
-  <!-- Dedicated VSB Engineering College Showcase Page -->
   <url>
-    <loc>https://tharunkumark4743.netlify.app/vsb-engineering-college-github-profiles/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <loc>https://tharunkumark.getvoroa.com/vsb-engineering-college-github-profiles/</loc>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tharunkumark.getvoroa.com/vsb-engineering-college-github-profiles/" />
   </url>
+
+  <!-- ========================================== -->
+  <!-- PRODUCTION VERCEL DEPLOYMENT: tharunkumark4743.vercel.app -->
+  <!-- ========================================== -->
+  <url>
+    <loc>https://tharunkumark4743.vercel.app/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tharunkumark4743.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tharunkumark4743.vercel.app/" />
+    <image:image>
+      <image:loc>https://tharunkumark4743.vercel.app/og-image.jpg</image:loc>
+      <image:title>Tharunkumar K — Building Intelligent Software Solutions</image:title>
+      <image:caption>Tharunkumar K - Full Stack &amp; AI Developer, 2x Hackathon Winner</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://tharunkumark4743.vercel.app/dev-cover.jpg</image:loc>
+      <image:title>Tharunkumar K Developer Profile Showcase</image:title>
+      <image:caption>Best GitHub Profile VSB Engineering College</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tharunkumark4743.vercel.app/vsb-engineering-college-github-profiles/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tharunkumark4743.vercel.app/vsb-engineering-college-github-profiles/" />
+  </url>
+
+  <!-- ========================================== -->
+  <!-- PRODUCTION NETLIFY DEPLOYMENT: tharunkumark4743.netlify.app -->
+  <!-- ========================================== -->
+  <url>
+    <loc>https://tharunkumark4743.netlify.app/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tharunkumark4743.netlify.app/" />
+    <image:image>
+      <image:loc>https://tharunkumark4743.netlify.app/og-image.jpg</image:loc>
+      <image:title>Tharunkumar K Portfolio Netlify Mirror</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tharunkumark4743.netlify.app/vsb-engineering-college-github-profiles/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tharunkumark4743.netlify.app/vsb-engineering-college-github-profiles/" />
+  </url>
+
 </urlset>

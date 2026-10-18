@@ -1,23 +1,44 @@
 # Robots.txt for Tharunkumar K Portfolio & VSB Engineering College GitHub Profiles
-# Canonical Host: https://tharunkumark4743.netlify.app/
 # Target Entity: Tharunkumar K (Tharun4743) | V.S.B. Engineering College, Karur
+# Full Stack Developer, AI Systems Engineer, 2× Hackathon Winner (Code Thugs 2K26, Neural Minds)
 
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /*.svg$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.js$
+Allow: /*.css$
 Crawl-delay: 1
 
-# Specific directives for major Search Engines
+# Specific directives for Google Search Ecosystem & Mobile Indexing
 User-agent: Googlebot
 Allow: /
+Allow: /assets/
+Allow: /vsb-engineering-college-github-profiles/
 
 User-agent: Googlebot-Image
 Allow: /
+Allow: /assets/
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
 
 User-agent: Googlebot-Mobile
 Allow: /
 
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Specific directives for other major Search Engines
 User-agent: Bingbot
 Allow: /
+Allow: /assets/
 
 User-agent: Slurp
 Allow: /
@@ -34,7 +55,10 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-# Specifically allow AI search engines & LLM crawlers for Knowledge Graph & Entity Disambiguation
+User-agent: Applebot-Extended
+Allow: /
+
+# AI Search Engines, Generative AI & LLM Crawlers for Knowledge Graph & Entity Disambiguation
 User-agent: GPTBot
 Allow: /
 
@@ -53,9 +77,57 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 User-agent: CCBot
 Allow: /
 
-# Canonical Sitemap Declaration
+User-agent: Diffbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Google Specialized Crawlers (Voice & Rich Snippets)
+User-agent: Google-Read-Aloud
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+# Social & In-App Search Indexers (Signals boost Google Knowledge Graph)
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+# Explicit XML Sitemap endpoints allowance
+Allow: /sitemap.xml
+Allow: /sitemap-*.xml
+
+# Canonical Sitemaps for All Active Domains
+Sitemap: https://tharunkumark.getvoroa.com/sitemap.xml
+Sitemap: https://tharunkumark.getvoroa.com/sitemap-getvoroa.xml
+Sitemap: https://tharunkumark4743.vercel.app/sitemap.xml
+Sitemap: https://tharunkumark4743.vercel.app/sitemap-vercel.xml
 Sitemap: https://tharunkumark4743.netlify.app/sitemap.xml
-Host: https://tharunkumark4743.netlify.app
+Sitemap: https://tharunkumark4743.netlify.app/sitemap-netlify.xml
+Host: https://tharunkumark.getvoroa.com
+
