@@ -52,6 +52,7 @@ import {
 } from './constants';
 import { Project, RoleItem, LeadershipItem, EducationItem } from './type';
 import VsbShowcase from './VsbShowcase';
+import ContributionChartGrid from './components/ContributionChartGrid';
 import infosysSpringboardImg from './assets/infosys-springboard.png';
 import tcsIonImg from './assets/tcs-ion.png';
 import futureSkillsImg from './assets/futureskills-prime.png';
@@ -766,8 +767,6 @@ interface GitHubWidgetProps {
 }
 
 const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) => {
-  const chartUrl = '/contribution-chart.svg';
-
   return (
     <section className="py-16 sm:py-20 bg-slate-50 relative overflow-hidden">
       <div className="container mx-auto px-6">
@@ -848,20 +847,10 @@ const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) =
           <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm border border-slate-100 text-center hover:shadow-md transition-all">
             <div className="flex items-center justify-between mb-3 px-1">
               <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Contributions Activity Grid (53 Weeks)</h4>
-              <span className="text-[10px] font-bold text-theme flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                Native Visualizer Engine
-              </span>
             </div>
             <div className="w-full overflow-x-auto scrollbar-thin">
               <div className="inline-block min-w-[650px] max-w-full p-1">
-                <img
-                  src={chartUrl}
-                  alt="Tharunkumar K GitHub Contributions Chart"
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-auto mx-auto select-none"
-                />
+                <ContributionChartGrid primaryColor={primaryColor} />
               </div>
             </div>
           </div>
