@@ -2,16 +2,16 @@ import { Project, CertificationItem, SkillCategory, AchievementItem, VsbStudentP
 
 import profileImg from './assets/TharunKumar.jpeg';
 import vsbecTaskManagerImg from './assets/vsbec-task-manager.png';
-import campusConnectImg from './assets/campus-connect.jpeg';
 import auraImg from './assets/aura-ai.png';
-import chatboxImg from './assets/chatbox-ai.png';
 import smartHelmetImg from './assets/smart-helmet.png';
 import goatCodeEditorImg from './assets/goat.png';
+import campusConnectImg from './assets/campus-connect.jpeg';
+import worksuiteLogo from './assets/worksuite-logo.png';
 
 export const PERSONAL_INFO = {
   name: 'Tharunkumar K',
   primaryName: 'Tharunkumar K',
-  title: 'Software Developer | Full Stack & AI Systems Developer | 2× Hackathon Winner',
+  title: 'Building Intelligent Software Solutions | Full Stack & AI Systems Developer',
   college: 'V.S.B. Engineering College, Karur',
   collegeFull: 'V.S.B. Engineering College, Karur, Tamil Nadu',
   department: 'Information Technology',
@@ -25,6 +25,8 @@ export const PERSONAL_INFO = {
   leetcode: 'https://leetcode.com/u/Tharunkumar__K/',
   geeksforgeeks: 'https://www.geeksforgeeks.org/profile/tharunkumark4743',
   resume: 'https://drive.google.com/drive/folders/1zdLQ8EoEC8X73fFAJjSJr-Ros_xckIyW',
+  aboutBio:
+    'Full stack developer who enjoys building things end-to-end – frontend, backend, and everything in between. Comfortable with React, Next.js, Node.js, TypeScript, and PostgreSQL, with recent experience at Neura Global. Learn fast, work well with teams, and like solving problems that actually matter.',
   profileSummary:
     '2× Hackathon Winner | CODE THUGS 2K26 🥇 | Neural Minds 🥉 | India Innovates 2026 & Odoo × NMIT 2026 Finalist 🇮🇳 | SIH 2025 & 2026 Top 50 | Best GitHub profile @VSB ENGINEERING COLLEGE | Full Stack & AI Developer. Experienced in engineering production web applications, distributed systems, and AI-powered platforms using React 19, TypeScript, Node.js, and PostgreSQL. Creator of VSBEC IT Vault (adopted by 365+ daily students), GOAT Code Editor (1st Place National Winner at Code Thugs 2K26), and published GitHub Marketplace Actions.'
 };
@@ -68,6 +70,41 @@ export const TECHNICAL_SKILLS: SkillCategory[] = [
 ];
 
 export const CERTIFICATIONS: CertificationItem[] = [
+  {
+    title: 'National Internship Program — Pega (60-Hour Certification)',
+    issuer: 'Pegasystems Worldwide India × SmartBridge',
+    year: 'Sep 2026',
+    link: 'https://drive.google.com/drive/folders/1B2cRnGk_3-DKSCx9gTSd_ybJQvXpW03q',
+    type: 'CERTIFICATE'
+  },
+  {
+    title: 'CODE THUGS 2K26 — National Hackathon 1st Place',
+    issuer: 'Jai Shriram Engineering College, Tiruppur',
+    year: 'Feb 2026',
+    link: 'https://drive.google.com/file/d/1RM_8iWXypnQ0CvaeaCzXWX5uVw4A0VLd/view?usp=sharing',
+    type: 'GOLD CERTIFICATE'
+  },
+  {
+    title: 'NEURAL MINDS HACKATHON — 3rd Prize (Code the Future with AI)',
+    issuer: 'Neural Minds Club, V.S.B. Engineering College',
+    year: 'Sep 2026',
+    link: 'https://drive.google.com/file/d/1mI8bbUEFykJpHsZlhoF9bNw83lBxEfJ8/view?usp=sharing',
+    type: 'CERTIFICATE'
+  },
+  {
+    title: 'Best Performer — Photography / Videography Themes',
+    issuer: 'V.S.B. Engineering College, Karur',
+    year: 'Oct 2024',
+    link: 'https://drive.google.com/file/d/1CbwPlA8tM-_7GbKkllZ_i5WwYHPzfsSW/view?usp=sharing',
+    type: 'CERTIFICATE'
+  },
+  {
+    title: 'Poster Presentation — ECO-CLUB 2K24',
+    issuer: 'Dept of Civil & Chemical Engg, VSBEC',
+    year: 'Oct 2024',
+    link: 'https://drive.google.com/file/d/10yzCbfSM5uRddDbqMuJS0gl24bMfNpbg/view?usp=sharing',
+    type: 'CERTIFICATE'
+  },
   {
     title: 'Infosys Internship Completion Certificate',
     issuer: 'Infosys Springboard',
@@ -136,56 +173,60 @@ export const CERTIFICATIONS: CertificationItem[] = [
     issuer: 'FutureSkills Prime — NASSCOM',
     year: 'Mar 2026',
     link: 'https://drive.google.com/file/d/1R8eAyLXAUdxyRK_hDgUBgikkULJLSBje/view?usp=drive_link',
-    type: 'GOLD CERTIFICATE'
+    type: 'COURSE'
   }
 ];
+
 export const PROJECTS: Project[] = [
   {
-    title: 'FINDORA AI',
+    title: 'GOAT Code Editor',
     description:
-      'Autonomous Campus Lost & Found Intelligence Network with multimodal correlation and zero-knowledge ownership verification. 3rd Prize Winner at 8-Hour AIML Hackathon.',
+      'High-performance browser-based collaborative IDE featuring multi-user code synchronization, WebRTC voice calling (1-to-1 & group mesh), Monaco editor kernel, and AI assistant.',
     longDescription:
-      'FINDORA AI is an institutional-grade, privacy-first Lost & Found intelligence network and multimodal correlation ecosystem engineered for smart university campuses.\n\nSecured 3rd Prize in the 8-Hour Hackathon conducted by the Department of Artificial Intelligence & Machine Learning at VSB Engineering College (awarded ChatGPT Go Subscription). The platform solves campus lost property chaos by automating item reporting, semantic matching, and fraud-proof ownership claims.\n\nIt features an AI-driven multimodal hybrid correlation pipeline (Visual 35%, Text 30%, Category 15%, Spatial 10%, Time 10%) powered by Google Gemini 2.5 Flash to automatically detect matching lost-and-found reports. To prevent fraudulent handovers, FINDORA AI implements a zero-knowledge blind verification protocol with Levenshtein distance matching and dynamic anti-hammering velocity limiters.\n\nThe system includes in-browser WebRTC camera capture with client-side HTML5 Canvas optical GPS/timestamp watermarking, Supabase PostgreSQL persistence, Cloudinary secure CDN storage, and instant automated campus broadcasts via Telegram Bot API (@findoravsb_bot) and Brevo SMTP secret OTP handovers.',
-    date: 'Sep 2026',
-    link: 'https://findoravsbec.vercel.app',
-    githubLink: 'https://github.com/Tharun4743/findora-ai',
+      'GOAT Code Editor (GOAT CE) is a high-performance browser-based collaborative IDE designed for seamless remote pair programming. It replaces fragmented workflows by providing a single shareable workspace with VS Code–grade Monaco editor, live peer cursors, multi-participant WebRTC voice calling, sandboxed code execution for 13+ languages, and a context-aware AI assistant.\n\nEngineered from first principles, it won 1st Place Nationally at Code Thugs 2k26 for technical complexity in collaborative architectures and is continuously deployed on Render via an Infrastructure-as-Code (IaC) render.yaml Blueprint.',
+    date: 'Jun 2026',
+    link: 'https://goatcode-editor.onrender.com',
+    githubLink: 'https://github.com/Tharun4743/GOAT-CE',
     tags: [
       'React 19',
-      'TypeScript',
-      'Tailwind CSS',
-      'Node.js 20+',
-      'Express.js',
-      'Supabase (PostgreSQL)',
-      'Google Gemini 2.5 Flash',
-      'Cloudinary CDN',
-      'Telegram Bot API',
-      'Brevo SMTP'
+      'TypeScript 5.8',
+      'Vite 6.2',
+      'Socket.io 4.8',
+      'WebRTC Audio Mesh',
+      'Monaco Editor',
+      'Node.js',
+      'Express 5.2',
+      'PostgreSQL 16',
+      'Piston API v2',
+      'OpenRouter (Llama 3.1 70B)'
     ],
     category: 'fullstack',
-    status: '3rd Prize Winner',
-    realWorldImplementation:
-      'Awarded 3rd Prize in the 8-Hour Hackathon at VSB Engineering College (AIML Dept). Deployed live on Vercel with real-time Telegram Bot integration (@findoravsb_bot) and Supabase backend.',
-    image: 'https://raw.githubusercontent.com/Tharun4743/findora-ai/main/frontend/src/assets/findora_logo.jpg',
+    status: 'National Winner (1st Place)',
+    image: goatCodeEditorImg,
     problem:
-      'Campus lost and found workflows rely on disorganized noticeboards, unverified social media posts, and vulnerable manual handovers susceptible to false claims and lack of privacy.',
+      'Remote pair programmers struggle with copy-pasting snippets across chat tools, caret desynchronization during concurrent edits, and juggling separate apps for voice communication.',
     solution:
-      'FINDORA AI unifies campus lost property reporting with multimodal AI correlation (Gemini 2.5 Flash), zero-knowledge blind ownership verification challenges, optical tamper-proof camera watermarking, and instant Telegram broadcasts.',
+      'GOAT Code Editor unifies real-time code synchronization, peer cursors, browser-native WebRTC voice calling, and sandboxed compilation in a single zero-setup, ephemeral collaborative workspace URL.',
     features: [
-      'Multimodal Hybrid Matching: Fusion correlation combining visual analysis (35%), text embeddings (30%), category taxonomy (15%), and spatio-temporal telemetry (20%)',
-      'Zero-Knowledge Blind Verification: Automated challenge-response protocol with Levenshtein distance scoring and anti-fraud velocity throttling',
-      'Tamper-Proof WebRTC Camera: Live in-browser capture with HTML5 Canvas GPS and timestamp optical watermarking',
-      'Multi-Tier Role Portals: Tailored interfaces for Students, Campus Desk Officers, and Departmental Administrators',
-      'Instant Campus Broadcasts: Real-time event dispatches via Telegram Bot API (@findoravsb_bot) and Brevo SMTP 1-time handover PINs'
+      'Real-Time Multi-User Collaboration: Live keystroke synchronization with race-condition-safe counter-based edit gating (remoteChangeDepth)',
+      'Live Presence & Cursor Tracking: Color-coded peer cursor and selection decorations in Monaco Editor with active typing indicators',
+      '1-to-1 & Group WebRTC Voice Calling: Full-duplex browser audio mesh built from scratch with SDP Offer/Answer negotiation, ICE relay, and live speaker detection',
+      'Hardware Acoustic Echo Cancellation: Browser-native AEC, Noise Suppression (NS), and Auto Gain Control (AGC) at the media stream level',
+      'Synthesized Telephone Ringtone: Dual oscillator nodes from Web Audio API producing realistic ringing with zero audio assets',
+      'Sandboxed Multi-Language Compiler: In-browser execution for 13+ languages via Piston API v2 with AI neural fallback engine',
+      'Ephemeral Auto-Purge Lifecycle: Instant memory and database purge of rooms, code, voice streams, and chat once all peers disconnect',
+      'Context-Aware AI Assistant: Llama 3.1 70B via OpenRouter for code explanation, refactoring, and automated unit test generation',
+      'Code Timeline Snapshots: Save up to 20 code states per room with instant timeline rollback'
     ],
     challenges:
-      'Preventing fraudulent claim attempts and false positives on similar-looking items. Solved by engineering a multi-factor correlation algorithm blending visual attributes with spatial-temporal proximity and private question-answer verification barriers.',
+      '1. Monaco Caret Jumping During Concurrent Edits: Gated local vs remote editor events with a remoteChangeDepth integer counter (rather than a simple boolean flag), restoring exact caret coordinates instantly.\n\n2. Native WebRTC Audio Mesh Without 3rd-Party SDKs: Implemented complete SDP Offer/Answer negotiation, ICE candidate handling, and Voice Activity Detection (VAD) via Web Audio API AnalyserNode.\n\n3. High-Availability Persistence: Built a dual-persistence architecture pairing PostgreSQL 16 with a transparent in-memory Map fallback to maintain full room functionality during database disconnects.',
     architecture:
-      'Full-stack architecture featuring React 19 / TypeScript SPA, Express REST API gateway, Supabase PostgreSQL database, Cloudinary CDN vault, Google Gemini 2.5 Flash AI, and Telegram Bot webhook relay.',
-    myRole: 'Lead Full-Stack Architect & AI Engineer',
+      'Decoupled React 19 & Monaco Editor client interacting via WebSockets (Socket.io) with an Express 5 backend. Peer-to-peer audio routed through WebRTC mesh, sandboxed runs via Piston API, and dual storage combining PostgreSQL 16 and in-memory Map cache.',
+    myRole: 'Lead Full Stack & Systems Architect',
     impact:
-      'Built and delivered within 8 hours during the VSBEC AIML Department Hackathon, winning 3rd Prize and ChatGPT Go subscription.',
+      'Won 1st Place Winner at Code Thugs 2k26 (National Hackathon) for technical complexity in collaborative architectures, deploying a production-ready real-time editor serving developers globally.',
     keyLearnings:
-      'Mastered Gemini multimodal visual feature extraction, zero-knowledge verification design, WebRTC canvas watermarking, and automated Telegram bot integration.'
+      'Mastered WebRTC peer mesh networking from first principles, Web Audio API synthesis, fine-grained Monaco editor text model concurrency, and fault-tolerant dual-store architectures.'
   },
   {
     title: 'VSBEC IT Vault',
@@ -206,7 +247,6 @@ export const PROJECTS: Project[] = [
       'Monaco IDE',
       'LeetCode GraphQL',
       'Telegram Bot API',
-      
       'Cloudinary',
       'Brevo Email Pool'
     ],
@@ -270,179 +310,51 @@ export const PROJECTS: Project[] = [
       'Engineered multi-tier RBAC authorization models, constructed isolated language runtime sandboxes, implemented in-memory directory caching strategies, and architected resilient multi-node transactional communication pools.'
   },
   {
-    title: 'CampusConnect',
+    title: 'FINDORA AI',
     description:
-      'Enterprise-grade campus placement platform automating Training & Placement Officer (TPO) workflows, recruiter engagement, and student interview pipelines.',
+      'Autonomous Campus Lost & Found Intelligence Network with multimodal correlation and zero-knowledge ownership verification. 3rd Prize Winner at 8-Hour AIML Hackathon.',
     longDescription:
-      'CampusConnect is an enterprise-grade placement management platform designed to automate Training & Placement Officer (TPO) workflows, eliminate recruitment friction, and guide students into career opportunities.\n\nThe platform integrates students, corporate recruiters, and placement officers into a unified digital ecosystem featuring automated job drive management, multi-filter student screening, and real-time interview scheduling.\n\nBuilt with React 19, Vite 6, Tailwind CSS v4, TypeScript, Node.js, Express, and Supabase PostgreSQL, it features an interactive Document Vault backed by Cloudinary for storing verified credentials, alongside bi-directional real-time application tracking powered by Socket.IO.\n\nHardened with Same-Origin CSRF Guard, custom Helmet policies for Google SSO, and proxy-aware rate limiting, CampusConnect is deployed on Render via Infrastructure-as-Code.',
-    date: 'June 2026',
-    githubLink: 'https://github.com/Tharun4743/CampusConnect',
-    link: 'https://campusconnect-yg4h.onrender.com/',
+      'FINDORA AI is an institutional-grade, privacy-first Lost & Found intelligence network and multimodal correlation ecosystem engineered for smart university campuses.\n\nSecured 3rd Prize in the 8-Hour Hackathon conducted by the Department of Artificial Intelligence & Machine Learning at VSB Engineering College (awarded ChatGPT Go Subscription). The platform solves campus lost property chaos by automating item reporting, semantic matching, and fraud-proof ownership claims.\n\nIt features an AI-driven multimodal hybrid correlation pipeline (Visual 35%, Text 30%, Category 15%, Spatial 10%, Time 10%) powered by Google Gemini 2.5 Flash to automatically detect matching lost-and-found reports. To prevent fraudulent handovers, FINDORA AI implements a zero-knowledge blind verification protocol with Levenshtein distance matching and dynamic anti-hammering velocity limiters.\n\nThe system includes in-browser WebRTC camera capture with client-side HTML5 Canvas optical GPS/timestamp watermarking, Supabase PostgreSQL persistence, Cloudinary secure CDN storage, and instant automated campus broadcasts via Telegram Bot API (@findoravsb_bot) and Brevo SMTP secret OTP handovers.',
+    date: 'Sep 2026',
+    link: 'https://findoravsbec.vercel.app',
+    githubLink: 'https://github.com/Tharun4743/findora-ai',
     tags: [
       'React 19',
-      'TypeScript 5.8',
-      'Vite 6.2',
-      'Tailwind CSS v4',
-      'Node.js 20+',
-      'Express',
-      'Supabase (PostgreSQL)',
-      'Socket.IO',
-      'Cloudinary',
-      'Google OAuth'
-    ],
-    category: 'fullstack',
-    status: 'Production',
-    image: campusConnectImg,
-    problem:
-      'Campus placement offices face manual paperwork overload, untracked resume archives, delayed student status visibility, and complex interview coordination across multiple corporate recruiting partners.',
-    solution:
-      'CampusConnect centralizes placement governance with an interactive Cloudinary Document Vault, real-time Socket.IO application timelines, multi-filter candidate screening for HRs, and automated TPO invite pipelines.',
-    features: [
-      'Interactive Document Vault: Secure cloud storage and instant preview for academic transcripts, resumes, and certificates via Cloudinary',
-      'Real-Time Application Tracker: Step-by-step visual timeline tracking candidates across Applied, Shortlisted, Interviewing, and Offered stages',
-      'Profile Verification Pipeline: TPO verification tools ensuring candidate academic records, CGPA, and credentials remain tamper-proof',
-      'Recruiter Drive & Multi-Filter Screening: Vacancy creation with automatic eligibility filtering by CGPA, arrears history, and core skills',
-      'Interview Scheduler & Selection Desk: Automated scheduling tool with instant candidate notification dispatches and offer management',
-      'Administrative Moderation Desk: Comprehensive audit logging, account access moderation, and database seeding utilities'
-    ],
-    challenges:
-      '1. Secure Single Sign-On with Strict Headers: Configured custom Helmet policies to selectively bypass Cross-Origin-Opener-Policy headers for Google Identity Services SSO without compromising security.\n\n2. CSRF & Proxy Defense: Built a Same-Origin CSRF Guard validating state-modifying requests and implemented proxy-aware rate limiting (trust proxy) to prevent IP collision on load balancers.',
-    architecture:
-      'Decoupled React 19 SPA frontend and RESTful Express.js API backend with bi-directional Socket.IO WebSockets for live status updates, backed by Supabase PostgreSQL and Cloudinary cloud storage CDN.',
-    myRole: 'Lead Full Stack Developer',
-    impact:
-      'Streamlined placement workflows for 500+ students, reducing manual data entry by 80% and decreasing interview scheduling conflicts to zero.',
-    keyLearnings:
-      'Mastered WebSocket synchronization for real-time application pipelines, structured RBAC using Supabase PostgreSQL, and implemented production defense-in-depth security.'
-  },
-  {
-    title: 'GOAT Code Editor',
-    description:
-      'High-performance browser-based collaborative IDE featuring multi-user code synchronization, WebRTC voice calling (1-to-1 & group mesh), Monaco editor kernel, and AI assistant.',
-    longDescription:
-      'GOAT Code Editor (GOAT CE) is a high-performance browser-based collaborative IDE designed for seamless remote pair programming. It replaces fragmented workflows by providing a single shareable workspace with VS Code–grade Monaco editor, live peer cursors, multi-participant WebRTC voice calling, sandboxed code execution for 13+ languages, and a context-aware AI assistant.\n\nEngineered from first principles, it won 1st Place Nationally at Code Thugs 2k26 for technical complexity in collaborative architectures and is continuously deployed on Render via an Infrastructure-as-Code (IaC) render.yaml Blueprint.',
-    date: 'Jun 2026',
-    link: 'https://goatcode-editor.onrender.com',
-    githubLink: 'https://github.com/Tharun4743/GOAT-CE',
-    tags: [
-      'React 19',
-      'TypeScript 5.8',
-      'Vite 6.2',
-      'Socket.io 4.8',
-      'WebRTC Audio Mesh',
-      'Monaco Editor',
-      'Node.js',
-      'Express 5.2',
-      'PostgreSQL 16',
-      'Piston API v2',
-      'OpenRouter (Llama 3.1 70B)'
-    ],
-    category: 'fullstack',
-    status: 'National Winner (1st Place)',
-    image: goatCodeEditorImg,
-    problem:
-      'Remote pair programmers struggle with copy-pasting snippets across chat tools, caret desynchronization during concurrent edits, and juggling separate apps for voice communication.',
-    solution:
-      'GOAT Code Editor unifies real-time code synchronization, peer cursors, browser-native WebRTC voice calling, and sandboxed compilation in a single zero-setup, ephemeral collaborative workspace URL.',
-    features: [
-      'Real-Time Multi-User Collaboration: Live keystroke synchronization with race-condition-safe counter-based edit gating (remoteChangeDepth)',
-      'Live Presence & Cursor Tracking: Color-coded peer cursor and selection decorations in Monaco Editor with active typing indicators',
-      '1-to-1 & Group WebRTC Voice Calling: Full-duplex browser audio mesh built from scratch with SDP Offer/Answer negotiation, ICE relay, and live speaker detection',
-      'Hardware Acoustic Echo Cancellation: Browser-native AEC, Noise Suppression (NS), and Auto Gain Control (AGC) at the media stream level',
-      'Synthesized Telephone Ringtone: Dual oscillator nodes from Web Audio API producing realistic ringing with zero audio assets',
-      'Sandboxed Multi-Language Compiler: In-browser execution for 13+ languages via Piston API v2 with AI neural fallback engine',
-      'Ephemeral Auto-Purge Lifecycle: Instant memory and database purge of rooms, code, voice streams, and chat once all peers disconnect',
-      'Context-Aware AI Assistant: Llama 3.1 70B via OpenRouter for code explanation, refactoring, and automated unit test generation',
-      'Code Timeline Snapshots: Save up to 20 code states per room with instant timeline rollback'
-    ],
-    challenges:
-      '1. Monaco Caret Jumping During Concurrent Edits: Gated local vs remote editor events with a remoteChangeDepth integer counter (rather than a simple boolean flag), restoring exact caret coordinates instantly.\n\n2. Native WebRTC Audio Mesh Without 3rd-Party SDKs: Implemented complete SDP Offer/Answer negotiation, ICE candidate handling, and Voice Activity Detection (VAD) via Web Audio API AnalyserNode.\n\n3. High-Availability Persistence: Built a dual-persistence architecture pairing PostgreSQL 16 with a transparent in-memory Map fallback to maintain full room functionality during database disconnects.',
-    architecture:
-      'Decoupled React 19 & Monaco Editor client interacting via WebSockets (Socket.io) with an Express 5 backend. Peer-to-peer audio routed through WebRTC mesh, sandboxed runs via Piston API, and dual storage combining PostgreSQL 16 and in-memory Map cache.',
-    myRole: 'Lead Full Stack & Systems Architect',
-    impact:
-      'Won 1st Place Winner at Code Thugs 2k26 (National Hackathon) for technical complexity in collaborative architectures, deploying a production-ready real-time editor serving developers globally.',
-    keyLearnings:
-      'Mastered WebRTC peer mesh networking from first principles, Web Audio API synthesis, fine-grained Monaco editor text model concurrency, and fault-tolerant dual-store architectures.'
-  },
-  {
-    title: "Techy Tharun's Chatbox",
-    description:
-      'High-performance, multi-model AI conversation platform featuring Server-Sent Events (SSE) streaming, automated key rotation fallback, and persistent chat history.',
-    longDescription:
-      "Techy Tharun's Chatbox is a high-performance, conversational AI assistant engineered for near-zero latency streaming and multi-model resilience.\n\nBuilt as a secure full-stack Next.js 15 application, it utilizes Server-Sent Events (SSE) to deliver instantaneous typewriter-style responses. It incorporates a custom token-aware Key Manager that automatically load-balances and rotates across Groq, OpenRouter, and OpenAI to eliminate rate limits.\n\nWith persistent conversation memory stored in Neon Serverless PostgreSQL via Prisma ORM, context-aware AI personas, file attachment parsing, and NextAuth.js v5 Google SSO, it delivers an intuitive, glassmorphic chat experience tailored for developers and technical workflows.",
-    date: 'Feb 2026 - Apr 2026',
-    githubLink: 'https://github.com/Tharun4743/Tharun-s-Chatbox',
-    link: 'https://tharunchatbox.onrender.com',
-    tags: [
-      'Next.js 15',
-      'React 18',
       'TypeScript',
       'Tailwind CSS',
-      'Prisma ORM',
-      'Neon PostgreSQL',
-      'NextAuth.js v5',
-      'Groq',
-      'OpenRouter',
-      'OpenAI'
+      'Node.js 20+',
+      'Express.js',
+      'Supabase (PostgreSQL)',
+      'Google Gemini 2.5 Flash',
+      'Cloudinary CDN',
+      'Telegram Bot API',
+      'Brevo SMTP'
     ],
-    category: 'fullstack',
-    status: 'Production Deployed',
-    image: chatboxImg,
+    category: 'ai',
+    status: '3rd Prize Winner',
+    realWorldImplementation:
+      'Awarded 3rd Prize in the 8-Hour Hackathon at VSB Engineering College (AIML Dept). Deployed live on Vercel with real-time Telegram Bot integration (@findoravsb_bot) and Supabase backend.',
+    image: 'https://raw.githubusercontent.com/Tharun4743/findora-ai/main/frontend/src/assets/findora_logo.jpg',
     problem:
-      'Standard AI interfaces suffer from high streaming latency, rigid single-provider rate limits, clunky document uploads, and lack of persistent conversation memory.',
+      'Campus lost and found workflows rely on disorganized noticeboards, unverified social media posts, and vulnerable manual handovers susceptible to false claims and lack of privacy.',
     solution:
-      "Techy Tharun's Chatbox integrates Server-Sent Events (SSE) typewriter streaming, multi-provider token-aware key rotation (Groq -> OpenRouter -> OpenAI), document attachment parsing, and PostgreSQL chat storage.",
+      'FINDORA AI unifies campus lost property reporting with multimodal AI correlation (Gemini 2.5 Flash), zero-knowledge blind ownership verification challenges, optical tamper-proof camera watermarking, and instant Telegram broadcasts.',
     features: [
-      'Live SSE Streaming Responses: Server-Sent Events delivering instant, typewriter-style text generation with sub-200ms latency',
-      'Multi-Provider Fallback Logic: Token-aware Key Manager rotating across Groq, OpenRouter, and OpenAI to bypass rate limits and outages',
-      'Context-Aware AI Personas: Specialized modes including Code Assistant, Document Analyzer, and Resume Reviewer',
-      'Intelligent File Context: Direct document uploads (PDF, DOCX, TXT) parsed and referenced directly within conversational context',
-      'Persistent PostgreSQL Chat Memory: Session storage in Neon PostgreSQL via Prisma ORM for seamless history retrieval',
-      'Enterprise Security & Google SSO: One-click authentication powered by NextAuth.js (Auth.js) v5 with secure session management'
+      'Multimodal Hybrid Matching: Fusion correlation combining visual analysis (35%), text embeddings (30%), category taxonomy (15%), and spatio-temporal telemetry (20%)',
+      'Zero-Knowledge Blind Verification: Automated challenge-response protocol with Levenshtein distance scoring and anti-fraud velocity throttling',
+      'Tamper-Proof WebRTC Camera: Live in-browser capture with HTML5 Canvas GPS and timestamp optical watermarking',
+      'Multi-Tier Role Portals: Tailored interfaces for Students, Campus Desk Officers, and Departmental Administrators',
+      'Instant Campus Broadcasts: Real-time event dispatches via Telegram Bot API (@findoravsb_bot) and Brevo SMTP 1-time handover PINs'
     ],
     challenges:
-      'Handling persistent SSE streaming connections across serverless environments and avoiding rate limit bottlenecks. Solved by architecting an automated provider-rotating Key Manager with parallelized token dispatch.',
+      'Preventing fraudulent claim attempts and false positives on similar-looking items. Solved by engineering a multi-factor correlation algorithm blending visual attributes with spatial-temporal proximity and private question-answer verification barriers.',
     architecture:
-      'Next.js 15 App Router architecture utilizing Server Components, Prisma ORM with Neon Serverless PostgreSQL, and load-balanced API routing across Groq, OpenRouter, and OpenAI.',
-    myRole: 'AI Engineer & Full-Stack Architect',
+      'Full-stack architecture featuring React 19 / TypeScript SPA, Express REST API gateway, Supabase PostgreSQL database, Cloudinary CDN vault, Google Gemini 2.5 Flash AI, and Telegram Bot webhook relay.',
+    myRole: 'Lead Full-Stack Architect & AI Engineer',
     impact:
-      'Achieved sub-200ms latency on AI streaming responses with 99.9% uptime through automated provider failover, serving as a reliable personal productivity tool.',
+      'Built and delivered within 8 hours during the VSBEC AIML Department Hackathon, winning 3rd Prize and ChatGPT Go subscription.',
     keyLearnings:
-      'Deepened expertise in Server-Sent Events (SSE) streaming protocols, multi-tenant serverless PostgreSQL optimizations, and multi-provider AI resilience engineering.'
-  },
-  {
-    title: 'Aura — Offline Multimodal RAG',
-    description:
-      '100% Offline Multimodal Retrieval-Augmented Generation (RAG) System developed for resource-constrained environments. Features local document processing, multimodal vision indexing, and voice transcription.',
-    longDescription:
-      'Aura is a military-grade, 100% offline multimodal Retrieval-Augmented Generation (RAG) workstation built for sovereign, air-gapped enterprise and defense environments.\n\nThe platform enables local page-by-page document ingestion (PDF, plaintext), local visual indexing using Hugging Face CLIP embeddings, and offline speech-to-text transcription via Vosk and Whisper.\n\nIt integrates local Llama-3 models running on Ollama with ChromaDB vector storage, ensuring grounded, context-anchored chat generation without transmitting any data over external networks.\n\nWrapped in an Electron desktop shell packaging a Spring Boot Java backend, local JRE, and Python environment, Aura provides absolute data privacy and zero-latency local intelligence.',
-    date: '2026',
-    githubLink: 'https://github.com/Tharun4743/SIH25231',
-    tags: ['React', 'Spring Boot', 'Java', 'SQLite', 'ChromaDB', 'Ollama', 'Electron'],
-    category: 'fullstack',
-    status: 'Offline AI Workstation',
-    image: auraImg,
-    problem:
-      'Enterprise and defense environments requiring intelligent document and visual asset retrieval cannot rely on cloud-based LLM APIs due to strict data privacy, air-gapped network policies, and latency constraints.',
-    solution:
-      'Aura provides a 100% offline, sovereign multimodal RAG workstation packaged in an Electron shell, running local LLMs via Ollama, local CLIP vision embeddings, and offline STT for complete on-premises privacy.',
-    features: [
-      'Document Processing: Local page-by-page text extraction from PDF and plaintext documents via Apache PDFBox',
-      'Multimodal Vision: Visual feature extraction and semantic indexing of local image materials using Hugging Face CLIP',
-      'Voice Transcription: Vocal queries transcribed locally via Python speech-to-text translators (Whisper/Vosk)',
-      'Grounded Retrieval (RAG): Integrates with local Llama-3 running on Ollama for context-anchored chat generation',
-      'Glassmorphic Desktop Wrapper: Compiled as an Electron shell packaging the JRE, Python environment, and Spring Boot server into a one-click executable'
-    ],
-    challenges:
-      'Orchestrating multiple local LLMs and vector databases in a fully air-gapped desktop environment without relying on external APIs. Solved by bundling a local JRE and Python environment into a self-contained Electron installer.',
-    architecture:
-      'Decoupled React SPA frontend and RESTful Spring Boot Java API backend, sharing real-time event updates via WebSockets, all wrapped in an Electron desktop shell.',
-    myRole: 'Core Systems Developer',
-    impact:
-      'Enabled completely air-gapped, privacy-preserving document and vision querying, making it suitable for secure enterprise and military deployment environments.',
-    keyLearnings:
-      'Learned to orchestrate local LLMs and vector databases within an Electron desktop shell and optimized Java Spring Boot for local low-memory environments.'
+      'Mastered Gemini multimodal visual feature extraction, zero-knowledge verification design, WebRTC canvas watermarking, and automated Telegram bot integration.'
   },
   {
     title: 'Smart Helmet IoT Safety System',
@@ -451,7 +363,7 @@ export const PROJECTS: Project[] = [
     longDescription:
       'The Smart Helmet IoT Safety System is an embedded rider safety platform engineered to proactively eliminate motorcycle accidents through real-time hardware sensing and wireless ignition interlocking.\n\nLead embedded developer on the dual-unit rider safety system. Shortlisted in the SIH 2025 Internal Hackathon as Top 50 out of 300+ campus teams and officially nominated to submit the idea proposal on the central Smart India Hackathon (SIH) portal.\n\nThe dual-unit system links a sensor-equipped helmet with a motorcycle ignition receiver circuit via low-latency RF 433MHz wireless communication. It continuously monitors helmet wearing compliance (IR proximity sensor), rider alcohol levels (MQ-3 sensor), and driver drowsiness (IR eye-blink sensor), automatically cutting bike ignition within 500ms under unsafe conditions. Built with Arduino microcontrollers, C/C++ firmware, relays, and an I²C LCD status display, it incorporates a 5-second RF fail-safe signal protection for real-world environmental reliability.',
     date: 'Sep 2025 - Oct 2025',
-    githubLink: 'https://github.com/Tharun4743/Smart-Helmet-IoT-Safety-System',
+    githubLink: 'https://github.com/Tharun4743/AGILE-INNOVATORS-smart-helmet-',
     driveLink: 'https://drive.google.com/drive/folders/1kYhyoOx9-Tr4WyOJkmUz7K4PDDpmaHEr?usp=drive_link',
     tags: [
       'Arduino',
@@ -509,6 +421,7 @@ export const PROJECTS: Project[] = [
     ],
     category: 'fullstack',
     status: 'Odoo × NMIT Finalist',
+    image: worksuiteLogo,
     problem:
       'Small and medium enterprises struggle with fragmented spreadsheets for daily attendance, manual error-prone payroll deductions, and delayed multi-level employee leave authorizations.',
     solution:
@@ -526,147 +439,92 @@ export const PROJECTS: Project[] = [
       'Qualified as National On-Site Finalist at the Odoo × NMIT Bangalore Hackathon 2026 out of nationwide competing developer teams.'
   },
   {
-    title: 'GitHub Profile Visualizer',
+    title: 'Aura — Offline Multimodal RAG',
     description:
-      'Published GitHub Marketplace Action and CLI suite generating 3D isometric contribution skylines, commit velocity telemetry, and skill radars in pure zero-dependency SVG.',
+      '100% Offline Multimodal Retrieval-Augmented Generation (RAG) System developed for resource-constrained environments. Features local document processing, multimodal vision indexing, and voice transcription.',
     longDescription:
-      'GitHub Profile Visualizer is a published GitHub Marketplace Action and developer telemetry engine. It parses public GitHub user activity and generates rich, high-resolution SVG telemetry cards including 3D isometric contribution skylines, commit velocity graphs, language distribution matrixes, and skill radar diagrams.\n\nEngineered with zero native binary dependencies to run seamlessly in GitHub Actions CI/CD runners, Docker containers, or local developer workstations.',
+      'Aura is a military-grade, 100% offline multimodal Retrieval-Augmented Generation (RAG) workstation built for sovereign, air-gapped enterprise and defense environments.\n\nThe platform enables local page-by-page document ingestion (PDF, plaintext), local visual indexing using Hugging Face CLIP embeddings, and offline speech-to-text transcription via Vosk and Whisper.\n\nIt integrates local Llama-3 models running on Ollama with ChromaDB vector storage, ensuring grounded, context-anchored chat generation without transmitting any data over external networks.\n\nWrapped in an Electron desktop shell packaging a Spring Boot Java backend, local JRE, and Python environment, Aura provides absolute data privacy and zero-latency local intelligence.',
     date: '2026',
-    link: 'https://github.com/marketplace/actions/github-profile-visualizer',
-    githubLink: 'https://github.com/Tharun4743/Github-profile-visualizer',
+    githubLink: 'https://github.com/Tharun4743/SIH25231',
+    tags: ['React', 'Spring Boot', 'Java', 'SQLite', 'ChromaDB', 'Ollama', 'Electron'],
+    category: 'ai',
+    status: 'Offline AI Workstation',
+    image: auraImg,
+    problem:
+      'Enterprise and defense environments requiring intelligent document and visual asset retrieval cannot rely on cloud-based LLM APIs due to strict data privacy, air-gapped network policies, and latency constraints.',
+    solution:
+      'Aura provides a 100% offline, sovereign multimodal RAG workstation packaged in an Electron shell, running local LLMs via Ollama, local CLIP vision embeddings, and offline STT for complete on-premises privacy.',
+    features: [
+      'Document Processing: Local page-by-page text extraction from PDF and plaintext documents via Apache PDFBox',
+      'Multimodal Vision: Visual feature extraction and semantic indexing of local image materials using Hugging Face CLIP',
+      'Voice Transcription: Vocal queries transcribed locally via Python speech-to-text translators (Whisper/Vosk)',
+      'Grounded Retrieval (RAG): Integrates with local Llama-3 running on Ollama for context-anchored chat generation',
+      'Glassmorphic Desktop Wrapper: Compiled as an Electron shell packaging the JRE, Python environment, and Spring Boot server into a one-click executable'
+    ],
+    challenges:
+      'Orchestrating multiple local LLMs and vector databases in a fully air-gapped desktop environment without relying on external APIs. Solved by bundling a local JRE and Python environment into a self-contained Electron installer.',
+    architecture:
+      'Decoupled React SPA frontend and RESTful Spring Boot Java API backend, sharing real-time event updates via WebSockets, all wrapped in an Electron desktop shell.',
+    myRole: 'Core Systems Developer',
+    impact:
+      'Enabled completely air-gapped, privacy-preserving document and vision querying, making it suitable for secure enterprise and military deployment environments.',
+    keyLearnings:
+      'Learned to orchestrate local LLMs and vector databases within an Electron desktop shell and optimized Java Spring Boot for local low-memory environments.'
+  },
+  {
+    title: 'CampusConnect',
+    description:
+      'Enterprise campus placement and recruitment ecosystem with real-time Socket.IO interview funnels, automated eligibility filters, and Cloudinary document vault.',
+    longDescription:
+      'CampusConnect is an enterprise-grade placement governance and corporate recruitment management ecosystem engineered for collegiate Training & Placement Offices (TPOs).\n\nBuilt during my internship at Neura Global, the platform digitizes recruitment drives across 5-stage application funnels (Applied → Shortlisted → Technical Interview → HR Round → Offered) with bi-directional WebSocket status broadcasts.\n\nIt features an interactive Cloudinary document vault for student resumes and verified marksheets, automated candidate eligibility auditing (filtering by minimum CGPA, active arrears, and department quotas), a conflict-free multi-panel interview scheduler, and hardened security including Same-Origin CSRF Guard and customized Cross-Origin-Opener-Policy headers for Google OAuth 2.0 Single Sign-On.\n\nDeployed in production on Render with Supabase PostgreSQL, reducing manual verification and roster compiling by over 80%.',
+    date: 'Jun 2026 - Jul 2026',
+    link: 'https://campusconnect-yg4h.onrender.com/',
+    githubLink: 'https://github.com/Tharun4743/CampusConnect',
     tags: [
-      'Node.js',
+      'React 19',
       'TypeScript',
-      'GitHub Actions',
-      'SVG Engine',
-      'GitHub REST API',
-      'CI/CD'
-    ],
-    category: 'fullstack',
-    status: 'Marketplace Action',
-    problem:
-      'Standard GitHub profile README cards rely on third-party hosted services that frequently hit rate limits, suffer downtime, or fail to render properly.',
-    solution:
-      'GitHub Profile Visualizer runs as a native GitHub Action directly within the user repository, rendering and committing static self-hosted SVGs with zero runtime API dependency.',
-    features: [
-      '3D Isometric Contribution City: Transforms daily git contribution heatmaps into 3D isometric architectural skylines',
-      'Pure SVG Generation: Renders pixel-perfect, scalable vector graphics without canvas or headless browser dependencies',
-      '13-in-1 Telemetry Suite: Commit velocity, activity streams, languages breakdown, and achievement badges',
-      'Zero-Config Workflow: Single YAML workflow integration directly on GitHub Actions'
-    ],
-    architecture:
-      'TypeScript execution pipeline parsing GitHub GraphQL & REST APIs, computing commit geometry, and rendering pure XML/SVG output.',
-    myRole: 'Author & Maintainer',
-    impact:
-      'Published on the official GitHub Marketplace and adopted by student developers and open-source engineers to power GitHub profile telemetry.'
-  },
-  {
-    title: 'EdgeGuard — Automotive CAN Bus IDS',
-    description:
-      'On-device Controller Area Network (CAN Bus 2.0B) intrusion detection system with sub-5ms LightGBM edge inference neutralizing DoS bus floods, fuzzing, and spoofing.',
-    longDescription:
-      'EdgeGuard is an automotive cybersecurity platform engineered to protect modern vehicle Controller Area Networks (CAN Bus 2.0B) against physical and remote cyber attacks. Utilizing lightweight LightGBM decision models trained on real vehicle telemetry, EdgeGuard runs on embedded in-vehicle hardware to identify anomalous message frequencies, payload entropy spikes, and frame spoofing within 5ms without requiring internet connectivity.',
-    date: '2026',
-    githubLink: 'https://github.com/Tharun4743/EdgeGuard',
-    tags: [
-      'Python',
-      'SocketCAN',
-      'LightGBM',
-      'Machine Learning',
-      'Automotive Security',
-      'CAN Bus 2.0B'
-    ],
-    category: 'fullstack',
-    status: 'Vehicle Cybersecurity',
-    problem:
-      'Automotive CAN bus protocols lack authentication and encryption by design, leaving connected vehicles vulnerable to malicious frame injection, throttle tampering, and denial-of-service bus flooding.',
-    solution:
-      'EdgeGuard provides sub-5ms real-time edge anomaly detection inspecting CAN ID timing deltas and payload entropy directly on-device with zero cloud reliance.',
-    features: [
-      'Sub-5ms Inference: Edge-optimized LightGBM model evaluating frame inter-arrival timing anomalies',
-      'SocketCAN Linux Daemon: Direct hardware interface with virtual and physical CAN transceivers',
-      'Attack Classification: Detects DoS bus floods, diagnostic fuzzing attacks, and impersonation spoofing',
-      'Security Operations Dashboard: Real-time NSOC telemetry interface for vehicle fleet telematics'
-    ],
-    architecture:
-      'Python SocketCAN daemon interfacing with kernel network stack, running optimized LightGBM inference pipelines with alert streaming.',
-    myRole: 'Lead Security Systems Engineer',
-    impact:
-      'Demonstrated 99.4% precision in catching synthetic CAN injection attacks with zero latency degradation to safety-critical vehicle ECUs.'
-  },
-  {
-    title: 'MuleGuard — Anti-Money Laundering Graph System',
-    description:
-      'Financial crime detection engine using Neo4j and D3.js graph topologies to identify money mule smurfing rings, circular transaction loops, and high-velocity layering.',
-    longDescription:
-      'MuleGuard is a financial forensics platform designed for fraud investigation units and regulatory compliance teams. It models transactional records into dynamic directed graph topologies using Neo4j and D3.js to detect complex money laundering patterns—including smurfing rings, high-velocity fund layering, and circular transaction loops—that evade conventional rule-based relational databases.',
-    date: '2026',
-    githubLink: 'https://github.com/Tharun4743/Muleguard',
-    tags: [
-      'React',
-      'Node.js',
-      'Neo4j',
-      'Graph Algorithms',
-      'D3.js',
-      'FinTech',
-      'Fraud Detection'
-    ],
-    category: 'fullstack',
-    status: 'Fraud Forensics',
-    problem:
-      'Financial fraudsters split illegal proceeds across dozens of intermediary "money mule" bank accounts within minutes, creating dispersed transaction trails that evade traditional relational database queries.',
-    solution:
-      'MuleGuard converts transactions into multi-hop graph structures, executing Cypher graph queries and velocity heuristics to uncover coordinated laundering rings instantly.',
-    features: [
-      'Interactive Graph Topology: D3.js visualization mapping money flow velocity between bank accounts and entities',
-      'Smurfing Detection: Algorithmic identification of split deposits aggregating into centralized destination vaults',
-      'Circular Loop Tracing: Cycle detection algorithms spotting self-funding and wash-trading schemes',
-      'Risk Scorecard: Multi-factor risk scores based on transaction velocity, account age, and node centrality'
-    ],
-    architecture:
-      'React and D3.js visualization interface connected via REST APIs to a Node.js backend executing Cypher graph queries on Neo4j.',
-    myRole: 'Full-Stack & Graph Systems Developer',
-    impact:
-      'Accelerated mule network discovery time from hours of manual CSV collation to instantaneous graphical visualization.'
-  },
-  {
-    title: 'Smart Public Service CRM',
-    description:
-      'Citizen grievance redressal portal with automated SLA tracking, geo-tagging, public status verification, and administrative escalation workflows.',
-    longDescription:
-      'Smart Public Service CRM is a civic engagement and municipal task governance platform designed to eliminate bottlenecks in citizen grievance redressal. Citizens can submit civic infrastructure complaints with GPS coordinates and photo evidence, while municipal officers manage resolution workflows governed by strict automated SLA escalation timers.',
-    date: '2026',
-    githubLink: 'https://github.com/Tharun4743/Public-CRM',
-    tags: [
-      'React',
       'Node.js',
       'Express',
-      'PostgreSQL',
-      'Leaflet GIS',
-      'SLA Escalation',
-      'Civic Tech'
+      'Socket.IO',
+      'Supabase (PostgreSQL)',
+      'Tailwind CSS',
+      'Cloudinary',
+      'Google OAuth 2.0'
     ],
     category: 'fullstack',
-    status: 'Civic Governance',
+    status: 'Neura Global Internship Flagship',
+    image: campusConnectImg,
     problem:
-      'Civic complaints filed with municipal bodies suffer from lack of transparency, misplaced physical paperwork, and no accountability for resolving public infrastructure issues.',
+      'University Training & Placement Offices manage hundreds of corporate recruiting drives with thousands of student resumes. Disconnected Google Forms, unverified spreadsheets, and broadcast messaging cause missed interview rounds, inaccurate CGPA claims, and severe corporate offer delays.',
     solution:
-      'Smart Public Service CRM provides a public tracking portal with geo-tagged incident mapping, transparent status lifecycles, and automatic escalation when resolution SLAs expire.',
+      'CampusConnect centralizes placement drives with real-time multi-stage interview funnels, tamper-proof academic auditing, an in-browser Cloudinary document vault, and automated eligibility verification.',
     features: [
-      'Geo-Tagged Complaint Registration: Citizens pin issues on interactive Leaflet maps with image uploads',
-      'Automated SLA Escalation: Unresolved tickets automatically escalate to higher zonal authorities upon SLA breach',
-      'Public Transparency Tracker: Real-time ticket lifecycle status (Submitted, Assigned, In Progress, Resolved)',
-      'Administrative Analytics: Zonal heatmap displaying infrastructure grievance clusters and department resolution rates'
+      'Real-Time 5-Stage Funnel: Bi-directional WebSocket tracker displaying application states (Applied, Shortlisted, Interviewing, Offered)',
+      'Cloudinary Document Vault: In-browser instant preview for resumes, marksheets, and verified credentials',
+      'Automated Drive & Eligibility Engine: Configurable filters for minimum CGPA, maximum backlogs, and tech stack requirements',
+      'Conflict-Free Interview Scheduler: Multi-panel interview scheduling with automated timetable clash detection',
+      'Enterprise Security Hardening: Same-Origin CSRF Guard and customized COOP/COEP headers for Google OAuth 2.0 SSO'
     ],
+    challenges:
+      'Managing high-concurrency real-time WebSocket state synchronizations across simultaneous interview panels while preventing candidate tampering with academic metrics. Solved by implementing server-side Supabase Row-Level Security (RLS) policies and proxy-aware token throttling.',
     architecture:
-      'React frontend with Leaflet mapping, Express.js REST API, and PostgreSQL database tracking ticket state transitions.',
-    myRole: 'Lead Full-Stack Developer',
+      'Decoupled React 19 SPA communicating via authenticated REST endpoints and Socket.IO 4.8 WebSockets with a Node.js/Express backend backed by Supabase PostgreSQL and Cloudinary CDN.',
+    myRole: 'Full-Stack Engineering Intern & Architect',
     impact:
-      'Built a complete civic accountability prototype delivering automated escalation and public status tracking.'
+      'Deployed in production at Neura Global, cutting administrative manual auditing by 80%, eliminating interview scheduling conflicts, and managing 500+ student profiles with zero candidate collision.',
+    keyLearnings:
+      'Mastered enterprise WebSocket state management, cloud document vault security, OAuth 2.0 COOP header isolation, and automated candidate eligibility pipelines.'
   }
 ];
 
 export const LEADERSHIP = [
+  {
+    title: 'Pega System Developer Intern',
+    organization: 'Pegasystems Worldwide India × SmartBridge',
+    period: '08/2026 - 09/2026',
+    description:
+      'Completed 60-Hour National Internship Program in Pega enterprise architecture. | Developed scalable case lifecycle automation workflows and data models in collaboration with SmartBridge. | Issued Certificate of Completion (ID: PEGA-SW-NIP-2026-578) sponsored by Pegasystems Worldwide India.'
+  },
   {
     title: 'Fullstack Development Intern',
     organization: 'Neura Global (Startup)',
@@ -685,26 +543,63 @@ export const LEADERSHIP = [
 
 export const ACHIEVEMENTS: AchievementItem[] = [
   {
-    title: 'Code Thugs 2k26 – 1st Place (National Winner 🥇)',
-    organization: 'Code Thugs 2k26',
+    title: 'CODE THUGS 2K26 — First Place (National Winner 🥇)',
+    organization: 'Jai Shriram Engineering College, Tiruppur',
+    event: 'National-Level Hackathon',
     year: '2026',
+    date: '6–7 February 2026',
     type: '1ST PLACE WINNER',
-    prize: '₹5,000 Cash Prize',
+    prize: '₹5,000 Cash Prize & Trophy',
     category: 'hackathon',
     iconName: 'trophy',
+    featured: true,
+    certificateUrl: 'https://drive.google.com/file/d/1RM_8iWXypnQ0CvaeaCzXWX5uVw4A0VLd/view?usp=sharing',
     description:
-      'Won 1st Place Winner nationally at Code Thugs 2k26 for designing, building, and deploying GOAT Code Editor — a real-time collaborative IDE featuring live cursor highlighting and in-browser compilation.'
+      'Won 1st Place nationally at CODE THUGS 2K26, a 24-hour National-Level Hackathon organized by Jai Shriram Engineering College, Tiruppur. Architected and deployed GOAT Code Editor — a real-time collaborative cloud IDE featuring live cursor highlighting, Monaco Editor integration, and in-browser compilation.'
   },
   {
-    title: 'Neural Minds AI/ML Hackathon — 3rd Prize (🥉)',
-    organization: 'VSB Engineering College (AIML Dept)',
+    title: 'NEURAL MINDS HACKATHON — 3rd Prize (🥉)',
+    organization: 'Neural Minds Club, V.S.B. Engineering College, Karur',
+    event: 'AI 8 Hours Hackathon',
     year: '2026',
+    date: '26 September 2026',
     type: '3RD PRIZE WINNER',
-    prize: 'ChatGPT Go Subscription',
+    prize: 'ChatGPT Go Subscription & Honors',
     category: 'hackathon',
     iconName: 'award',
+    teamName: 'TECH SQUAD',
+    teamMembers: ['Tamilselvan S', 'Tharunkumar K', 'Ram Kishore S M'],
+    certificateUrl: 'https://drive.google.com/file/d/1mI8bbUEFykJpHsZlhoF9bNw83lBxEfJ8/view?usp=sharing',
     description:
-      'Secured 3rd Prize in the Neural Minds 8-Hour AI/ML Hackathon conducted by the Department of AI & ML at VSB Engineering College for architecting FINDORA AI — an autonomous campus lost & found intelligence network.'
+      'Theme: "Code the Future with AI". Secured 3rd Prize as Team TECH SQUAD (Tamilselvan S, Tharunkumar K, Ram Kishore S M) in the 8-Hour AI Hackathon organized by Neural Minds Club at V.S.B. Engineering College. Architected FINDORA AI — an autonomous campus lost-and-found intelligence network powered by multimodal correlation and zero-knowledge verification.'
+  },
+  {
+    title: 'Best Performer — Photography / Videography',
+    organization: 'V.S.B. Engineering College, Karur',
+    event: 'Photography / Videography Themes Contest',
+    year: '2024',
+    date: '3 October 2024',
+    type: 'BEST PERFORMER',
+    prize: 'Excellence Citation',
+    category: 'creative',
+    iconName: 'camera',
+    certificateUrl: 'https://drive.google.com/file/d/1CbwPlA8tM-_7GbKkllZ_i5WwYHPzfsSW/view?usp=sharing',
+    description:
+      'Awarded Best Performer for Photography and Videography Themes at V.S.B. Engineering College, Karur for creative cinematography, technical visual framing, narrative editing, and creative storytelling.'
+  },
+  {
+    title: 'Poster Presentation — ECO-CLUB 2K24',
+    organization: 'V.S.B. Engineering College, Karur',
+    department: 'Civil and Chemical Engineering',
+    event: 'ECO-CLUB 2K24 Poster Presentation',
+    year: '2024',
+    date: '19 October 2024',
+    type: 'TECHNICAL PRESENTATION',
+    category: 'presentation',
+    iconName: 'leaf',
+    certificateUrl: 'https://drive.google.com/file/d/10yzCbfSM5uRddDbqMuJS0gl24bMfNpbg/view?usp=sharing',
+    description:
+      'Presented research on sustainable environmental engineering and eco-friendly technological innovations during ECO-CLUB 2K24, organized by the Department of Civil and Chemical Engineering at V.S.B. Engineering College.'
   },
   {
     title: 'Best GitHub Profile & Top Developer — VSB Engineering College',
@@ -714,7 +609,7 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     prize: 'Rank #1 GitHub Profile in Campus',
     iconName: 'trophy',
     description:
-      'Recognized for maintaining the top developer profile at V.S.B. Engineering College, Karur with 2,400+ commits, 15+ active repositories, a published GitHub Marketplace Action (GitHub Profile Visualizer), and enterprise-grade full-stack architectures.'
+      'Recognized for maintaining the top developer profile at V.S.B. Engineering College, Karur with 3,500+ commits, 30+ active repositories, a published GitHub Marketplace Action (GitHub Profile Visualizer), and enterprise-grade full-stack architectures.'
   },
   {
     title: 'Smart India Hackathon 2026 – Top 50 (Internal)',
@@ -754,7 +649,21 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     category: 'hackathon',
     iconName: 'lightbulb',
     description:
-      'Advanced to the national finals following multi-stage technical evaluations and prototype demonstrations.'
+      'National Finalist at India Innovates 2026 for architecting Public CRM (Smart Public Service CRM) — a citizen relationship management and grievance redressal platform with geo-tagging, photo verification, and automated 72h SLA escalation to municipal authorities.'
+  },
+  {
+    title: 'National Internship Program — Pega (60-Hour Completion)',
+    organization: 'Pegasystems Worldwide India × SmartBridge',
+    event: 'National Internship Program',
+    year: '2026',
+    date: '4 Aug – 3 Sep 2026',
+    type: 'CERTIFICATE OF COMPLETION',
+    score: 'ID: PEGA-SW-NIP-2026-578',
+    category: 'leadership',
+    iconName: 'graduation',
+    certificateUrl: 'https://drive.google.com/drive/folders/1B2cRnGk_3-DKSCx9gTSd_ybJQvXpW03q',
+    description:
+      'Completed the 60-Hour National Internship Program on Pega systems, sponsored by Pegasystems Worldwide India Private Limited in collaboration with SmartBridge. Issued Certificate of Completion on 22 September 2026 (Certificate ID: PEGA-SW-NIP-2026-578).'
   },
   {
     title: 'Department Student Coordinator',
@@ -892,13 +801,13 @@ export const VSB_GITHUB_PROFILES: VsbStudentProfile[] = [
       'Docker'
     ],
     metrics: {
-      commits: '2,400+ Commits',
-      repos: '15+ Public Repositories',
+      commits: '3,500+ Commits',
+      repos: '30+ Public Repositories (35+ Ecosystem)',
       achievements: '2× Hackathon Winner | SIH Top 50'
     },
     evaluationHighlights: [
       '2× Hackathon Winner (Code Thugs 2K26 🥇, Neural Minds 🥉)',
-      'Rank #1 Best GitHub Profile in VSB Engineering College (2,400+ commits, 15+ repos)',
+      'Rank #1 Best GitHub Profile in VSB Engineering College (3,500+ commits, 30+ repos)',
       'India Innovates 2026 & Odoo × NMIT Bangalore 2026 National Finalist 🇮🇳',
       '2x Smart India Hackathon (SIH 2025 & 2026) Top 50 Nominee',
       '365+ active campus daily users on VSBEC IT Vault platform',

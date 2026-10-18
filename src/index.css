@@ -48,11 +48,6 @@
       }
       section {
         scroll-margin-top: 100px;
-        content-visibility: auto;
-        contain-intrinsic-size: 1px 700px;
-      }
-      section#hero {
-        content-visibility: visible;
       }
       ::selection {
         background: var(--theme-bg-soft);

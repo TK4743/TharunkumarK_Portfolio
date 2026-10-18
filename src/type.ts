@@ -12,7 +12,7 @@ export type Project = {
   date?: string; 
   githubLink?: string;
   driveLink?: string;
-  category: 'frontend' | 'backend' | 'iot' | 'fullstack';
+  category: 'frontend' | 'backend' | 'iot' | 'fullstack' | 'ai';
   features?: string[];
   challenges?: string;
   architecture?: string;
@@ -44,7 +44,7 @@ export type CertificationItem = {
   issuer: string;
   year?: string; // Made optional as it's missing in some constants
   link?: string;
-  type?: 'CERTIFICATE' | 'BADGE' | 'GOLD CERTIFICATE';
+  type?: 'CERTIFICATE' | 'BADGE' | 'GOLD CERTIFICATE' | 'COURSE';
 };
 
 // NEW: Internship type
@@ -60,12 +60,19 @@ export type AchievementItem = {
   title: string;
   organization: string;
   year: string;
+  date?: string;
+  event?: string;
+  department?: string;
   description: string;
   type?: string;
   prize?: string;
   score?: string;
-  category?: 'hackathon' | 'leadership' | 'ambassador';
-  iconName?: 'trophy' | 'rocket' | 'lightbulb' | 'graduation' | 'shield' | 'code' | 'star' | 'award';
+  category?: 'hackathon' | 'leadership' | 'ambassador' | 'creative' | 'presentation';
+  iconName?: 'trophy' | 'rocket' | 'lightbulb' | 'graduation' | 'shield' | 'code' | 'star' | 'award' | 'camera' | 'leaf';
+  certificateUrl?: string;
+  featured?: boolean;
+  teamName?: string;
+  teamMembers?: string[];
 };
 
 export type FeaturedRepoItem = {
