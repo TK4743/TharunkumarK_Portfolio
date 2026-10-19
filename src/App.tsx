@@ -767,6 +767,12 @@ interface GitHubWidgetProps {
 }
 
 const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) => {
+  const [contribStats, setContribStats] = useState<{ total: number; isLive: boolean; activeDays: number }>({
+    total: 326,
+    isLive: false,
+    activeDays: 139,
+  });
+
   return (
     <section className="py-16 sm:py-20 bg-slate-50 relative overflow-hidden">
       <div className="container mx-auto px-6">
@@ -845,12 +851,23 @@ const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) =
           </div>
 
           <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm border border-slate-100 text-center hover:shadow-md transition-all">
-            <div className="flex items-center justify-between mb-3 px-1">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-3 px-1">
               <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Contributions Activity Grid (53 Weeks)</h4>
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/60 shadow-xs">
+                  <span className={`w-1.5 h-1.5 rounded-full ${contribStats.isLive ? 'bg-emerald-500 animate-pulse' : 'bg-slate-400'}`} />
+                  {contribStats.isLive ? 'Live Synced' : 'Syncing...'}
+                </span>
+                {contribStats.total > 0 && (
+                  <span className="text-xs font-bold text-slate-700">
+                    {contribStats.total.toLocaleString()} contributions
+                  </span>
+                )}
+              </div>
             </div>
             <div className="w-full overflow-x-auto scrollbar-thin">
               <div className="inline-block min-w-[650px] max-w-full p-1">
-                <ContributionChartGrid primaryColor={primaryColor} />
+                <ContributionChartGrid primaryColor={primaryColor} onSyncStatus={setContribStats} />
               </div>
             </div>
           </div>
