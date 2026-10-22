@@ -18,18 +18,26 @@ async function syncContributions() {
         'Cache-Control': 'no-cache',
       },
     });
-    if (!res.ok) {
-      throw new Error(`HTTP ${res.status}: ${res.statusText}`);
-    }
+    if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
     svgText = await res.text();
   } catch (err) {
-    console.warn(`[sync-contributions] Could not fetch from remote (${err.message}). Checking local fallback...`);
-    const localSvgPath = path.resolve(__dirname, '../../../Tharun4743/assets/contribution-chart.svg');
-    if (fs.existsSync(localSvgPath)) {
-      svgText = fs.readFileSync(localSvgPath, 'utf8');
-      console.log('[sync-contributions] Using local Tharun4743/assets/contribution-chart.svg');
-    } else {
-      throw new Error('No remote or local contribution-chart.svg available.');
+    console.warn(`[sync-contributions] Could not fetch from GitHub raw (${err.message}). Trying jsDelivr CDN...`);
+    try {
+      const cdnRes = await fetch('https://cdn.jsdelivr.net/gh/Tharun4743/Tharun4743@main/assets/contribution-chart.svg', {
+        headers: { 'User-Agent': 'Tharunkumar-Portfolio-Sync' }
+      });
+      if (!cdnRes.ok) throw new Error(`HTTP ${cdnRes.status}`);
+      svgText = await cdnRes.text();
+      console.log('[sync-contributions] Successfully retrieved contribution-chart.svg from jsDelivr CDN.');
+    } catch (cdnErr) {
+      console.warn(`[sync-contributions] CDN fetch failed (${cdnErr.message}). Checking local fallback...`);
+      const localSvgPath = path.resolve(__dirname, '../../Tharun4743/assets/contribution-chart.svg');
+      if (fs.existsSync(localSvgPath)) {
+        svgText = fs.readFileSync(localSvgPath, 'utf8');
+        console.log('[sync-contributions] Using local Tharun4743/assets/contribution-chart.svg');
+      } else {
+        throw new Error('No remote, CDN, or local contribution-chart.svg available.');
+      }
     }
   }
 

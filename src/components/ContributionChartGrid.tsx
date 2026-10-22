@@ -105,7 +105,9 @@ export const ContributionChartGrid: React.FC<ContributionChartGridProps> = ({
     const fetchLiveContributions = async () => {
       // 1. Primary remote live source (GitHub Actions automatic sync)
       const primaryUrl = `https://raw.githubusercontent.com/Tharun4743/Tharun4743/main/assets/contribution-chart.svg?t=${Date.now()}`;
-      // 2. Local fallback static asset
+      // 2. High-availability global CDN mirror
+      const cdnUrl = `https://cdn.jsdelivr.net/gh/Tharun4743/Tharun4743@main/assets/contribution-chart.svg?t=${Date.now()}`;
+      // 3. Local fallback static asset
       const fallbackUrl = `/contribution-chart.svg?t=${Date.now()}`;
 
       const tryFetch = async (url: string) => {
@@ -122,7 +124,11 @@ export const ContributionChartGrid: React.FC<ContributionChartGridProps> = ({
         try {
           svgText = await tryFetch(primaryUrl);
         } catch {
-          svgText = await tryFetch(fallbackUrl);
+          try {
+            svgText = await tryFetch(cdnUrl);
+          } catch {
+            svgText = await tryFetch(fallbackUrl);
+          }
         }
 
         const parsed = parseContributionSvg(svgText);
