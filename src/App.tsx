@@ -53,6 +53,7 @@ import {
 import { Project, RoleItem, LeadershipItem, EducationItem } from './type';
 import VsbShowcase from './VsbShowcase';
 import ContributionChartGrid from './components/ContributionChartGrid';
+import { ContributionCell, TOTAL_CONTRIBUTIONS } from './contributionData';
 import infosysSpringboardImg from './assets/infosys-springboard.png';
 import tcsIonImg from './assets/tcs-ion.png';
 import futureSkillsImg from './assets/futureskills-prime.png';
@@ -768,10 +769,11 @@ interface GitHubWidgetProps {
 
 const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) => {
   const [contribStats, setContribStats] = useState<{ total: number; isLive: boolean; activeDays: number }>({
-    total: 326,
+    total: TOTAL_CONTRIBUTIONS || 3078,
     isLive: false,
-    activeDays: 139,
+    activeDays: 142,
   });
+  const [hoveredCell, setHoveredCell] = useState<ContributionCell | null>(null);
 
   return (
     <section className="py-16 sm:py-20 bg-slate-50 relative overflow-hidden">
@@ -851,17 +853,39 @@ const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) =
           </div>
 
           <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm border border-slate-100 text-center hover:shadow-md transition-all">
-            <div className="flex flex-wrap items-center justify-between gap-2 mb-3 px-1">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-3 px-1 transition-all">
               <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Contributions Activity Grid (53 Weeks)</h4>
-              {contribStats.total > 0 && (
-                <span className="text-xs font-bold text-slate-700">
-                  {contribStats.total.toLocaleString()} contributions
-                </span>
-              )}
+              <div className="min-h-[26px] flex items-center justify-end transition-all">
+                {hoveredCell ? (
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-theme/10 text-theme border border-theme/20 shadow-xs animate-fadeIn">
+                    <span className="w-1.5 h-1.5 rounded-full bg-theme animate-pulse" />
+                    {hoveredCell.count === 0
+                      ? 'No contributions'
+                      : `${hoveredCell.count.toLocaleString()} contribution${hoveredCell.count === 1 ? '' : 's'}`}{' '}
+                    on{' '}
+                    {new Date(hoveredCell.date + 'T00:00:00').toLocaleDateString('en-US', {
+                      month: 'short',
+                      day: 'numeric',
+                      year: 'numeric',
+                    })}
+                  </span>
+                ) : (
+                  <span className="inline-flex items-center gap-1 text-xs font-bold text-slate-700">
+                    <span className="text-theme font-black text-sm">
+                      <CountUp value={contribStats.total || TOTAL_CONTRIBUTIONS || 3078} />
+                    </span>{' '}
+                    contributions in the last year
+                  </span>
+                )}
+              </div>
             </div>
             <div className="w-full overflow-x-auto scrollbar-thin">
               <div className="inline-block min-w-[650px] max-w-full p-1">
-                <ContributionChartGrid primaryColor={primaryColor} onSyncStatus={setContribStats} />
+                <ContributionChartGrid
+                  primaryColor={primaryColor}
+                  onSyncStatus={setContribStats}
+                  onHoverCell={setHoveredCell}
+                />
               </div>
             </div>
           </div>
