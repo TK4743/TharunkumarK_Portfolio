@@ -1,4 +1,4 @@
-﻿name: Sync GitHub Contributions
+name: Sync GitHub Contributions
 
 on:
   schedule:
@@ -50,8 +50,8 @@ jobs:
       - name: Commit and push updated contribution data
         if: steps.changes.outputs.changed == 'true'
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "Tharun4743"
+          git config user.email "tharunkumark42007@gmail.com"
           git add src/contributionData.ts public/contribution-chart.svg
           git commit -m "chore: sync GitHub contributions [$(date -u '+%Y-%m-%d')]"
           git push
