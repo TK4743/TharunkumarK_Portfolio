@@ -4,6 +4,13 @@ on:
   schedule:
     # Runs daily at 01:00 UTC (06:30 IST)
     - cron: '0 1 * * *'
+  push:
+    branches:
+      - main
+    # Ignore pushes that are ONLY the bot's own sync commits to prevent infinite loop
+    paths-ignore:
+      - 'src/contributionData.ts'
+      - 'public/contribution-chart.svg'
   workflow_dispatch: # Allow manual trigger from GitHub Actions tab
 
 permissions:
@@ -13,6 +20,9 @@ jobs:
   sync:
     name: Sync Contribution Data
     runs-on: ubuntu-latest
+
+    # Skip if the commit was made by the GitHub Actions bot itself (loop guard)
+    if: github.actor != 'github-actions[bot]'
 
     steps:
       - name: Checkout repository
@@ -48,4 +58,4 @@ jobs:
 
       - name: No changes detected
         if: steps.changes.outputs.changed != 'true'
-        run: echo "No contribution changes detected. Skipping commit."
+        run: echo "Contribution data is already up-to-date. Skipping commit."
