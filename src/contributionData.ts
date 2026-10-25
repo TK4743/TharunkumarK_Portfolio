@@ -1,5 +1,5 @@
 // Auto-generated 53-week contribution data extracted from native SVG visualizer
-// Last synced: 2026-10-24T05:30:11.421Z
+// Last synced: 2026-10-25T05:47:57.982Z
 export interface ContributionCell {
   level: number;
   x: number;
@@ -14,7 +14,7 @@ export interface ContributionMonth {
   label: string;
 }
 
-export const TOTAL_CONTRIBUTIONS = 4086;
+export const TOTAL_CONTRIBUTIONS = 4939;
 
 export const CONTRIBUTION_MONTHS: ContributionMonth[] = [
   {
@@ -22,51 +22,51 @@ export const CONTRIBUTION_MONTHS: ContributionMonth[] = [
     "label": "Oct"
   },
   {
-    "x": 53,
+    "x": 40.5,
     "label": "Nov"
   },
   {
-    "x": 115.5,
+    "x": 103,
     "label": "Dec"
   },
   {
-    "x": 165.5,
+    "x": 153,
     "label": "Jan"
   },
   {
-    "x": 215.5,
+    "x": 203,
     "label": "Feb"
   },
   {
-    "x": 265.5,
+    "x": 253,
     "label": "Mar"
   },
   {
-    "x": 328,
+    "x": 315.5,
     "label": "Apr"
   },
   {
-    "x": 378,
+    "x": 365.5,
     "label": "May"
   },
   {
-    "x": 440.5,
+    "x": 428,
     "label": "Jun"
   },
   {
-    "x": 490.5,
+    "x": 478,
     "label": "Jul"
   },
   {
-    "x": 540.5,
+    "x": 528,
     "label": "Aug"
   },
   {
-    "x": 603,
+    "x": 590.5,
     "label": "Sep"
   },
   {
-    "x": 653,
+    "x": 640.5,
     "label": "Oct"
   }
 ];
@@ -76,69 +76,13 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
     "level": 0,
     "x": 28,
     "y": 20,
-    "date": "2025-10-19",
-    "count": 0,
-    "title": "No contributions on October 19th."
-  },
-  {
-    "level": 0,
-    "x": 28,
-    "y": 32.5,
-    "date": "2025-10-20",
-    "count": 0,
-    "title": "No contributions on October 20th."
-  },
-  {
-    "level": 0,
-    "x": 28,
-    "y": 45,
-    "date": "2025-10-21",
-    "count": 0,
-    "title": "No contributions on October 21st."
-  },
-  {
-    "level": 0,
-    "x": 28,
-    "y": 57.5,
-    "date": "2025-10-22",
-    "count": 0,
-    "title": "No contributions on October 22nd."
-  },
-  {
-    "level": 0,
-    "x": 28,
-    "y": 70,
-    "date": "2025-10-23",
-    "count": 0,
-    "title": "No contributions on October 23rd."
-  },
-  {
-    "level": 0,
-    "x": 28,
-    "y": 82.5,
-    "date": "2025-10-24",
-    "count": 0,
-    "title": "No contributions on October 24th."
-  },
-  {
-    "level": 0,
-    "x": 28,
-    "y": 95,
-    "date": "2025-10-25",
-    "count": 0,
-    "title": "No contributions on October 25th."
-  },
-  {
-    "level": 0,
-    "x": 40.5,
-    "y": 20,
     "date": "2025-10-26",
     "count": 0,
     "title": "No contributions on October 26th."
   },
   {
     "level": 0,
-    "x": 40.5,
+    "x": 28,
     "y": 32.5,
     "date": "2025-10-27",
     "count": 0,
@@ -146,7 +90,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 40.5,
+    "x": 28,
     "y": 45,
     "date": "2025-10-28",
     "count": 0,
@@ -154,7 +98,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 40.5,
+    "x": 28,
     "y": 57.5,
     "date": "2025-10-29",
     "count": 0,
@@ -162,7 +106,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 40.5,
+    "x": 28,
     "y": 70,
     "date": "2025-10-30",
     "count": 0,
@@ -170,7 +114,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 40.5,
+    "x": 28,
     "y": 82.5,
     "date": "2025-10-31",
     "count": 0,
@@ -178,7 +122,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 40.5,
+    "x": 28,
     "y": 95,
     "date": "2025-11-01",
     "count": 0,
@@ -186,7 +130,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 53,
+    "x": 40.5,
     "y": 20,
     "date": "2025-11-02",
     "count": 0,
@@ -194,7 +138,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 53,
+    "x": 40.5,
     "y": 32.5,
     "date": "2025-11-03",
     "count": 0,
@@ -202,7 +146,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 53,
+    "x": 40.5,
     "y": 45,
     "date": "2025-11-04",
     "count": 0,
@@ -210,7 +154,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 53,
+    "x": 40.5,
     "y": 57.5,
     "date": "2025-11-05",
     "count": 0,
@@ -218,7 +162,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 53,
+    "x": 40.5,
     "y": 70,
     "date": "2025-11-06",
     "count": 0,
@@ -226,7 +170,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 53,
+    "x": 40.5,
     "y": 82.5,
     "date": "2025-11-07",
     "count": 0,
@@ -234,7 +178,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 53,
+    "x": 40.5,
     "y": 95,
     "date": "2025-11-08",
     "count": 0,
@@ -242,7 +186,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 65.5,
+    "x": 53,
     "y": 20,
     "date": "2025-11-09",
     "count": 0,
@@ -250,7 +194,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 65.5,
+    "x": 53,
     "y": 32.5,
     "date": "2025-11-10",
     "count": 0,
@@ -258,7 +202,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 65.5,
+    "x": 53,
     "y": 45,
     "date": "2025-11-11",
     "count": 0,
@@ -266,7 +210,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 65.5,
+    "x": 53,
     "y": 57.5,
     "date": "2025-11-12",
     "count": 0,
@@ -274,7 +218,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 65.5,
+    "x": 53,
     "y": 70,
     "date": "2025-11-13",
     "count": 0,
@@ -282,7 +226,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 65.5,
+    "x": 53,
     "y": 82.5,
     "date": "2025-11-14",
     "count": 0,
@@ -290,7 +234,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 65.5,
+    "x": 53,
     "y": 95,
     "date": "2025-11-15",
     "count": 0,
@@ -298,7 +242,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 78,
+    "x": 65.5,
     "y": 20,
     "date": "2025-11-16",
     "count": 0,
@@ -306,7 +250,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 78,
+    "x": 65.5,
     "y": 32.5,
     "date": "2025-11-17",
     "count": 0,
@@ -314,7 +258,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 78,
+    "x": 65.5,
     "y": 45,
     "date": "2025-11-18",
     "count": 0,
@@ -322,7 +266,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 78,
+    "x": 65.5,
     "y": 57.5,
     "date": "2025-11-19",
     "count": 0,
@@ -330,7 +274,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 78,
+    "x": 65.5,
     "y": 70,
     "date": "2025-11-20",
     "count": 0,
@@ -338,7 +282,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 78,
+    "x": 65.5,
     "y": 82.5,
     "date": "2025-11-21",
     "count": 0,
@@ -346,7 +290,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 78,
+    "x": 65.5,
     "y": 95,
     "date": "2025-11-22",
     "count": 0,
@@ -354,7 +298,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 90.5,
+    "x": 78,
     "y": 20,
     "date": "2025-11-23",
     "count": 0,
@@ -362,7 +306,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 90.5,
+    "x": 78,
     "y": 32.5,
     "date": "2025-11-24",
     "count": 0,
@@ -370,7 +314,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 90.5,
+    "x": 78,
     "y": 45,
     "date": "2025-11-25",
     "count": 0,
@@ -378,7 +322,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 90.5,
+    "x": 78,
     "y": 57.5,
     "date": "2025-11-26",
     "count": 0,
@@ -386,7 +330,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 90.5,
+    "x": 78,
     "y": 70,
     "date": "2025-11-27",
     "count": 2,
@@ -394,7 +338,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 90.5,
+    "x": 78,
     "y": 82.5,
     "date": "2025-11-28",
     "count": 5,
@@ -402,7 +346,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 90.5,
+    "x": 78,
     "y": 95,
     "date": "2025-11-29",
     "count": 4,
@@ -410,7 +354,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 103,
+    "x": 90.5,
     "y": 20,
     "date": "2025-11-30",
     "count": 1,
@@ -418,7 +362,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 103,
+    "x": 90.5,
     "y": 32.5,
     "date": "2025-12-01",
     "count": 0,
@@ -426,7 +370,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 103,
+    "x": 90.5,
     "y": 45,
     "date": "2025-12-02",
     "count": 0,
@@ -434,7 +378,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 103,
+    "x": 90.5,
     "y": 57.5,
     "date": "2025-12-03",
     "count": 1,
@@ -442,7 +386,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 103,
+    "x": 90.5,
     "y": 70,
     "date": "2025-12-04",
     "count": 1,
@@ -450,7 +394,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 103,
+    "x": 90.5,
     "y": 82.5,
     "date": "2025-12-05",
     "count": 0,
@@ -458,7 +402,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 103,
+    "x": 90.5,
     "y": 95,
     "date": "2025-12-06",
     "count": 0,
@@ -466,7 +410,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 115.5,
+    "x": 103,
     "y": 20,
     "date": "2025-12-07",
     "count": 0,
@@ -474,7 +418,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 115.5,
+    "x": 103,
     "y": 32.5,
     "date": "2025-12-08",
     "count": 0,
@@ -482,7 +426,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 115.5,
+    "x": 103,
     "y": 45,
     "date": "2025-12-09",
     "count": 0,
@@ -490,7 +434,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 115.5,
+    "x": 103,
     "y": 57.5,
     "date": "2025-12-10",
     "count": 0,
@@ -498,7 +442,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 115.5,
+    "x": 103,
     "y": 70,
     "date": "2025-12-11",
     "count": 0,
@@ -506,7 +450,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 115.5,
+    "x": 103,
     "y": 82.5,
     "date": "2025-12-12",
     "count": 1,
@@ -514,7 +458,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 115.5,
+    "x": 103,
     "y": 95,
     "date": "2025-12-13",
     "count": 0,
@@ -522,7 +466,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 128,
+    "x": 115.5,
     "y": 20,
     "date": "2025-12-14",
     "count": 0,
@@ -530,7 +474,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 128,
+    "x": 115.5,
     "y": 32.5,
     "date": "2025-12-15",
     "count": 0,
@@ -538,7 +482,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 128,
+    "x": 115.5,
     "y": 45,
     "date": "2025-12-16",
     "count": 0,
@@ -546,7 +490,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 128,
+    "x": 115.5,
     "y": 57.5,
     "date": "2025-12-17",
     "count": 0,
@@ -554,7 +498,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 128,
+    "x": 115.5,
     "y": 70,
     "date": "2025-12-18",
     "count": 0,
@@ -562,7 +506,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 128,
+    "x": 115.5,
     "y": 82.5,
     "date": "2025-12-19",
     "count": 2,
@@ -570,7 +514,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 128,
+    "x": 115.5,
     "y": 95,
     "date": "2025-12-20",
     "count": 2,
@@ -578,7 +522,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 140.5,
+    "x": 128,
     "y": 20,
     "date": "2025-12-21",
     "count": 0,
@@ -586,7 +530,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 140.5,
+    "x": 128,
     "y": 32.5,
     "date": "2025-12-22",
     "count": 0,
@@ -594,7 +538,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 140.5,
+    "x": 128,
     "y": 45,
     "date": "2025-12-23",
     "count": 0,
@@ -602,7 +546,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 140.5,
+    "x": 128,
     "y": 57.5,
     "date": "2025-12-24",
     "count": 10,
@@ -610,7 +554,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 140.5,
+    "x": 128,
     "y": 70,
     "date": "2025-12-25",
     "count": 0,
@@ -618,7 +562,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 140.5,
+    "x": 128,
     "y": 82.5,
     "date": "2025-12-26",
     "count": 0,
@@ -626,7 +570,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 140.5,
+    "x": 128,
     "y": 95,
     "date": "2025-12-27",
     "count": 0,
@@ -634,7 +578,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 153,
+    "x": 140.5,
     "y": 20,
     "date": "2025-12-28",
     "count": 0,
@@ -642,7 +586,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 153,
+    "x": 140.5,
     "y": 32.5,
     "date": "2025-12-29",
     "count": 0,
@@ -650,7 +594,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 153,
+    "x": 140.5,
     "y": 45,
     "date": "2025-12-30",
     "count": 0,
@@ -658,7 +602,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 153,
+    "x": 140.5,
     "y": 57.5,
     "date": "2025-12-31",
     "count": 0,
@@ -666,7 +610,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 153,
+    "x": 140.5,
     "y": 70,
     "date": "2026-01-01",
     "count": 1,
@@ -674,7 +618,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 153,
+    "x": 140.5,
     "y": 82.5,
     "date": "2026-01-02",
     "count": 0,
@@ -682,7 +626,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 153,
+    "x": 140.5,
     "y": 95,
     "date": "2026-01-03",
     "count": 0,
@@ -690,7 +634,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 165.5,
+    "x": 153,
     "y": 20,
     "date": "2026-01-04",
     "count": 0,
@@ -698,7 +642,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 165.5,
+    "x": 153,
     "y": 32.5,
     "date": "2026-01-05",
     "count": 0,
@@ -706,7 +650,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 165.5,
+    "x": 153,
     "y": 45,
     "date": "2026-01-06",
     "count": 0,
@@ -714,7 +658,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 165.5,
+    "x": 153,
     "y": 57.5,
     "date": "2026-01-07",
     "count": 0,
@@ -722,7 +666,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 165.5,
+    "x": 153,
     "y": 70,
     "date": "2026-01-08",
     "count": 0,
@@ -730,7 +674,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 165.5,
+    "x": 153,
     "y": 82.5,
     "date": "2026-01-09",
     "count": 0,
@@ -738,7 +682,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 165.5,
+    "x": 153,
     "y": 95,
     "date": "2026-01-10",
     "count": 0,
@@ -746,7 +690,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 178,
+    "x": 165.5,
     "y": 20,
     "date": "2026-01-11",
     "count": 0,
@@ -754,7 +698,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 178,
+    "x": 165.5,
     "y": 32.5,
     "date": "2026-01-12",
     "count": 0,
@@ -762,7 +706,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 178,
+    "x": 165.5,
     "y": 45,
     "date": "2026-01-13",
     "count": 0,
@@ -770,7 +714,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 178,
+    "x": 165.5,
     "y": 57.5,
     "date": "2026-01-14",
     "count": 0,
@@ -778,7 +722,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 178,
+    "x": 165.5,
     "y": 70,
     "date": "2026-01-15",
     "count": 5,
@@ -786,7 +730,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 178,
+    "x": 165.5,
     "y": 82.5,
     "date": "2026-01-16",
     "count": 5,
@@ -794,7 +738,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 178,
+    "x": 165.5,
     "y": 95,
     "date": "2026-01-17",
     "count": 18,
@@ -802,7 +746,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 190.5,
+    "x": 178,
     "y": 20,
     "date": "2026-01-18",
     "count": 0,
@@ -810,7 +754,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 190.5,
+    "x": 178,
     "y": 32.5,
     "date": "2026-01-19",
     "count": 3,
@@ -818,7 +762,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 190.5,
+    "x": 178,
     "y": 45,
     "date": "2026-01-20",
     "count": 0,
@@ -826,7 +770,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 190.5,
+    "x": 178,
     "y": 57.5,
     "date": "2026-01-21",
     "count": 0,
@@ -834,7 +778,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 190.5,
+    "x": 178,
     "y": 70,
     "date": "2026-01-22",
     "count": 0,
@@ -842,7 +786,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 190.5,
+    "x": 178,
     "y": 82.5,
     "date": "2026-01-23",
     "count": 0,
@@ -850,7 +794,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 190.5,
+    "x": 178,
     "y": 95,
     "date": "2026-01-24",
     "count": 0,
@@ -858,7 +802,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 203,
+    "x": 190.5,
     "y": 20,
     "date": "2026-01-25",
     "count": 0,
@@ -866,7 +810,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 203,
+    "x": 190.5,
     "y": 32.5,
     "date": "2026-01-26",
     "count": 0,
@@ -874,7 +818,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 203,
+    "x": 190.5,
     "y": 45,
     "date": "2026-01-27",
     "count": 0,
@@ -882,7 +826,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 203,
+    "x": 190.5,
     "y": 57.5,
     "date": "2026-01-28",
     "count": 0,
@@ -890,7 +834,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 203,
+    "x": 190.5,
     "y": 70,
     "date": "2026-01-29",
     "count": 0,
@@ -898,7 +842,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 203,
+    "x": 190.5,
     "y": 82.5,
     "date": "2026-01-30",
     "count": 0,
@@ -906,7 +850,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 203,
+    "x": 190.5,
     "y": 95,
     "date": "2026-01-31",
     "count": 0,
@@ -914,7 +858,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 215.5,
+    "x": 203,
     "y": 20,
     "date": "2026-02-01",
     "count": 0,
@@ -922,7 +866,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 215.5,
+    "x": 203,
     "y": 32.5,
     "date": "2026-02-02",
     "count": 0,
@@ -930,7 +874,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 215.5,
+    "x": 203,
     "y": 45,
     "date": "2026-02-03",
     "count": 0,
@@ -938,7 +882,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 215.5,
+    "x": 203,
     "y": 57.5,
     "date": "2026-02-04",
     "count": 0,
@@ -946,7 +890,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 215.5,
+    "x": 203,
     "y": 70,
     "date": "2026-02-05",
     "count": 0,
@@ -954,7 +898,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 215.5,
+    "x": 203,
     "y": 82.5,
     "date": "2026-02-06",
     "count": 0,
@@ -962,7 +906,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 215.5,
+    "x": 203,
     "y": 95,
     "date": "2026-02-07",
     "count": 3,
@@ -970,7 +914,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 228,
+    "x": 215.5,
     "y": 20,
     "date": "2026-02-08",
     "count": 0,
@@ -978,7 +922,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 228,
+    "x": 215.5,
     "y": 32.5,
     "date": "2026-02-09",
     "count": 0,
@@ -986,7 +930,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 228,
+    "x": 215.5,
     "y": 45,
     "date": "2026-02-10",
     "count": 0,
@@ -994,7 +938,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 228,
+    "x": 215.5,
     "y": 57.5,
     "date": "2026-02-11",
     "count": 0,
@@ -1002,7 +946,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 228,
+    "x": 215.5,
     "y": 70,
     "date": "2026-02-12",
     "count": 2,
@@ -1010,7 +954,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 228,
+    "x": 215.5,
     "y": 82.5,
     "date": "2026-02-13",
     "count": 0,
@@ -1018,7 +962,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 228,
+    "x": 215.5,
     "y": 95,
     "date": "2026-02-14",
     "count": 0,
@@ -1026,7 +970,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 240.5,
+    "x": 228,
     "y": 20,
     "date": "2026-02-15",
     "count": 0,
@@ -1034,7 +978,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 240.5,
+    "x": 228,
     "y": 32.5,
     "date": "2026-02-16",
     "count": 0,
@@ -1042,7 +986,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 240.5,
+    "x": 228,
     "y": 45,
     "date": "2026-02-17",
     "count": 0,
@@ -1050,7 +994,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 240.5,
+    "x": 228,
     "y": 57.5,
     "date": "2026-02-18",
     "count": 0,
@@ -1058,7 +1002,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 240.5,
+    "x": 228,
     "y": 70,
     "date": "2026-02-19",
     "count": 0,
@@ -1066,7 +1010,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 240.5,
+    "x": 228,
     "y": 82.5,
     "date": "2026-02-20",
     "count": 0,
@@ -1074,7 +1018,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 240.5,
+    "x": 228,
     "y": 95,
     "date": "2026-02-21",
     "count": 1,
@@ -1082,7 +1026,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 253,
+    "x": 240.5,
     "y": 20,
     "date": "2026-02-22",
     "count": 0,
@@ -1090,7 +1034,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 253,
+    "x": 240.5,
     "y": 32.5,
     "date": "2026-02-23",
     "count": 0,
@@ -1098,7 +1042,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 253,
+    "x": 240.5,
     "y": 45,
     "date": "2026-02-24",
     "count": 0,
@@ -1106,7 +1050,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 253,
+    "x": 240.5,
     "y": 57.5,
     "date": "2026-02-25",
     "count": 0,
@@ -1114,7 +1058,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 253,
+    "x": 240.5,
     "y": 70,
     "date": "2026-02-26",
     "count": 0,
@@ -1122,7 +1066,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 253,
+    "x": 240.5,
     "y": 82.5,
     "date": "2026-02-27",
     "count": 0,
@@ -1130,7 +1074,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 253,
+    "x": 240.5,
     "y": 95,
     "date": "2026-02-28",
     "count": 0,
@@ -1138,7 +1082,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 265.5,
+    "x": 253,
     "y": 20,
     "date": "2026-03-01",
     "count": 0,
@@ -1146,7 +1090,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 265.5,
+    "x": 253,
     "y": 32.5,
     "date": "2026-03-02",
     "count": 4,
@@ -1154,7 +1098,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 265.5,
+    "x": 253,
     "y": 45,
     "date": "2026-03-03",
     "count": 1,
@@ -1162,7 +1106,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 265.5,
+    "x": 253,
     "y": 57.5,
     "date": "2026-03-04",
     "count": 0,
@@ -1170,7 +1114,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 265.5,
+    "x": 253,
     "y": 70,
     "date": "2026-03-05",
     "count": 0,
@@ -1178,7 +1122,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 265.5,
+    "x": 253,
     "y": 82.5,
     "date": "2026-03-06",
     "count": 0,
@@ -1186,7 +1130,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 265.5,
+    "x": 253,
     "y": 95,
     "date": "2026-03-07",
     "count": 0,
@@ -1194,7 +1138,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 278,
+    "x": 265.5,
     "y": 20,
     "date": "2026-03-08",
     "count": 0,
@@ -1202,7 +1146,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 278,
+    "x": 265.5,
     "y": 32.5,
     "date": "2026-03-09",
     "count": 3,
@@ -1210,7 +1154,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 278,
+    "x": 265.5,
     "y": 45,
     "date": "2026-03-10",
     "count": 0,
@@ -1218,7 +1162,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 278,
+    "x": 265.5,
     "y": 57.5,
     "date": "2026-03-11",
     "count": 0,
@@ -1226,7 +1170,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 278,
+    "x": 265.5,
     "y": 70,
     "date": "2026-03-12",
     "count": 0,
@@ -1234,7 +1178,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 278,
+    "x": 265.5,
     "y": 82.5,
     "date": "2026-03-13",
     "count": 0,
@@ -1242,7 +1186,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 278,
+    "x": 265.5,
     "y": 95,
     "date": "2026-03-14",
     "count": 0,
@@ -1250,7 +1194,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 290.5,
+    "x": 278,
     "y": 20,
     "date": "2026-03-15",
     "count": 2,
@@ -1258,7 +1202,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 290.5,
+    "x": 278,
     "y": 32.5,
     "date": "2026-03-16",
     "count": 0,
@@ -1266,7 +1210,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 290.5,
+    "x": 278,
     "y": 45,
     "date": "2026-03-17",
     "count": 0,
@@ -1274,7 +1218,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 290.5,
+    "x": 278,
     "y": 57.5,
     "date": "2026-03-18",
     "count": 0,
@@ -1282,7 +1226,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 290.5,
+    "x": 278,
     "y": 70,
     "date": "2026-03-19",
     "count": 0,
@@ -1290,7 +1234,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 290.5,
+    "x": 278,
     "y": 82.5,
     "date": "2026-03-20",
     "count": 0,
@@ -1298,7 +1242,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 290.5,
+    "x": 278,
     "y": 95,
     "date": "2026-03-21",
     "count": 12,
@@ -1306,7 +1250,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 303,
+    "x": 290.5,
     "y": 20,
     "date": "2026-03-22",
     "count": 39,
@@ -1314,7 +1258,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 303,
+    "x": 290.5,
     "y": 32.5,
     "date": "2026-03-23",
     "count": 3,
@@ -1322,7 +1266,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 303,
+    "x": 290.5,
     "y": 45,
     "date": "2026-03-24",
     "count": 2,
@@ -1330,7 +1274,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 303,
+    "x": 290.5,
     "y": 57.5,
     "date": "2026-03-25",
     "count": 0,
@@ -1338,7 +1282,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 303,
+    "x": 290.5,
     "y": 70,
     "date": "2026-03-26",
     "count": 0,
@@ -1346,7 +1290,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 303,
+    "x": 290.5,
     "y": 82.5,
     "date": "2026-03-27",
     "count": 0,
@@ -1354,7 +1298,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 303,
+    "x": 290.5,
     "y": 95,
     "date": "2026-03-28",
     "count": 0,
@@ -1362,7 +1306,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 315.5,
+    "x": 303,
     "y": 20,
     "date": "2026-03-29",
     "count": 0,
@@ -1370,7 +1314,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 315.5,
+    "x": 303,
     "y": 32.5,
     "date": "2026-03-30",
     "count": 0,
@@ -1378,7 +1322,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 315.5,
+    "x": 303,
     "y": 45,
     "date": "2026-03-31",
     "count": 0,
@@ -1386,7 +1330,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 315.5,
+    "x": 303,
     "y": 57.5,
     "date": "2026-04-01",
     "count": 0,
@@ -1394,7 +1338,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 315.5,
+    "x": 303,
     "y": 70,
     "date": "2026-04-02",
     "count": 0,
@@ -1402,7 +1346,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 315.5,
+    "x": 303,
     "y": 82.5,
     "date": "2026-04-03",
     "count": 0,
@@ -1410,7 +1354,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 315.5,
+    "x": 303,
     "y": 95,
     "date": "2026-04-04",
     "count": 0,
@@ -1418,7 +1362,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 328,
+    "x": 315.5,
     "y": 20,
     "date": "2026-04-05",
     "count": 0,
@@ -1426,7 +1370,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 328,
+    "x": 315.5,
     "y": 32.5,
     "date": "2026-04-06",
     "count": 0,
@@ -1434,7 +1378,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 328,
+    "x": 315.5,
     "y": 45,
     "date": "2026-04-07",
     "count": 0,
@@ -1442,7 +1386,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 328,
+    "x": 315.5,
     "y": 57.5,
     "date": "2026-04-08",
     "count": 0,
@@ -1450,7 +1394,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 328,
+    "x": 315.5,
     "y": 70,
     "date": "2026-04-09",
     "count": 0,
@@ -1458,7 +1402,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 328,
+    "x": 315.5,
     "y": 82.5,
     "date": "2026-04-10",
     "count": 0,
@@ -1466,7 +1410,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 328,
+    "x": 315.5,
     "y": 95,
     "date": "2026-04-11",
     "count": 0,
@@ -1474,7 +1418,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 340.5,
+    "x": 328,
     "y": 20,
     "date": "2026-04-12",
     "count": 32,
@@ -1482,7 +1426,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 340.5,
+    "x": 328,
     "y": 32.5,
     "date": "2026-04-13",
     "count": 5,
@@ -1490,7 +1434,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 340.5,
+    "x": 328,
     "y": 45,
     "date": "2026-04-14",
     "count": 0,
@@ -1498,7 +1442,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 340.5,
+    "x": 328,
     "y": 57.5,
     "date": "2026-04-15",
     "count": 0,
@@ -1506,7 +1450,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 340.5,
+    "x": 328,
     "y": 70,
     "date": "2026-04-16",
     "count": 0,
@@ -1514,7 +1458,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 340.5,
+    "x": 328,
     "y": 82.5,
     "date": "2026-04-17",
     "count": 0,
@@ -1522,7 +1466,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 340.5,
+    "x": 328,
     "y": 95,
     "date": "2026-04-18",
     "count": 0,
@@ -1530,7 +1474,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 353,
+    "x": 340.5,
     "y": 20,
     "date": "2026-04-19",
     "count": 0,
@@ -1538,7 +1482,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 353,
+    "x": 340.5,
     "y": 32.5,
     "date": "2026-04-20",
     "count": 0,
@@ -1546,7 +1490,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 353,
+    "x": 340.5,
     "y": 45,
     "date": "2026-04-21",
     "count": 0,
@@ -1554,7 +1498,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 353,
+    "x": 340.5,
     "y": 57.5,
     "date": "2026-04-22",
     "count": 0,
@@ -1562,7 +1506,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 353,
+    "x": 340.5,
     "y": 70,
     "date": "2026-04-23",
     "count": 0,
@@ -1570,7 +1514,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 353,
+    "x": 340.5,
     "y": 82.5,
     "date": "2026-04-24",
     "count": 0,
@@ -1578,7 +1522,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 353,
+    "x": 340.5,
     "y": 95,
     "date": "2026-04-25",
     "count": 2,
@@ -1586,7 +1530,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 365.5,
+    "x": 353,
     "y": 20,
     "date": "2026-04-26",
     "count": 0,
@@ -1594,7 +1538,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 365.5,
+    "x": 353,
     "y": 32.5,
     "date": "2026-04-27",
     "count": 0,
@@ -1602,7 +1546,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 365.5,
+    "x": 353,
     "y": 45,
     "date": "2026-04-28",
     "count": 0,
@@ -1610,7 +1554,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 365.5,
+    "x": 353,
     "y": 57.5,
     "date": "2026-04-29",
     "count": 0,
@@ -1618,7 +1562,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 365.5,
+    "x": 353,
     "y": 70,
     "date": "2026-04-30",
     "count": 0,
@@ -1626,7 +1570,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 365.5,
+    "x": 353,
     "y": 82.5,
     "date": "2026-05-01",
     "count": 0,
@@ -1634,7 +1578,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 365.5,
+    "x": 353,
     "y": 95,
     "date": "2026-05-02",
     "count": 0,
@@ -1642,7 +1586,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 378,
+    "x": 365.5,
     "y": 20,
     "date": "2026-05-03",
     "count": 0,
@@ -1650,7 +1594,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 378,
+    "x": 365.5,
     "y": 32.5,
     "date": "2026-05-04",
     "count": 0,
@@ -1658,7 +1602,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 378,
+    "x": 365.5,
     "y": 45,
     "date": "2026-05-05",
     "count": 0,
@@ -1666,7 +1610,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 378,
+    "x": 365.5,
     "y": 57.5,
     "date": "2026-05-06",
     "count": 0,
@@ -1674,7 +1618,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 378,
+    "x": 365.5,
     "y": 70,
     "date": "2026-05-07",
     "count": 0,
@@ -1682,7 +1626,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 378,
+    "x": 365.5,
     "y": 82.5,
     "date": "2026-05-08",
     "count": 0,
@@ -1690,7 +1634,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 378,
+    "x": 365.5,
     "y": 95,
     "date": "2026-05-09",
     "count": 0,
@@ -1698,7 +1642,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 390.5,
+    "x": 378,
     "y": 20,
     "date": "2026-05-10",
     "count": 0,
@@ -1706,7 +1650,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 390.5,
+    "x": 378,
     "y": 32.5,
     "date": "2026-05-11",
     "count": 0,
@@ -1714,7 +1658,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 390.5,
+    "x": 378,
     "y": 45,
     "date": "2026-05-12",
     "count": 0,
@@ -1722,7 +1666,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 390.5,
+    "x": 378,
     "y": 57.5,
     "date": "2026-05-13",
     "count": 0,
@@ -1730,7 +1674,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 390.5,
+    "x": 378,
     "y": 70,
     "date": "2026-05-14",
     "count": 0,
@@ -1738,7 +1682,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 390.5,
+    "x": 378,
     "y": 82.5,
     "date": "2026-05-15",
     "count": 0,
@@ -1746,7 +1690,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 390.5,
+    "x": 378,
     "y": 95,
     "date": "2026-05-16",
     "count": 0,
@@ -1754,7 +1698,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 403,
+    "x": 390.5,
     "y": 20,
     "date": "2026-05-17",
     "count": 0,
@@ -1762,7 +1706,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 403,
+    "x": 390.5,
     "y": 32.5,
     "date": "2026-05-18",
     "count": 0,
@@ -1770,7 +1714,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 403,
+    "x": 390.5,
     "y": 45,
     "date": "2026-05-19",
     "count": 0,
@@ -1778,7 +1722,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 403,
+    "x": 390.5,
     "y": 57.5,
     "date": "2026-05-20",
     "count": 0,
@@ -1786,7 +1730,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 403,
+    "x": 390.5,
     "y": 70,
     "date": "2026-05-21",
     "count": 0,
@@ -1794,7 +1738,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 403,
+    "x": 390.5,
     "y": 82.5,
     "date": "2026-05-22",
     "count": 0,
@@ -1802,7 +1746,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 403,
+    "x": 390.5,
     "y": 95,
     "date": "2026-05-23",
     "count": 0,
@@ -1810,7 +1754,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 415.5,
+    "x": 403,
     "y": 20,
     "date": "2026-05-24",
     "count": 0,
@@ -1818,7 +1762,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 415.5,
+    "x": 403,
     "y": 32.5,
     "date": "2026-05-25",
     "count": 0,
@@ -1826,7 +1770,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 415.5,
+    "x": 403,
     "y": 45,
     "date": "2026-05-26",
     "count": 0,
@@ -1834,7 +1778,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 415.5,
+    "x": 403,
     "y": 57.5,
     "date": "2026-05-27",
     "count": 0,
@@ -1842,7 +1786,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 415.5,
+    "x": 403,
     "y": 70,
     "date": "2026-05-28",
     "count": 0,
@@ -1850,7 +1794,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 415.5,
+    "x": 403,
     "y": 82.5,
     "date": "2026-05-29",
     "count": 0,
@@ -1858,7 +1802,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 415.5,
+    "x": 403,
     "y": 95,
     "date": "2026-05-30",
     "count": 0,
@@ -1866,7 +1810,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 428,
+    "x": 415.5,
     "y": 20,
     "date": "2026-05-31",
     "count": 0,
@@ -1874,7 +1818,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 428,
+    "x": 415.5,
     "y": 32.5,
     "date": "2026-06-01",
     "count": 0,
@@ -1882,7 +1826,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 428,
+    "x": 415.5,
     "y": 45,
     "date": "2026-06-02",
     "count": 0,
@@ -1890,7 +1834,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 428,
+    "x": 415.5,
     "y": 57.5,
     "date": "2026-06-03",
     "count": 0,
@@ -1898,7 +1842,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 428,
+    "x": 415.5,
     "y": 70,
     "date": "2026-06-04",
     "count": 1,
@@ -1906,7 +1850,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 428,
+    "x": 415.5,
     "y": 82.5,
     "date": "2026-06-05",
     "count": 3,
@@ -1914,7 +1858,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 428,
+    "x": 415.5,
     "y": 95,
     "date": "2026-06-06",
     "count": 1,
@@ -1922,7 +1866,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 440.5,
+    "x": 428,
     "y": 20,
     "date": "2026-06-07",
     "count": 0,
@@ -1930,7 +1874,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 440.5,
+    "x": 428,
     "y": 32.5,
     "date": "2026-06-08",
     "count": 0,
@@ -1938,7 +1882,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 440.5,
+    "x": 428,
     "y": 45,
     "date": "2026-06-09",
     "count": 0,
@@ -1946,7 +1890,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 440.5,
+    "x": 428,
     "y": 57.5,
     "date": "2026-06-10",
     "count": 0,
@@ -1954,7 +1898,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 440.5,
+    "x": 428,
     "y": 70,
     "date": "2026-06-11",
     "count": 0,
@@ -1962,7 +1906,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 440.5,
+    "x": 428,
     "y": 82.5,
     "date": "2026-06-12",
     "count": 0,
@@ -1970,7 +1914,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 440.5,
+    "x": 428,
     "y": 95,
     "date": "2026-06-13",
     "count": 55,
@@ -1978,7 +1922,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 453,
+    "x": 440.5,
     "y": 20,
     "date": "2026-06-14",
     "count": 11,
@@ -1986,7 +1930,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 453,
+    "x": 440.5,
     "y": 32.5,
     "date": "2026-06-15",
     "count": 4,
@@ -1994,7 +1938,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 453,
+    "x": 440.5,
     "y": 45,
     "date": "2026-06-16",
     "count": 0,
@@ -2002,7 +1946,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 453,
+    "x": 440.5,
     "y": 57.5,
     "date": "2026-06-17",
     "count": 0,
@@ -2010,7 +1954,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 453,
+    "x": 440.5,
     "y": 70,
     "date": "2026-06-18",
     "count": 0,
@@ -2018,7 +1962,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 453,
+    "x": 440.5,
     "y": 82.5,
     "date": "2026-06-19",
     "count": 1,
@@ -2026,7 +1970,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 453,
+    "x": 440.5,
     "y": 95,
     "date": "2026-06-20",
     "count": 0,
@@ -2034,7 +1978,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 465.5,
+    "x": 453,
     "y": 20,
     "date": "2026-06-21",
     "count": 0,
@@ -2042,7 +1986,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 465.5,
+    "x": 453,
     "y": 32.5,
     "date": "2026-06-22",
     "count": 0,
@@ -2050,7 +1994,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 465.5,
+    "x": 453,
     "y": 45,
     "date": "2026-06-23",
     "count": 0,
@@ -2058,7 +2002,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 465.5,
+    "x": 453,
     "y": 57.5,
     "date": "2026-06-24",
     "count": 1,
@@ -2066,7 +2010,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 465.5,
+    "x": 453,
     "y": 70,
     "date": "2026-06-25",
     "count": 2,
@@ -2074,7 +2018,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 465.5,
+    "x": 453,
     "y": 82.5,
     "date": "2026-06-26",
     "count": 0,
@@ -2082,7 +2026,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 465.5,
+    "x": 453,
     "y": 95,
     "date": "2026-06-27",
     "count": 3,
@@ -2090,7 +2034,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 478,
+    "x": 465.5,
     "y": 20,
     "date": "2026-06-28",
     "count": 18,
@@ -2098,7 +2042,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 478,
+    "x": 465.5,
     "y": 32.5,
     "date": "2026-06-29",
     "count": 1,
@@ -2106,7 +2050,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 478,
+    "x": 465.5,
     "y": 45,
     "date": "2026-06-30",
     "count": 3,
@@ -2114,7 +2058,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 478,
+    "x": 465.5,
     "y": 57.5,
     "date": "2026-07-01",
     "count": 1,
@@ -2122,7 +2066,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 478,
+    "x": 465.5,
     "y": 70,
     "date": "2026-07-02",
     "count": 3,
@@ -2130,7 +2074,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 478,
+    "x": 465.5,
     "y": 82.5,
     "date": "2026-07-03",
     "count": 0,
@@ -2138,7 +2082,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 478,
+    "x": 465.5,
     "y": 95,
     "date": "2026-07-04",
     "count": 2,
@@ -2146,7 +2090,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 490.5,
+    "x": 478,
     "y": 20,
     "date": "2026-07-05",
     "count": 1,
@@ -2154,7 +2098,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 490.5,
+    "x": 478,
     "y": 32.5,
     "date": "2026-07-06",
     "count": 1,
@@ -2162,7 +2106,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 490.5,
+    "x": 478,
     "y": 45,
     "date": "2026-07-07",
     "count": 14,
@@ -2170,7 +2114,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 490.5,
+    "x": 478,
     "y": 57.5,
     "date": "2026-07-08",
     "count": 2,
@@ -2178,7 +2122,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 490.5,
+    "x": 478,
     "y": 70,
     "date": "2026-07-09",
     "count": 3,
@@ -2186,7 +2130,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 490.5,
+    "x": 478,
     "y": 82.5,
     "date": "2026-07-10",
     "count": 2,
@@ -2194,7 +2138,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 490.5,
+    "x": 478,
     "y": 95,
     "date": "2026-07-11",
     "count": 10,
@@ -2202,7 +2146,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 0,
-    "x": 503,
+    "x": 490.5,
     "y": 20,
     "date": "2026-07-12",
     "count": 0,
@@ -2210,7 +2154,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 503,
+    "x": 490.5,
     "y": 32.5,
     "date": "2026-07-13",
     "count": 3,
@@ -2218,7 +2162,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 503,
+    "x": 490.5,
     "y": 45,
     "date": "2026-07-14",
     "count": 2,
@@ -2226,7 +2170,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 503,
+    "x": 490.5,
     "y": 57.5,
     "date": "2026-07-15",
     "count": 2,
@@ -2234,7 +2178,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 503,
+    "x": 490.5,
     "y": 70,
     "date": "2026-07-16",
     "count": 2,
@@ -2242,7 +2186,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 503,
+    "x": 490.5,
     "y": 82.5,
     "date": "2026-07-17",
     "count": 14,
@@ -2250,7 +2194,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 503,
+    "x": 490.5,
     "y": 95,
     "date": "2026-07-18",
     "count": 1,
@@ -2258,7 +2202,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 515.5,
+    "x": 503,
     "y": 20,
     "date": "2026-07-19",
     "count": 42,
@@ -2266,7 +2210,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 515.5,
+    "x": 503,
     "y": 32.5,
     "date": "2026-07-20",
     "count": 21,
@@ -2274,7 +2218,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 515.5,
+    "x": 503,
     "y": 45,
     "date": "2026-07-21",
     "count": 21,
@@ -2282,7 +2226,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 515.5,
+    "x": 503,
     "y": 57.5,
     "date": "2026-07-22",
     "count": 4,
@@ -2290,7 +2234,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 515.5,
+    "x": 503,
     "y": 70,
     "date": "2026-07-23",
     "count": 3,
@@ -2298,7 +2242,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 515.5,
+    "x": 503,
     "y": 82.5,
     "date": "2026-07-24",
     "count": 2,
@@ -2306,7 +2250,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 515.5,
+    "x": 503,
     "y": 95,
     "date": "2026-07-25",
     "count": 8,
@@ -2314,7 +2258,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 528,
+    "x": 515.5,
     "y": 20,
     "date": "2026-07-26",
     "count": 3,
@@ -2322,7 +2266,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 528,
+    "x": 515.5,
     "y": 32.5,
     "date": "2026-07-27",
     "count": 37,
@@ -2330,7 +2274,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 528,
+    "x": 515.5,
     "y": 45,
     "date": "2026-07-28",
     "count": 44,
@@ -2338,7 +2282,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 528,
+    "x": 515.5,
     "y": 57.5,
     "date": "2026-07-29",
     "count": 4,
@@ -2346,7 +2290,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 528,
+    "x": 515.5,
     "y": 70,
     "date": "2026-07-30",
     "count": 23,
@@ -2354,7 +2298,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 528,
+    "x": 515.5,
     "y": 82.5,
     "date": "2026-07-31",
     "count": 10,
@@ -2362,7 +2306,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 528,
+    "x": 515.5,
     "y": 95,
     "date": "2026-08-01",
     "count": 39,
@@ -2370,7 +2314,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 2,
-    "x": 540.5,
+    "x": 528,
     "y": 20,
     "date": "2026-08-02",
     "count": 62,
@@ -2378,7 +2322,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 540.5,
+    "x": 528,
     "y": 32.5,
     "date": "2026-08-03",
     "count": 12,
@@ -2386,7 +2330,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 540.5,
+    "x": 528,
     "y": 45,
     "date": "2026-08-04",
     "count": 1,
@@ -2394,7 +2338,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 540.5,
+    "x": 528,
     "y": 57.5,
     "date": "2026-08-05",
     "count": 15,
@@ -2402,7 +2346,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 540.5,
+    "x": 528,
     "y": 70,
     "date": "2026-08-06",
     "count": 5,
@@ -2410,7 +2354,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 540.5,
+    "x": 528,
     "y": 82.5,
     "date": "2026-08-07",
     "count": 25,
@@ -2418,7 +2362,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 540.5,
+    "x": 528,
     "y": 95,
     "date": "2026-08-08",
     "count": 10,
@@ -2426,7 +2370,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 553,
+    "x": 540.5,
     "y": 20,
     "date": "2026-08-09",
     "count": 16,
@@ -2434,7 +2378,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 553,
+    "x": 540.5,
     "y": 32.5,
     "date": "2026-08-10",
     "count": 6,
@@ -2442,15 +2386,15 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 553,
+    "x": 540.5,
     "y": 45,
     "date": "2026-08-11",
-    "count": 15,
-    "title": "15 contributions on August 11th."
+    "count": 17,
+    "title": "17 contributions on August 11th."
   },
   {
     "level": 1,
-    "x": 553,
+    "x": 540.5,
     "y": 57.5,
     "date": "2026-08-12",
     "count": 3,
@@ -2458,119 +2402,119 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 553,
+    "x": 540.5,
     "y": 70,
     "date": "2026-08-13",
     "count": 1,
     "title": "1 contribution on August 13th."
   },
   {
-    "level": 2,
-    "x": 553,
+    "level": 3,
+    "x": 540.5,
     "y": 82.5,
     "date": "2026-08-14",
-    "count": 78,
-    "title": "78 contributions on August 14th."
+    "count": 116,
+    "title": "116 contributions on August 14th."
   },
   {
     "level": 4,
-    "x": 553,
+    "x": 540.5,
     "y": 95,
     "date": "2026-08-15",
-    "count": 233,
-    "title": "233 contributions on August 15th."
+    "count": 358,
+    "title": "358 contributions on August 15th."
   },
   {
     "level": 1,
-    "x": 565.5,
+    "x": 553,
     "y": 20,
     "date": "2026-08-16",
-    "count": 30,
-    "title": "30 contributions on August 16th."
+    "count": 44,
+    "title": "44 contributions on August 16th."
   },
   {
     "level": 1,
-    "x": 565.5,
+    "x": 553,
     "y": 32.5,
     "date": "2026-08-17",
-    "count": 20,
-    "title": "20 contributions on August 17th."
+    "count": 29,
+    "title": "29 contributions on August 17th."
   },
   {
     "level": 1,
-    "x": 565.5,
+    "x": 553,
     "y": 45,
     "date": "2026-08-18",
-    "count": 18,
-    "title": "18 contributions on August 18th."
+    "count": 31,
+    "title": "31 contributions on August 18th."
   },
   {
-    "level": 1,
-    "x": 565.5,
+    "level": 2,
+    "x": 553,
     "y": 57.5,
     "date": "2026-08-19",
-    "count": 47,
-    "title": "47 contributions on August 19th."
+    "count": 65,
+    "title": "65 contributions on August 19th."
   },
   {
-    "level": 1,
-    "x": 565.5,
+    "level": 2,
+    "x": 553,
     "y": 70,
     "date": "2026-08-20",
-    "count": 44,
-    "title": "44 contributions on August 20th."
+    "count": 71,
+    "title": "71 contributions on August 20th."
   },
   {
-    "level": 1,
-    "x": 565.5,
+    "level": 2,
+    "x": 553,
     "y": 82.5,
     "date": "2026-08-21",
-    "count": 56,
-    "title": "56 contributions on August 21st."
+    "count": 88,
+    "title": "88 contributions on August 21st."
+  },
+  {
+    "level": 3,
+    "x": 553,
+    "y": 95,
+    "date": "2026-08-22",
+    "count": 146,
+    "title": "146 contributions on August 22nd."
   },
   {
     "level": 2,
     "x": 565.5,
-    "y": 95,
-    "date": "2026-08-22",
-    "count": 110,
-    "title": "110 contributions on August 22nd."
-  },
-  {
-    "level": 2,
-    "x": 578,
     "y": 20,
     "date": "2026-08-23",
-    "count": 65,
-    "title": "65 contributions on August 23rd."
+    "count": 92,
+    "title": "92 contributions on August 23rd."
   },
   {
     "level": 1,
-    "x": 578,
+    "x": 565.5,
     "y": 32.5,
     "date": "2026-08-24",
-    "count": 37,
-    "title": "37 contributions on August 24th."
+    "count": 45,
+    "title": "45 contributions on August 24th."
   },
   {
     "level": 1,
-    "x": 578,
+    "x": 565.5,
     "y": 45,
     "date": "2026-08-25",
-    "count": 19,
-    "title": "19 contributions on August 25th."
+    "count": 27,
+    "title": "27 contributions on August 25th."
   },
   {
     "level": 1,
-    "x": 578,
+    "x": 565.5,
     "y": 57.5,
     "date": "2026-08-26",
-    "count": 22,
-    "title": "22 contributions on August 26th."
+    "count": 28,
+    "title": "28 contributions on August 26th."
   },
   {
     "level": 1,
-    "x": 578,
+    "x": 565.5,
     "y": 70,
     "date": "2026-08-27",
     "count": 4,
@@ -2578,7 +2522,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 578,
+    "x": 565.5,
     "y": 82.5,
     "date": "2026-08-28",
     "count": 5,
@@ -2586,119 +2530,119 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 578,
+    "x": 565.5,
     "y": 95,
     "date": "2026-08-29",
-    "count": 18,
-    "title": "18 contributions on August 29th."
+    "count": 21,
+    "title": "21 contributions on August 29th."
+  },
+  {
+    "level": 3,
+    "x": 578,
+    "y": 20,
+    "date": "2026-08-30",
+    "count": 127,
+    "title": "127 contributions on August 30th."
+  },
+  {
+    "level": 1,
+    "x": 578,
+    "y": 32.5,
+    "date": "2026-08-31",
+    "count": 20,
+    "title": "20 contributions on August 31st."
+  },
+  {
+    "level": 1,
+    "x": 578,
+    "y": 45,
+    "date": "2026-09-01",
+    "count": 14,
+    "title": "14 contributions on September 1st."
+  },
+  {
+    "level": 1,
+    "x": 578,
+    "y": 57.5,
+    "date": "2026-09-02",
+    "count": 28,
+    "title": "28 contributions on September 2nd."
+  },
+  {
+    "level": 1,
+    "x": 578,
+    "y": 70,
+    "date": "2026-09-03",
+    "count": 34,
+    "title": "34 contributions on September 3rd."
+  },
+  {
+    "level": 3,
+    "x": 578,
+    "y": 82.5,
+    "date": "2026-09-04",
+    "count": 170,
+    "title": "170 contributions on September 4th."
+  },
+  {
+    "level": 3,
+    "x": 578,
+    "y": 95,
+    "date": "2026-09-05",
+    "count": 117,
+    "title": "117 contributions on September 5th."
   },
   {
     "level": 2,
     "x": 590.5,
     "y": 20,
-    "date": "2026-08-30",
-    "count": 88,
-    "title": "88 contributions on August 30th."
+    "date": "2026-09-06",
+    "count": 96,
+    "title": "96 contributions on September 6th."
   },
   {
     "level": 1,
     "x": 590.5,
     "y": 32.5,
-    "date": "2026-08-31",
-    "count": 17,
-    "title": "17 contributions on August 31st."
-  },
-  {
-    "level": 1,
-    "x": 590.5,
-    "y": 45,
-    "date": "2026-09-01",
-    "count": 13,
-    "title": "13 contributions on September 1st."
-  },
-  {
-    "level": 1,
-    "x": 590.5,
-    "y": 57.5,
-    "date": "2026-09-02",
-    "count": 16,
-    "title": "16 contributions on September 2nd."
-  },
-  {
-    "level": 1,
-    "x": 590.5,
-    "y": 70,
-    "date": "2026-09-03",
-    "count": 24,
-    "title": "24 contributions on September 3rd."
+    "date": "2026-09-07",
+    "count": 23,
+    "title": "23 contributions on September 7th."
   },
   {
     "level": 3,
     "x": 590.5,
-    "y": 82.5,
-    "date": "2026-09-04",
-    "count": 129,
-    "title": "129 contributions on September 4th."
-  },
-  {
-    "level": 2,
-    "x": 590.5,
-    "y": 95,
-    "date": "2026-09-05",
-    "count": 80,
-    "title": "80 contributions on September 5th."
-  },
-  {
-    "level": 2,
-    "x": 603,
-    "y": 20,
-    "date": "2026-09-06",
-    "count": 65,
-    "title": "65 contributions on September 6th."
-  },
-  {
-    "level": 1,
-    "x": 603,
-    "y": 32.5,
-    "date": "2026-09-07",
-    "count": 16,
-    "title": "16 contributions on September 7th."
-  },
-  {
-    "level": 2,
-    "x": 603,
     "y": 45,
     "date": "2026-09-08",
-    "count": 97,
-    "title": "97 contributions on September 8th."
+    "count": 144,
+    "title": "144 contributions on September 8th."
   },
   {
     "level": 1,
-    "x": 603,
+    "x": 590.5,
     "y": 57.5,
     "date": "2026-09-09",
-    "count": 7,
-    "title": "7 contributions on September 9th."
+    "count": 10,
+    "title": "10 contributions on September 9th."
   },
   {
     "level": 1,
-    "x": 603,
+    "x": 590.5,
     "y": 70,
     "date": "2026-09-10",
-    "count": 5,
-    "title": "5 contributions on September 10th."
+    "count": 7,
+    "title": "7 contributions on September 10th."
   },
   {
     "level": 1,
-    "x": 603,
+    "x": 590.5,
     "y": 82.5,
     "date": "2026-09-11",
-    "count": 13,
-    "title": "13 contributions on September 11th."
+    "count": 19,
+    "title": "19 contributions on September 11th."
   },
   {
     "level": 1,
-    "x": 603,
+    "x": 590.5,
     "y": 95,
     "date": "2026-09-12",
     "count": 8,
@@ -2706,7 +2650,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 615.5,
+    "x": 603,
     "y": 20,
     "date": "2026-09-13",
     "count": 2,
@@ -2714,7 +2658,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 615.5,
+    "x": 603,
     "y": 32.5,
     "date": "2026-09-14",
     "count": 1,
@@ -2722,7 +2666,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 615.5,
+    "x": 603,
     "y": 45,
     "date": "2026-09-15",
     "count": 8,
@@ -2730,55 +2674,55 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 615.5,
+    "x": 603,
     "y": 57.5,
     "date": "2026-09-16",
-    "count": 13,
-    "title": "13 contributions on September 16th."
+    "count": 16,
+    "title": "16 contributions on September 16th."
   },
   {
     "level": 1,
-    "x": 615.5,
+    "x": 603,
     "y": 70,
     "date": "2026-09-17",
-    "count": 23,
-    "title": "23 contributions on September 17th."
+    "count": 32,
+    "title": "32 contributions on September 17th."
   },
   {
     "level": 1,
-    "x": 615.5,
+    "x": 603,
     "y": 82.5,
     "date": "2026-09-18",
-    "count": 13,
-    "title": "13 contributions on September 18th."
+    "count": 17,
+    "title": "17 contributions on September 18th."
   },
   {
     "level": 1,
-    "x": 615.5,
+    "x": 603,
     "y": 95,
     "date": "2026-09-19",
-    "count": 25,
-    "title": "25 contributions on September 19th."
+    "count": 41,
+    "title": "41 contributions on September 19th."
   },
   {
     "level": 4,
-    "x": 628,
+    "x": 615.5,
     "y": 20,
     "date": "2026-09-20",
-    "count": 189,
-    "title": "189 contributions on September 20th."
+    "count": 195,
+    "title": "195 contributions on September 20th."
   },
   {
     "level": 2,
-    "x": 628,
+    "x": 615.5,
     "y": 32.5,
     "date": "2026-09-21",
-    "count": 100,
-    "title": "100 contributions on September 21st."
+    "count": 103,
+    "title": "103 contributions on September 21st."
   },
   {
     "level": 1,
-    "x": 628,
+    "x": 615.5,
     "y": 45,
     "date": "2026-09-22",
     "count": 45,
@@ -2786,31 +2730,31 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 628,
+    "x": 615.5,
     "y": 57.5,
     "date": "2026-09-23",
-    "count": 25,
-    "title": "25 contributions on September 23rd."
+    "count": 30,
+    "title": "30 contributions on September 23rd."
   },
   {
     "level": 1,
-    "x": 628,
+    "x": 615.5,
     "y": 70,
     "date": "2026-09-24",
-    "count": 16,
-    "title": "16 contributions on September 24th."
+    "count": 26,
+    "title": "26 contributions on September 24th."
   },
   {
     "level": 1,
-    "x": 628,
+    "x": 615.5,
     "y": 82.5,
     "date": "2026-09-25",
-    "count": 10,
-    "title": "10 contributions on September 25th."
+    "count": 16,
+    "title": "16 contributions on September 25th."
   },
   {
     "level": 1,
-    "x": 628,
+    "x": 615.5,
     "y": 95,
     "date": "2026-09-26",
     "count": 8,
@@ -2818,7 +2762,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 640.5,
+    "x": 628,
     "y": 20,
     "date": "2026-09-27",
     "count": 7,
@@ -2826,7 +2770,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 640.5,
+    "x": 628,
     "y": 32.5,
     "date": "2026-09-28",
     "count": 5,
@@ -2834,7 +2778,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 640.5,
+    "x": 628,
     "y": 45,
     "date": "2026-09-29",
     "count": 33,
@@ -2842,7 +2786,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 640.5,
+    "x": 628,
     "y": 57.5,
     "date": "2026-09-30",
     "count": 29,
@@ -2850,7 +2794,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 640.5,
+    "x": 628,
     "y": 70,
     "date": "2026-10-01",
     "count": 11,
@@ -2858,7 +2802,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 640.5,
+    "x": 628,
     "y": 82.5,
     "date": "2026-10-02",
     "count": 10,
@@ -2866,7 +2810,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 640.5,
+    "x": 628,
     "y": 95,
     "date": "2026-10-03",
     "count": 18,
@@ -2874,7 +2818,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 653,
+    "x": 640.5,
     "y": 20,
     "date": "2026-10-04",
     "count": 17,
@@ -2882,7 +2826,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 653,
+    "x": 640.5,
     "y": 32.5,
     "date": "2026-10-05",
     "count": 12,
@@ -2890,7 +2834,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 653,
+    "x": 640.5,
     "y": 45,
     "date": "2026-10-06",
     "count": 4,
@@ -2898,7 +2842,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 653,
+    "x": 640.5,
     "y": 57.5,
     "date": "2026-10-07",
     "count": 6,
@@ -2906,7 +2850,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 653,
+    "x": 640.5,
     "y": 70,
     "date": "2026-10-08",
     "count": 11,
@@ -2914,7 +2858,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 653,
+    "x": 640.5,
     "y": 82.5,
     "date": "2026-10-09",
     "count": 4,
@@ -2922,15 +2866,15 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 653,
+    "x": 640.5,
     "y": 95,
     "date": "2026-10-10",
-    "count": 4,
-    "title": "4 contributions on October 10th."
+    "count": 5,
+    "title": "5 contributions on October 10th."
   },
   {
     "level": 1,
-    "x": 665.5,
+    "x": 653,
     "y": 20,
     "date": "2026-10-11",
     "count": 6,
@@ -2938,7 +2882,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 665.5,
+    "x": 653,
     "y": 32.5,
     "date": "2026-10-12",
     "count": 16,
@@ -2946,7 +2890,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 665.5,
+    "x": 653,
     "y": 45,
     "date": "2026-10-13",
     "count": 9,
@@ -2954,7 +2898,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 665.5,
+    "x": 653,
     "y": 57.5,
     "date": "2026-10-14",
     "count": 12,
@@ -2962,7 +2906,7 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 1,
-    "x": 665.5,
+    "x": 653,
     "y": 70,
     "date": "2026-10-15",
     "count": 14,
@@ -2970,23 +2914,23 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 4,
-    "x": 665.5,
+    "x": 653,
     "y": 82.5,
     "date": "2026-10-16",
-    "count": 213,
-    "title": "213 contributions on October 16th."
+    "count": 219,
+    "title": "219 contributions on October 16th."
   },
   {
     "level": 3,
-    "x": 665.5,
+    "x": 653,
     "y": 95,
     "date": "2026-10-17",
-    "count": 134,
-    "title": "134 contributions on October 17th."
+    "count": 136,
+    "title": "136 contributions on October 17th."
   },
   {
     "level": 2,
-    "x": 678,
+    "x": 665.5,
     "y": 20,
     "date": "2026-10-18",
     "count": 96,
@@ -2994,50 +2938,106 @@ export const CONTRIBUTION_CELLS: ContributionCell[] = [
   },
   {
     "level": 2,
-    "x": 678,
+    "x": 665.5,
     "y": 32.5,
     "date": "2026-10-19",
-    "count": 75,
-    "title": "75 contributions on October 19th."
+    "count": 93,
+    "title": "93 contributions on October 19th."
   },
   {
     "level": 3,
-    "x": 678,
+    "x": 665.5,
     "y": 45,
     "date": "2026-10-20",
-    "count": 115,
-    "title": "115 contributions on October 20th."
+    "count": 119,
+    "title": "119 contributions on October 20th."
   },
   {
     "level": 4,
-    "x": 678,
+    "x": 665.5,
     "y": 57.5,
     "date": "2026-10-21",
-    "count": 224,
-    "title": "224 contributions on October 21st."
+    "count": 228,
+    "title": "228 contributions on October 21st."
   },
   {
     "level": 4,
-    "x": 678,
+    "x": 665.5,
     "y": 70,
     "date": "2026-10-22",
-    "count": 179,
-    "title": "179 contributions on October 22nd."
+    "count": 183,
+    "title": "183 contributions on October 22nd."
   },
   {
     "level": 3,
-    "x": 678,
+    "x": 665.5,
     "y": 82.5,
     "date": "2026-10-23",
-    "count": 161,
-    "title": "161 contributions on October 23rd."
+    "count": 165,
+    "title": "165 contributions on October 23rd."
+  },
+  {
+    "level": 3,
+    "x": 665.5,
+    "y": 95,
+    "date": "2026-10-24",
+    "count": 139,
+    "title": "139 contributions on October 24th."
   },
   {
     "level": 1,
     "x": 678,
+    "y": 20,
+    "date": "2026-10-25",
+    "count": 32,
+    "title": "32 contributions on October 25th."
+  },
+  {
+    "level": 0,
+    "x": 678,
+    "y": 32.5,
+    "date": "2026-10-26",
+    "count": 0,
+    "title": "0 contributions on 2026-10-26"
+  },
+  {
+    "level": 0,
+    "x": 678,
+    "y": 45,
+    "date": "2026-10-27",
+    "count": 0,
+    "title": "0 contributions on 2026-10-27"
+  },
+  {
+    "level": 0,
+    "x": 678,
+    "y": 57.5,
+    "date": "2026-10-28",
+    "count": 0,
+    "title": "0 contributions on 2026-10-28"
+  },
+  {
+    "level": 0,
+    "x": 678,
+    "y": 70,
+    "date": "2026-10-29",
+    "count": 0,
+    "title": "0 contributions on 2026-10-29"
+  },
+  {
+    "level": 0,
+    "x": 678,
+    "y": 82.5,
+    "date": "2026-10-30",
+    "count": 0,
+    "title": "0 contributions on 2026-10-30"
+  },
+  {
+    "level": 0,
+    "x": 678,
     "y": 95,
-    "date": "2026-10-24",
-    "count": 28,
-    "title": "28 contributions on October 24th."
+    "date": "2026-10-31",
+    "count": 0,
+    "title": "0 contributions on 2026-10-31"
   }
 ];
