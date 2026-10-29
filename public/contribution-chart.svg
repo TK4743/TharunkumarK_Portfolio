@@ -404,8 +404,8 @@
     <rect class="day level-3" width="10" height="10" x="678" y="20" rx="2" ry="2" fill="rgba(15, 118, 110, 0.80)" data-date="2026-10-25" data-count="150"><title>150 contributions on October 25th.</title></rect>
     <rect class="day level-2" width="10" height="10" x="678" y="32.5" rx="2" ry="2" fill="rgba(15, 118, 110, 0.55)" data-date="2026-10-26" data-count="94"><title>94 contributions on October 26th.</title></rect>
     <rect class="day level-2" width="10" height="10" x="678" y="45" rx="2" ry="2" fill="rgba(15, 118, 110, 0.55)" data-date="2026-10-27" data-count="112"><title>112 contributions on October 27th.</title></rect>
-    <rect class="day level-1" width="10" height="10" x="678" y="57.5" rx="2" ry="2" fill="rgba(15, 118, 110, 0.28)" data-date="2026-10-28" data-count="29"><title>29 contributions on October 28th.</title></rect>
-    <rect class="day level-0" width="10" height="10" x="678" y="70" rx="2" ry="2" fill="#ebedf0" data-date="2026-10-29" data-count="0"><title>0 contributions on 2026-10-29</title></rect>
+    <rect class="day level-2" width="10" height="10" x="678" y="57.5" rx="2" ry="2" fill="rgba(15, 118, 110, 0.55)" data-date="2026-10-28" data-count="89"><title>89 contributions on October 28th.</title></rect>
+    <rect class="day level-1" width="10" height="10" x="678" y="70" rx="2" ry="2" fill="rgba(15, 118, 110, 0.28)" data-date="2026-10-29" data-count="28"><title>28 contributions on October 29th.</title></rect>
     <rect class="day level-0" width="10" height="10" x="678" y="82.5" rx="2" ry="2" fill="#ebedf0" data-date="2026-10-30" data-count="0"><title>0 contributions on 2026-10-30</title></rect>
     <rect class="day level-0" width="10" height="10" x="678" y="95" rx="2" ry="2" fill="#ebedf0" data-date="2026-10-31" data-count="0"><title>0 contributions on 2026-10-31</title></rect>
   </g>
