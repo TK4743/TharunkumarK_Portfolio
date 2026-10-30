@@ -24,6 +24,8 @@ Allow: /
 Allow: /assets/
 Allow: /*.png$
 Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
 Allow: /*.svg$
 
 User-agent: Googlebot-Mobile

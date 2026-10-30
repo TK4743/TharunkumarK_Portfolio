@@ -1596,14 +1596,17 @@ const App: React.FC = () => {
                   className="w-full aspect-[3/4] bg-slate-100 rounded-[3rem] shadow-2xl relative overflow-hidden transition-all duration-700 border-[8px] border-white ring-1 ring-slate-100 animate-float-avatar will-change-transform"
                 >
                   <img
+                    id="hero-profile-photo"
+                    itemProp="image"
                     src={PERSONAL_INFO.profileImage}
-                    alt={PERSONAL_INFO.name}
+                    alt={`${PERSONAL_INFO.name} — Best GitHub Profile & Full Stack Developer`}
                     loading="eager"
+                    {...({ fetchpriority: 'high' } as any)}
                     decoding="async"
                     className="w-full h-full object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-1000"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.src = 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop';
+                      target.src = '/og-image.jpg';
                     }}
                   />
                 </div>
@@ -1872,14 +1875,14 @@ const App: React.FC = () => {
                   >
                     <div className="p-4 sm:p-5 flex flex-col h-full items-center text-center">
                     {/* 1. Project Logo / Icon */}
-                    <div className="mb-2.5 flex justify-center">
+                    <div className="mb-2.5 flex justify-center" data-nosnippet="true">
                       <motion.div
                         whileHover={{ rotate: 5, scale: 1.08 }}
                         transition={{ type: "spring", stiffness: 300, damping: 15 }}
                         className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-white shadow-sm ring-1 ring-slate-200/60 relative flex-shrink-0 cursor-pointer flex items-center justify-center bg-gradient-to-br from-theme-soft to-slate-100"
                       >
                         {project.image ? (
-                          <img src={project.image} alt={project.title} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                          <img src={project.image} alt={project.title} loading="lazy" decoding="async" data-nosnippet="true" className="w-full h-full object-cover" />
                         ) : (
                           <Code size={24} className="text-theme" />
                         )}
@@ -2331,8 +2334,8 @@ const App: React.FC = () => {
                 <div className="p-8 sm:p-10 border-b border-slate-100 bg-slate-50/70 flex flex-col items-center text-center">
                   {/* 1. Logo */}
                   {activeProject.image && (
-                    <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-1 ring-slate-200/60 mb-4 flex-shrink-0">
-                      <img src={activeProject.image} alt={activeProject.title} className="w-full h-full object-cover" />
+                    <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-1 ring-slate-200/60 mb-4 flex-shrink-0" data-nosnippet="true">
+                      <img src={activeProject.image} alt={activeProject.title} loading="lazy" decoding="async" data-nosnippet="true" className="w-full h-full object-cover" />
                     </div>
                   )}
 

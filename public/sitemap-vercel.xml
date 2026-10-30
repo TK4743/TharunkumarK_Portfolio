@@ -8,9 +8,8 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://tharunkumark4743.vercel.app/og-image.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://tharunkumark4743.vercel.app/dev-cover.jpg</image:loc>
+      <image:title>Tharunkumar K — Full Stack &amp; AI Developer</image:title>
+      <image:caption>Official portrait of Tharunkumar K, Full Stack Developer &amp; AI Developer at VSB Engineering College</image:caption>
     </image:image>
   </url>
   <url>

@@ -7,6 +7,7 @@ import smartHelmetImg from './assets/smart-helmet.png';
 import goatCodeEditorImg from './assets/goat.png';
 import campusConnectImg from './assets/campus-connect.jpeg';
 import worksuiteLogo from './assets/worksuite-logo.png';
+import findoraAiImg from './assets/findora-ai.jpg';
 
 export const PERSONAL_INFO = {
   name: 'Tharunkumar K',
@@ -334,7 +335,7 @@ export const PROJECTS: Project[] = [
     status: '3rd Prize Winner',
     realWorldImplementation:
       'Awarded 3rd Prize in the 8-Hour Hackathon at VSB Engineering College (AIML Dept). Deployed live on Vercel with real-time Telegram Bot integration (@findoravsb_bot) and Supabase backend.',
-    image: 'https://raw.githubusercontent.com/Tharun4743/findora-ai/main/frontend/src/assets/findora_logo.jpg',
+    image: findoraAiImg,
     problem:
       'Campus lost and found workflows rely on disorganized noticeboards, unverified social media posts, and vulnerable manual handovers susceptible to false claims and lack of privacy.',
     solution:
