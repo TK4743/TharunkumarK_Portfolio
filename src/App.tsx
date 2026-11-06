@@ -52,9 +52,8 @@ import {
 } from './constants';
 import { Project, RoleItem, LeadershipItem, EducationItem } from './type';
 import VsbShowcase from './VsbShowcase';
-import ContributionChartGrid from './components/ContributionChartGrid';
 import { AIChatbot } from './components/AIChatbot';
-import { ContributionCell, TOTAL_CONTRIBUTIONS, GITHUB_STATS } from './contributionData';
+import { GITHUB_STATS } from './contributionData';
 import infosysSpringboardImg from './assets/infosys-springboard.png';
 import tcsIonImg from './assets/tcs-ion.png';
 import futureSkillsImg from './assets/futureskills-prime.png';
@@ -605,20 +604,13 @@ interface GitHubWidgetProps {
   };
 }
 
-const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) => {
-  const [contribStats, setContribStats] = useState<{ total: number; isLive: boolean; activeDays: number }>({
-    total: TOTAL_CONTRIBUTIONS || GITHUB_STATS.totalContributions,
-    isLive: true,
-    activeDays: GITHUB_STATS.activeDays || 163,
-  });
-  const [hoveredCell, setHoveredCell] = useState<ContributionCell | null>(null);
-
+const GitHubWidget: React.FC<GitHubWidgetProps> = ({ gitStats }) => {
   return (
     <section className="py-16 sm:py-20 bg-slate-50 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <SectionHeader
           title="GitHub Analytics"
-          subtitle="Real-time repository statistics and contributions activity tracker."
+          subtitle="Repository statistics and developer metrics."
           icon={<Github size={24} />}
         />
 
@@ -644,11 +636,7 @@ const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) =
               <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all h-full">
                 <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-theme transition-colors">Public Repos</h4>
                 <p className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-theme transition-colors">
-                  {gitStats.loading ? (
-                    <span className="animate-pulse text-slate-400">...</span>
-                  ) : (
-                    <CountUp value={gitStats.repos || GITHUB_STATS.repos} />
-                  )}
+                  <CountUp value={gitStats.repos || GITHUB_STATS.repos} />
                 </p>
               </TiltCard>
             </a>
@@ -662,11 +650,7 @@ const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) =
               <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all h-full">
                 <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-theme transition-colors">Lifetime Commits</h4>
                 <p className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-theme transition-colors">
-                  {gitStats.loading ? (
-                    <span className="animate-pulse text-slate-400">...</span>
-                  ) : (
-                    <CountUp value={gitStats.commits || GITHUB_STATS.commits} />
-                  )}
+                  <CountUp value={gitStats.commits || GITHUB_STATS.commits} />
                 </p>
               </TiltCard>
             </a>
@@ -680,52 +664,10 @@ const GitHubWidget: React.FC<GitHubWidgetProps> = ({ primaryColor, gitStats }) =
               <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all h-full">
                 <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-theme transition-colors">Followers</h4>
                 <p className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-theme transition-colors">
-                  {gitStats.loading ? (
-                    <span className="animate-pulse text-slate-400">...</span>
-                  ) : (
-                    <CountUp value={gitStats.followers || GITHUB_STATS.followers} />
-                  )}
+                  <CountUp value={gitStats.followers || GITHUB_STATS.followers} />
                 </p>
               </TiltCard>
             </a>
-          </div>
-
-          <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm border border-slate-100 text-center hover:shadow-md transition-all">
-            <div className="flex flex-wrap items-center justify-between gap-2 mb-3 px-1 transition-all">
-              <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Contributions Activity Grid (53 Weeks)</h4>
-              <div className="min-h-[26px] flex items-center justify-end transition-all">
-                {hoveredCell ? (
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-theme/10 text-theme border border-theme/20 shadow-xs animate-fadeIn">
-                    <span className="w-1.5 h-1.5 rounded-full bg-theme animate-pulse" />
-                    {hoveredCell.count === 0
-                      ? 'No contributions'
-                      : `${hoveredCell.count.toLocaleString()} contribution${hoveredCell.count === 1 ? '' : 's'}`}{' '}
-                    on{' '}
-                    {new Date(hoveredCell.date + 'T00:00:00').toLocaleDateString('en-US', {
-                      month: 'short',
-                      day: 'numeric',
-                      year: 'numeric',
-                    })}
-                  </span>
-                ) : (
-                  <span className="inline-flex items-center gap-1 text-xs font-bold text-slate-700">
-                    <span className="text-theme font-black text-sm">
-                      <CountUp value={contribStats.total || TOTAL_CONTRIBUTIONS || 3078} />
-                    </span>{' '}
-                    contributions in the last year
-                  </span>
-                )}
-              </div>
-            </div>
-            <div className="w-full overflow-x-auto scrollbar-thin">
-              <div className="inline-block min-w-[650px] max-w-full p-1">
-                <ContributionChartGrid
-                  primaryColor={primaryColor}
-                  onSyncStatus={setContribStats}
-                  onHoverCell={setHoveredCell}
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -1219,93 +1161,6 @@ const App: React.FC = () => {
       document.body.style.overflow = 'unset';
     };
   }, [activeProject]);
-
-  useEffect(() => {
-    let isMounted = true;
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 5000);
-
-    const fetchLiveGitHub = async () => {
-      // 1. Instantly hydrate from zero-rate-limit local JSON endpoint
-      try {
-        const jsonRes = await fetch(`/git-stats.json?t=${Date.now()}`, {
-          signal: controller.signal,
-          headers: { 'Cache-Control': 'no-cache' }
-        });
-        if (jsonRes.ok) {
-          const statsJson = await jsonRes.json();
-          if (isMounted && typeof statsJson.commits === 'number') {
-            setGitStats(prev => ({
-              ...prev,
-              followers: statsJson.followers ?? prev.followers,
-              repos: statsJson.repos ?? prev.repos,
-              commits: statsJson.commits ?? prev.commits,
-              loading: false
-            }));
-          }
-        }
-      } catch {
-        // Fallback continues to direct GitHub API
-      }
-
-      // 2. Fetch live data from GitHub REST & Search APIs
-      try {
-        const [userRes, commitsRes] = await Promise.allSettled([
-          fetch('https://api.github.com/users/Tharun4743', {
-            signal: controller.signal,
-            headers: {
-              'Accept': 'application/vnd.github.v3+json'
-            }
-          }),
-          fetch('https://api.github.com/search/commits?q=author:Tharun4743', {
-            signal: controller.signal,
-            headers: {
-              'Accept': 'application/vnd.github.v3+json'
-            }
-          })
-        ]);
-        clearTimeout(timeoutId);
-
-        let liveFollowers = GITHUB_STATS.followers;
-        let liveRepos = GITHUB_STATS.repos;
-        let liveCommits = GITHUB_STATS.commits;
-
-        if (userRes.status === 'fulfilled' && userRes.value.ok) {
-          const userJson = await userRes.value.json();
-          liveFollowers = typeof userJson.followers === 'number' ? userJson.followers : (Number(userJson.followers) || GITHUB_STATS.followers);
-          liveRepos = typeof userJson.public_repos === 'number' ? userJson.public_repos : (Number(userJson.public_repos) || GITHUB_STATS.repos);
-        }
-
-        if (commitsRes.status === 'fulfilled' && commitsRes.value.ok) {
-          const commitsJson = await commitsRes.value.json();
-          if (typeof commitsJson.total_count === 'number' && commitsJson.total_count > 0) {
-            liveCommits = commitsJson.total_count;
-          }
-        }
-
-        if (isMounted) {
-          setGitStats(prev => ({
-            followers: liveFollowers || prev.followers,
-            repos: liveRepos || prev.repos,
-            commits: liveCommits || prev.commits,
-            loading: false,
-            error: false
-          }));
-        }
-      } catch (err) {
-        if (isMounted) {
-          setGitStats(prev => ({ ...prev, loading: false }));
-        }
-      }
-    };
-
-    fetchLiveGitHub();
-    return () => {
-      isMounted = false;
-      clearTimeout(timeoutId);
-      controller.abort();
-    };
-  }, []);
 
   if (isDedicatedShowcase) {
     return (

@@ -29,60 +29,10 @@ interface VsbShowcaseProps {
 }
 
 export const VsbShowcase: React.FC<VsbShowcaseProps> = ({ isDedicatedPage = false, onNavigateHome, gitStats }) => {
-  const [liveStats, setLiveStats] = React.useState({
+  const liveStats = {
     repos: gitStats?.repos || GITHUB_STATS.repos,
     commits: gitStats?.commits || GITHUB_STATS.commits
-  });
-
-  React.useEffect(() => {
-    if (gitStats?.repos && gitStats?.commits) {
-      setLiveStats({ repos: gitStats.repos, commits: gitStats.commits });
-      return;
-    }
-    let isMounted = true;
-    const fetchLive = async () => {
-      // 1. Try zero-rate-limit cached stats first
-      try {
-        const jsonRes = await fetch(`/git-stats.json?t=${Date.now()}`);
-        if (jsonRes.ok) {
-          const stats = await jsonRes.json();
-          if (isMounted && typeof stats.commits === 'number') {
-            setLiveStats({
-              repos: stats.repos ?? GITHUB_STATS.repos,
-              commits: stats.commits ?? GITHUB_STATS.commits
-            });
-          }
-        }
-      } catch {
-        // Continue to API fetch
-      }
-
-      // 2. Fetch live data from GitHub APIs
-      try {
-        const [userRes, commitsRes] = await Promise.allSettled([
-          fetch('https://api.github.com/users/Tharun4743'),
-          fetch('https://api.github.com/search/commits?q=author:Tharun4743')
-        ]);
-        let repos = gitStats?.repos || GITHUB_STATS.repos;
-        let commits = gitStats?.commits || GITHUB_STATS.commits;
-        if (userRes.status === 'fulfilled' && userRes.value.ok) {
-          const u = await userRes.value.json();
-          if (typeof u.public_repos === 'number') repos = u.public_repos;
-        }
-        if (commitsRes.status === 'fulfilled' && commitsRes.value.ok) {
-          const c = await commitsRes.value.json();
-          if (typeof c.total_count === 'number' && c.total_count > 0) commits = c.total_count;
-        }
-        if (isMounted) {
-          setLiveStats({ repos, commits });
-        }
-      } catch {
-        // ignore
-      }
-    };
-    fetchLive();
-    return () => { isMounted = false; };
-  }, [gitStats?.repos, gitStats?.commits]);
+  };
 
   const featuredRepos = [
     {
