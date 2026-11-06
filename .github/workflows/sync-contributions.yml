@@ -56,7 +56,7 @@ jobs:
           git config user.name "Tharun4743"
           git config user.email "tharunkumark42007@gmail.com"
           git add src/contributionData.ts public/contribution-chart.svg public/git-stats.json
-          git commit -m "chore: sync GitHub contributions & telemetry [$(date -u '+%Y-%m-%d')]"
+          git commit -m "chore: sync GitHub contributions & telemetry [$(date -u '+%Y-%m-%d')] [skip ci] [skip netlify]"
           git push
 
       - name: No changes detected
