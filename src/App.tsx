@@ -593,88 +593,6 @@ const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose, onSele
   );
 };
 
-interface GitHubWidgetProps {
-  primaryColor: string;
-  gitStats: {
-    followers: number;
-    repos: number;
-    commits: number;
-    loading: boolean;
-    error: boolean;
-  };
-}
-
-const GitHubWidget: React.FC<GitHubWidgetProps> = ({ gitStats }) => {
-  return (
-    <section className="py-16 sm:py-20 bg-slate-50 relative overflow-hidden">
-      <div className="container mx-auto px-6">
-        <SectionHeader
-          title="GitHub Analytics"
-          subtitle="Repository statistics and developer metrics."
-          icon={<Github size={24} />}
-        />
-
-        <div className="max-w-4xl mx-auto flex flex-col gap-4 sm:gap-6">
-          <div className="flex items-center justify-end pb-2">
-            <a
-              href="https://github.com/Tharun4743"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-bold text-theme hover:underline flex items-center gap-1"
-            >
-              View on GitHub <ExternalLink size={12} />
-            </a>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-5 text-center">
-            <a
-              href="https://github.com/Tharun4743?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all h-full">
-                <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-theme transition-colors">Public Repos</h4>
-                <p className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-theme transition-colors">
-                  <CountUp value={gitStats.repos || GITHUB_STATS.repos} />
-                </p>
-              </TiltCard>
-            </a>
-
-            <a
-              href="https://github.com/Tharun4743"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all h-full">
-                <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-theme transition-colors">Lifetime Commits</h4>
-                <p className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-theme transition-colors">
-                  <CountUp value={gitStats.commits || GITHUB_STATS.commits} />
-                </p>
-              </TiltCard>
-            </a>
-
-            <a
-              href="https://github.com/Tharun4743?tab=followers"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <TiltCard className="p-4 sm:p-5 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-theme hover:shadow-lg transition-all h-full">
-                <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 group-hover:text-theme transition-colors">Followers</h4>
-                <p className="text-xl sm:text-2xl font-black text-slate-900 group-hover:text-theme transition-colors">
-                  <CountUp value={gitStats.followers || GITHUB_STATS.followers} />
-                </p>
-              </TiltCard>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
 const ContactSlider: React.FC = () => {
   const contactItems = [
     { label: 'Drop me a message', value: PERSONAL_INFO.email, link: `https://mail.google.com/mail/?view=cm&fs=1&to=${PERSONAL_INFO.email}`, icon: <Mail size={24} />, borderHover: 'hover:border-blue-500', iconHover: 'group-hover:text-blue-600 group-hover:bg-blue-50 group-hover:border-blue-300' },
@@ -1714,7 +1632,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      <GitHubWidget gitStats={gitStats} primaryColor={THEMES[activeThemeIndex]?.primary || '#4f46e5'} />
+      
 
       {/* Certifications Section */}
       <section id="certs" className="py-16 sm:py-20 bg-slate-50">
