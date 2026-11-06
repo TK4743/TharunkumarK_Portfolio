@@ -53,6 +53,7 @@ import {
 import { Project, RoleItem, LeadershipItem, EducationItem } from './type';
 import VsbShowcase from './VsbShowcase';
 import ContributionChartGrid from './components/ContributionChartGrid';
+import { AIChatbot } from './components/AIChatbot';
 import { ContributionCell, TOTAL_CONTRIBUTIONS, GITHUB_STATS } from './contributionData';
 import infosysSpringboardImg from './assets/infosys-springboard.png';
 import tcsIonImg from './assets/tcs-ion.png';
@@ -590,169 +591,6 @@ const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose, onSele
         </motion.div>
       </div>
     </AnimatePresence>
-  );
-};
-
-interface AIChatbotProps {
-  gitStats?: {
-    followers?: number;
-    repos?: number;
-    commits?: number;
-    loading?: boolean;
-    error?: boolean;
-  };
-}
-
-const AIChatbot: React.FC<AIChatbotProps> = ({ gitStats = { commits: GITHUB_STATS.commits, repos: GITHUB_STATS.repos } }) => {
-  const ALL_QUESTIONS = [
-    'What is your professional background?',
-    'Can you detail your top projects?',
-    'Where do you currently intern?',
-    'How can I get in touch?',
-    'What are your main technical skills?',
-    'What is your college CGPA?',
-    'Tell me about the Smart Helmet project',
-    'What backend tech do you use?'
-  ];
-
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeQuestions, setActiveQuestions] = useState<string[]>(ALL_QUESTIONS.slice(0, 3));
-  const [messages, setMessages] = useState<Array<{ sender: 'user' | 'bot'; text: string }>>([
-    { sender: 'bot', text: "Hello! I am Tharun's AI Portfolio Assistant. Ask me anything about his background, projects, or experience!" }
-  ]);
-  const [isTyping, setIsTyping] = useState(false);
-
-  const safeCommits = (gitStats?.commits ?? GITHUB_STATS.commits).toLocaleString();
-  const safeRepos = gitStats?.repos ?? GITHUB_STATS.repos;
-
-  const qaPairs = [
-    {
-      keywords: ['who', 'tharun', 'background', 'profile', 'about'],
-      answer: "Tharunkumar K is a passionate Full Stack Developer and IoT enthusiast from Tamil Nadu, currently pursuing a B.Tech in IT at VSB Engineering College (CGPA: 8.5). He specializes in React, Node.js, TypeScript, PostgreSQL, and embedded IoT designs."
-    },
-    {
-      keywords: ['hackathon', 'award', 'prize', 'winner', 'neural', 'thugs', 'odoo', 'achievement'],
-      answer: `Tharunkumar K is a 2× Hackathon Winner & holds the #1 Best GitHub Profile at VSB Engineering College:\n\n• Code Thugs 2K26 🥇: 1st Place National Winner for GOAT Code Editor.\n• Neural Minds 🥉: 3rd Prize in AI/ML Hackathon for FINDORA AI.\n• India Innovates 2026 & Odoo × NMIT 2026 Finalist 🇮🇳 for Work Suite HRMS.\n• Smart India Hackathon (SIH 2025 & 2026) Top 50 Nominee.\n• Best GitHub Profile @ VSB Engineering College (${safeCommits}+ commits, ${safeRepos}+ repos).`
-    },
-    {
-      keywords: ['project', 'work', 'build', 'portfolio', 'top', 'technical', 'skills', 'tech', 'stack', 'helmet', 'backend', 'task', 'vsbec', 'goat', 'vault', 'sih'],
-      answer: "Tharun has built several production-grade engineering platforms:\n\n• GOAT Code Editor: Real-time collaborative IDE with browser-native WebRTC voice calling mesh, Monaco kernel & 13+ language execution (Code Thugs 2k26 National 1st Place Winner 🥇).\n• VSBEC IT Vault: SIH 2026 Internal Hackathon Top 50 (out of 300+ campus teams, official SIH portal nominee) adopted by 365+ students with 3-tier proof audit, LeetCode sync, and sandboxed Monaco IDE.\n• FINDORA AI: Campus lost & found intelligence network with Google Gemini 2.5 Flash (Neural Minds AIML Hackathon 3rd Prize 🥉).\n• Smart Helmet IoT System: SIH 2025 Internal Hackathon Top 50 (out of 300+ campus teams, official SIH portal nominee) with RF 433MHz wireless ignition cutoff.\n• Work Suite HRMS: Enterprise workforce operations suite with RBAC and automated payroll (Odoo × NMIT 2026 National Finalist 🇮🇳).\n• Aura: 100% Offline Multimodal RAG workstation (Spring Boot, Llama-3, CLIP, Electron)."
-    },
-    {
-      keywords: ['intern', 'experience', 'neura', 'infosys', 'job'],
-      answer: "Currently, Tharun is a Fullstack Development Intern at Neura Global (Startup) where he builds production React/Node.js features. Previously, he completed a Software Development Internship with Infosys Springboard (StarWall employee dashboard)."
-    },
-    {
-      keywords: ['education', 'college', 'gpa', 'study', 'graduation', 'cgpa'],
-      answer: "Tharun is pursuing a Bachelor of Technology in Information Technology at VSB Engineering College, Karur, Tamil Nadu (Batch: 2024 - 2028). He currently holds a CGPA of 8.5 / 10."
-    },
-    {
-      keywords: ['contact', 'email', 'phone', 'social', 'reach'],
-      answer: "You can reach Tharun directly through:\n\n• Email: tharunkumark42007@gmail.com\n• Phone: +91 8760964830\n• LinkedIn: in.linkedin.com/in/tharunkumark4743?trk=profile-badge"
-    }
-  ];
-
-  const handleQuestionClick = (questionText: string) => {
-    setMessages(prev => [...prev, { sender: 'user', text: questionText }]);
-    setIsTyping(true);
-
-    const lowercaseQ = questionText.toLowerCase();
-    let bestMatch = qaPairs.find(pair => pair.keywords.some(keyword => lowercaseQ.includes(keyword)));
-    const responseText = bestMatch ? bestMatch.answer : "I'm not fully sure about that detail! Try asking about his projects, experience, education, or contact info.";
-
-    setTimeout(() => {
-      setIsTyping(false);
-      setMessages(prev => [...prev, { sender: 'bot', text: responseText }]);
-    }, 1000);
-
-    const remainingPool = ALL_QUESTIONS.filter(q => !activeQuestions.includes(q) && q !== questionText);
-    const nextQuestion = remainingPool[Math.floor(Math.random() * remainingPool.length)];
-    if (nextQuestion) {
-      setActiveQuestions(prev => prev.map(q => q === questionText ? nextQuestion : q));
-    }
-  };
-
-  return (
-    <>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-[90] p-4 bg-theme hover:scale-105 active:scale-95 text-white rounded-full shadow-2xl transition-all flex items-center justify-center border-4 border-white"
-        style={{ boxShadow: '0 10px 30px -5px var(--theme-glow)' }}
-      >
-        <MessageSquare size={26} className={isOpen ? 'rotate-90 transition-transform' : ''} />
-      </button>
-
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: 50, scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 50, scale: 0.9 }}
-            className="fixed bottom-24 right-6 w-[350px] sm:w-[400px] h-[500px] bg-white rounded-[2.5rem] border-2 border-slate-200/50 shadow-[0_30px_80px_-15px_rgba(0,0,0,0.3)] overflow-hidden glass-effect flex flex-col z-[90]"
-          >
-            <div className="p-6 bg-theme text-white flex items-center justify-between shadow-md">
-              <div className="flex items-center gap-3">
-                <img src={PERSONAL_INFO.profileImage} alt="Tharunkumar K" className="w-10 h-10 min-w-[40px] rounded-xl object-cover object-top border-2 border-white/20 shadow-sm flex-shrink-0" />
-                <div>
-                  <h3 className="font-bold text-sm">Tharun's Assistant</h3>
-                  <p className="text-[10px] text-white/80">Online & Ready</p>
-                </div>
-              </div>
-              <button onClick={() => setIsOpen(false)} className="p-1 hover:bg-white/20 rounded-lg transition-colors">
-                <X size={20} />
-              </button>
-            </div>
-
-            <div className="flex-1 overflow-y-auto p-6 space-y-4">
-              {messages.map((msg, i) => (
-                <div key={i} className={`flex w-full ${msg.sender === 'user' ? 'justify-end' : 'justify-start gap-2 items-end'}`}>
-                  {msg.sender === 'bot' && (
-                    <img src={PERSONAL_INFO.profileImage} alt="Assistant" className="w-6 h-6 rounded-full object-cover object-top shadow-sm flex-shrink-0 mb-1 border border-slate-200" />
-                  )}
-                  <div
-                    className={`max-w-[80%] px-4 py-3 rounded-2xl text-[13.5px] leading-relaxed whitespace-pre-line shadow-sm ${
-                      msg.sender === 'user' 
-                        ? 'bg-theme text-white rounded-br-sm' 
-                        : 'bg-white border border-slate-100 text-slate-700 rounded-bl-sm'
-                    }`}
-                  >
-                    {msg.text}
-                  </div>
-                </div>
-              ))}
-              {isTyping && (
-                <div className="flex justify-start">
-                  <div className="px-5 py-3 bg-slate-100 rounded-3xl rounded-bl-none text-slate-400 text-sm flex gap-1 items-center">
-                    <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-                    <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-                    <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <div className="p-3 bg-slate-50/80 border-t border-slate-100/60 overflow-x-auto whitespace-nowrap scrollbar-hide flex gap-2">
-              <AnimatePresence mode="popLayout">
-                {activeQuestions.map((q) => (
-                  <motion.button
-                    key={q}
-                    layout
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.8 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                    onClick={() => handleQuestionClick(q)}
-                    className="flex-shrink-0 px-3 py-1.5 bg-white text-[11px] font-bold text-slate-600 border border-slate-200 hover:border-theme hover:text-theme rounded-full shadow-sm"
-                  >
-                    {q}
-                  </motion.button>
-                ))}
-              </AnimatePresence>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </>
   );
 };
 
@@ -1496,7 +1334,7 @@ const App: React.FC = () => {
           onClose={() => setIsPaletteOpen(false)}
           onSelectTheme={(idx) => setActiveThemeIndex(idx)}
         />
-        <AIChatbot />
+        <AIChatbot gitStats={gitStats} />
       </div>
     );
   }
